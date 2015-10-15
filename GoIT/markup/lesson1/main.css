@@ -1,0 +1,35 @@
+        body{
+            background: #eeeeee;
+            margin-top: 4px;
+            
+            
+        }
+        .block {
+            width: 600px;
+            height: 846px;
+            margin: auto;
+            background: #fffef9; /* Цвет фона блока*/
+            padding: 50px; /* Поля вокруг текста*/
+            border-color: #d5d5d5; /* Цвет границы блока*/
+            border-style: solid; /* Стиль линии вокруг блока*/
+            border-width: 1px; /* Толщина линии вокруг блока*/
+            box-shadow: 0 0 3px rgba(0,0,0,0.3); /* Параметры тени */
+            
+        }
+        .photo{
+            text-align: center;
+        }
+        h1 {
+            text-align: center;
+        }
+        p{
+            text-indent: 10px; /* Отступ первой строки */
+            font-weight: bold;
+            font-size: 18px;
+           
+        }
+        ul{
+            font-weight: bold;
+            font-size: 18px;
+            line-height: 30px;
+        }
