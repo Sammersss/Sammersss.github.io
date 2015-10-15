@@ -1,35 +1,73 @@
-        body{
-            background: #eeeeee;
-            margin-top: 4px;
-            
-            
-        }
-        .block {
-            width: 600px;
-            height: 846px;
-            margin: auto;
-            background: #fffef9; /* Цвет фона блока*/
-            padding: 50px; /* Поля вокруг текста*/
-            border-color: #d5d5d5; /* Цвет границы блока*/
-            border-style: solid; /* Стиль линии вокруг блока*/
-            border-width: 1px; /* Толщина линии вокруг блока*/
-            box-shadow: 0 0 3px rgba(0,0,0,0.3); /* Параметры тени */
-            
-        }
-        .photo{
-            text-align: center;
-        }
-        h1 {
-            text-align: center;
-        }
-        p{
-            text-indent: 10px; /* Отступ первой строки */
-            font-weight: bold;
-            font-size: 18px;
-           
-        }
-        ul{
-            font-weight: bold;
-            font-size: 18px;
-            line-height: 30px;
-        }
+*{
+    margin: 0;
+    padding: 0; /*обнуление всех стилей на странице*/
+}
+
+body{
+    background: #eeeeee;
+    margin-top: 4px;
+    
+    
+}
+.block {
+    width: 512px;
+    height: 751px;
+    margin: auto;
+    background: #fffef9; /* Цвет фона блока*/
+    padding: 54px 50px 72px 50px; /* Поля вокруг текста*/
+    border-color: #d5d5d5; /* Цвет границы блока*/
+    border-style: solid; /* Стиль линии вокруг блока*/
+    border-width: 1px; /* Толщина линии вокруг блока*/
+    box-shadow: 0 0 3px rgba(0,0,0,0.3); /* Параметры тени */
+    
+}
+.photo{
+    text-align: center;
+    margin-top: 28px;
+    margin-bottom: 15px;
+}
+h1 {
+    text-align: center;
+    
+}
+
+h3{
+    text-indent: 14px; /* Отступ первой строки */
+    font-size: 16px;
+    font-weight: bold;
+/*    font-size: 16px;*/
+    margin-top: 29px;
+    margin-bottom: 19px;
+}
+p{
+    text-indent: 14px; /* Отступ первой строки */
+    font-weight: bold;
+    font-size: 16px;
+
+   
+}
+
+#rab{
+    margin-top: 0;
+}
+
+#tel #nomer{
+    margin-bottom: 10px;
+}
+
+#profil #fid{
+    margin-bottom: 11px;
+}
+
+#fb{
+    margin-bottom: 20px; 
+}
+
+ul{
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 28px;
+    margin-top: 36px;
+    margin-left: 40px;
+    margin-bottom: 19px;
+}
