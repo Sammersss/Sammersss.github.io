@@ -29,6 +29,8 @@ img{
     -webkit-border-radius: 1px;
     -moz-border-radius: 1px;
     border-radius: 7px;
+    width: 134px;
+    height: 128px;
 }
 .photo{
     text-align: center;
