@@ -5,6 +5,7 @@
 
 body{
     background: #eeeeee;
+	font: normal 13pt Times;
     margin-top: 4px;
     
     
@@ -27,21 +28,19 @@ body{
     margin-bottom: 15px;
 }
 h1 {
+	font: bold 16pt Times;
     text-align: center;
     
 }
 
 h3{
     text-indent: 14px; /* Отступ первой строки */
-    font-size: 16px;
-    font-weight: bold;
-/*    font-size: 16px;*/
+	font: normal 13pt Times;
     margin-top: 29px;
     margin-bottom: 19px;
 }
 p{
     text-indent: 14px; /* Отступ первой строки */
-    font-weight: bold;
     font-size: 16px;
 
    
@@ -64,7 +63,6 @@ p{
 }
 
 ul{
-    font-weight: bold;
     font-size: 16px;
     line-height: 28px;
     margin-top: 36px;
