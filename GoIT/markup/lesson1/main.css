@@ -10,7 +10,7 @@ body{
     
     
 }
-.block {
+.wrapper {
     width: 512px;
     height: 751px;
     margin: auto;
@@ -20,7 +20,15 @@ body{
     border-style: solid; /* Стиль линии вокруг блока*/
     border-width: 1px; /* Толщина линии вокруг блока*/
     box-shadow: 0 0 3px rgba(0,0,0,0.3); /* Параметры тени */
+    -webkit-border-radius: 1px;
+    -moz-border-radius: 1px;
+    border-radius: 1px;
     
+}
+img{
+    -webkit-border-radius: 1px;
+    -moz-border-radius: 1px;
+    border-radius: 7px;
 }
 .photo{
     text-align: center;
@@ -28,14 +36,14 @@ body{
     margin-bottom: 15px;
 }
 h1 {
-	font: bold 16pt Times;
+    font: bold 16pt Times;
     text-align: center;
     
 }
 
 h3{
     text-indent: 14px; /* Отступ первой строки */
-	font: normal 13pt Times;
+    font: normal 13pt Times;
     margin-top: 29px;
     margin-bottom: 19px;
 }
@@ -46,19 +54,19 @@ p{
    
 }
 
-#rab{
+#work{
     margin-top: 0;
 }
 
-#tel #nomer{
+#contact_phone #phone_number{
     margin-bottom: 10px;
 }
 
-#profil #fid{
+#social_profile #feedback{
     margin-bottom: 11px;
 }
 
-#fb{
+#social_network{
     margin-bottom: 20px; 
 }
 
