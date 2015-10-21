@@ -25,6 +25,15 @@ body{
     border-radius: 2px;
     
 }
+.learning_reasons {
+	border-top: 1px solid #7a7a7a;
+	border-bottom: 1px solid #7a7a7a;
+}
+
+.contacts {
+	border-bottom: 1px solid #7a7a7a;
+}
+
 img{
     -webkit-border-radius: 1px;
     -moz-border-radius: 1px;
