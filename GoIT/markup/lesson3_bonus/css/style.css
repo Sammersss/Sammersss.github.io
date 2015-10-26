@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    padding: 0; /*обнуление всех стилей на странице*/
+}
+body {
+    position: relative;
+    background-color: #404040;
+    font-family: Tahoma, Arial, sans-serif;
+    color: #e6e6e6;
+    font-size: 12px;
+}
+.wrapper {
+    position: relative;
+    margin: auto;
+    background: url(images/background.png);
+    width: 960px;
+    height: 883px;
+}
+header {
+/*    border: 1px solid #3911bf;*/
+	overflow: hidden;
+}
+header .logo {
+/*    border: 1px solid #50060e;*/
+    float: left;
+	background: url(images/palm-tree.png) no-repeat;
+	background-position: left 212px top 57px;
+	height: 75px;
+	padding-top: 132px;
+    padding-left: 71px;
+    padding-bottom: 0;
+    text-align: center;
+    
+}
+.contacts-box {
+/*    border: 1px solid #50060e;*/
+	float: right;
+	margin-top: 152px;
+	margin-right: 88px;
+    
+}
+
+/*ARTICLE*/
+
+article {
+/*    border: 1px solid #11bfb2;*/
+    margin: 0 0 83px;
+    width: 100%;
+    text-align: center;
+
+}
+article li {
+    display: inline-block;
+    width: 261px;
+    margin: 0 13px 68px 0;
+    vertical-align: top;
+    text-align: center;
+}
+article img {
+    display: block;
+    margin-bottom: 5px;
+    border:2px solid #aaaaaa;
+	border-radius: 2px;
+    
+}
+li {
+    font-size: 16px;
+}
+
+
+/*FOOTER*/
+footer {
+/*    border: 1px solid #3911bf;*/
+}
+.copyright {
+    margin-bottom: 31px;
+    text-align: center;
+    color: #e6e6e6;
+    font: 400 12px Tahoma;
+    
+}
