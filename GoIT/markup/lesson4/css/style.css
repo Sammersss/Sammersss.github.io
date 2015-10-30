@@ -16,8 +16,6 @@ box-shadow: -1px 4px 10px 0px rgba(0,0,0,0.55);
 
 
 body {
-	width: 1280px;
-	height: 1060px;
 	background-image:url(../images/background.png);
 }
 .wrapper {
@@ -138,7 +136,7 @@ body {
 	
 }
 .information {
-	width: 170px;
+	width: 180px;
 	float: left;
 	overflow: hidden;
 	position:relative;
@@ -153,11 +151,11 @@ body {
 	overflow: hidden;
 	position:relative;
 	top: 12px;
-	left:830px;
+	left:820px;
 	padding-bottom: 5px;
 }
 .news {
-	width: 170px;
+	width: 180px;
 	float: right;
 	overflow: hidden; /* страховка от ломки верстки объектами шире размера колонки-родителя */
 	position:relative;
