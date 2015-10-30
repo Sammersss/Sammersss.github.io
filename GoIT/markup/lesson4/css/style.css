@@ -1,0 +1,272 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+.shadow {
+-webkit-box-shadow: -1px 4px 10px 0px rgba(0,0,0,0.55);
+-moz-box-shadow: -1px 4px 10px 0px rgba(0,0,0,0.55);
+box-shadow: -1px 4px 10px 0px rgba(0,0,0,0.55);
+}
+
+.clearfix:after {
+	content:"";
+	clear: both;
+	display: block;
+}
+
+
+body {
+	width: 1280px;
+	height: 1060px;
+	background-image:url(../images/background.png);
+}
+.wrapper {
+	margin: 0 auto;
+	width: 1000px;
+	margin-top: 38px;
+	overflow: hidden;
+	border: 1px solid black;
+
+}
+/*		HEADER*/
+.header {
+/*			border: 1px solid red;*/
+}
+.box1 {
+/*			border: 1px solid blue;*/
+	position: relative;
+	overflow: hidden;
+	background: white;
+}
+.photo{
+	width: 283px;
+	height: 164px;
+	margin-left: 30px;
+	margin-top: 10px;
+
+}
+.contacts {
+	position: absolute;
+	top: 10px;
+	right: 33px;
+	color: rgba(18, 138, 167, 0.8);
+	font: 400 12px Tahoma;
+	line-height: 20px;
+}
+#text-contact {
+	font: bold 12px Tahoma;
+}
+.countries {
+	position: absolute;
+	right: 33px;
+	bottom: 9px;
+	text-align: center;
+	color: #128aa7;
+	font: 9px Tahoma;
+}
+
+.countries div {
+	display: inline-block;
+	overflow: hidden;
+/*	float: right;*/
+	padding: 0 5px;
+}
+.countries p {
+	text-decoration: underline;
+	
+}
+.box2 {
+/*	border: 1px solid green;*/
+	height: 237px;
+	
+	
+	
+}
+/*		CONTEINER*/
+.container {
+	position: relative;
+	overflow: hidden;
+	background: white;
+/*	padding-bottom: 12px;*/
+}
+.content {
+	color: #424c43;
+	font: 14px Tahoma;
+	line-height: 24px;
+}
+.information h3 {
+	text-align: center;
+	color: #424c43;
+	font: 400 18px Tahoma;
+}
+.news h3 {
+	text-align: center;
+	color: #424c43;
+	font: 400 18px Tahoma;: Tahoma;
+}
+.information p {
+	color: #424c43;
+	font: 14px Tahoma;
+	line-height: 24px;
+}
+.news p {
+	color: #424c43;
+	font: 14px Tahoma;
+	line-height: 24px;
+}
+
+.fon1 {  /* фон для левой колонки (синий) */
+	width: 100%;
+	background: #edeef0;
+	float: left; /* делаем все обертки плавающими блоками чтобы избежать добавления блока с clear: both; */
+	position: relative; /* чтобы иметь возможность сместить фон */
+	right: 540px; /* обнажаем красный фон для центральной колонки. 540 - ширина центральной колонки */
+	padding-bottom: 12px;
+}
+.fon2 {/* фон для центральной колонки (красный) */
+	width: 100%;
+	background: #ffffff;
+	float: left;
+	position: relative;
+	right: 230px; /* обнажаем желтый фон для правой колонки. 230 - ширина правой колонки */
+
+}
+.fon3 {/* фон для правой колонки (желтый) */
+	width: 100%;
+	background: #edeef0;
+	float: left;
+	
+}
+.information {
+	width: 170px;
+	float: left;
+	overflow: hidden;
+	position:relative;
+	top: 12px;
+	left:800px;
+	padding-bottom: 5px;
+	background: #edeef0;
+}
+.content {
+	width: 540px;
+	float: left;
+	overflow: hidden;
+	position:relative;
+	top: 12px;
+	left:830px;
+	padding-bottom: 5px;
+}
+.news {
+	width: 170px;
+	float: right;
+	overflow: hidden; /* страховка от ломки верстки объектами шире размера колонки-родителя */
+	position:relative;
+	top: 12px;
+	left: 740px; /* возвращаем колонки с контентом на свои позиции. */
+	padding-bottom: 5px;
+}
+
+/*------------------------------------*\
+НАВИГАЦИЯ
+\*------------------------------------*/
+.nav {	
+	position: relative;
+/*	z-index: 2;*/
+	background-color: #323232;
+	padding-left: 33px;
+	border-top: 1px solid #cacbcb;
+	border-bottom: 1px solid #000;
+	z-index: 1;
+}
+
+
+.nav ul {	
+	-webkit-transition: opacity 0.25s ease-in ;
+	-o-transition: opacity 0.25s ease-in ;
+	transition: opacity 0.25s ease-in ;
+	list-style:none;
+	position:relative;
+	float:left;
+	margin:0;
+	padding:0
+
+}
+
+.nav ul a {
+	display:block;
+	color:#fff;
+	text-decoration:none;
+	font: 14px Tahoma;
+    line-height: 34px;
+    padding: 0px 28px;
+}
+
+.nav ul li {
+	position:relative;
+	float:left;
+	margin:0;
+	padding:0
+}
+
+.nav ul ul li:hover {
+	background: #050505;
+	padding-left: 5px;
+}
+
+.nav ul ul {
+	position:absolute;
+	display:none;
+	top:100%;
+	left:0;
+	margin-left: 15px;
+	width:150px;
+	background:#323232;
+	-webkit-box-shadow: -1px 4px 13px 0px rgba(0,0,0,0.55);
+	-moz-box-shadow: -1px 4px 13px 0px rgba(0,0,0,0.55);
+	box-shadow: -1px 4px 13px 0px rgba(0,0,0,0.55);
+}
+
+.nav ul ul li {
+	width:145px;
+}
+
+.nav ul ul a {
+	line-height:120%;
+	padding:5px 15px
+}
+
+.nav ul ul ul {
+	top:0;
+	left:100%
+}
+
+.nav ul li:hover > ul {
+	display:block
+}
+
+
+.triangle {
+	width: 6px;
+	height: 6px;
+	margin:15px 10px 10px 10px;
+	background: url(../images/triangle-right.png);
+	float: right;
+}
+
+.dropdown:hover .triangle {
+	background: url(../images/triangle-down.png) no-repeat;
+}
+
+
+
+
+/*	FOOTER*/
+.footer {
+	margin: 0 auto;
+	width: 1000px;
+	padding: 10px;
+	color: #fff;
+	font-family: Tahoma;
+	text-align: center;
+	font-size: 13px;
+}
