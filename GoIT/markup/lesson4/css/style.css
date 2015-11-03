@@ -16,12 +16,11 @@
 
 
 body {
-	background-image:url(../images/background.png);
+	background-image: url(../images/background.png);
 }
 .wrapper {
 	margin: 0 auto;
 	width: 1000px;
-	margin-top: 38px;
 	overflow: hidden;
 	border: 1px solid black;
 
@@ -247,11 +246,9 @@ body {
 	background: url(../images/triangle-right.png);
 	float: right;
 }
-
-.dropdown:hover .triangle {
+.movement:hover .triangle {
 	background: url(../images/triangle-down.png) no-repeat;
 }
-
 
 
 
