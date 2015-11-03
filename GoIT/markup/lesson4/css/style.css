@@ -61,7 +61,7 @@ body {
 	font: 9px Tahoma;
 }
 
-.countries div {
+.countries li {
 	display: inline-block;
 	overflow: hidden;
 	padding: 0 5px;
