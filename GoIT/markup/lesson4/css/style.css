@@ -3,9 +3,9 @@
 	padding: 0;
 }
 .shadow {
-	-webkit-box-shadow: -1px 4px 10px 0px rgba(0,0,0,0.55);
-	-moz-box-shadow: -1px 4px 10px 0px rgba(0,0,0,0.55);
-	box-shadow: -1px 4px 10px 0px rgba(0,0,0,0.55);
+	-webkit-box-shadow: 0px -3px 10px 0px rgba(0,0,0,0.55);
+	-moz-box-shadow: 0px -3px 10px 0px rgba(0,0,0,0.55);
+	box-shadow: 0px -3px 10px 0px rgba(0,0,0,0.55);
 }
 
 .clearfix:after {
@@ -22,7 +22,7 @@ body {
 	margin: 0 auto;
 	width: 1000px;
 	overflow: hidden;
-	border: 1px solid black;
+	border-bottom: 3px solid #031d28;
 
 }
 /*		HEADER*/
@@ -71,7 +71,8 @@ body {
 	
 }
 .box-photo {
-	height: 237px;
+	line-height: 0;
+/*	height: 237px;*/
 	
 	
 	
@@ -116,6 +117,7 @@ body {
 	position: relative; /* чтобы иметь возможность сместить фон */
 	right: 540px; /* обнажаем красный фон для центральной колонки. 540 - ширина центральной колонки */
 	padding-bottom: 12px;
+	border-right: 1px solid #c7cacf; 
 }
 .fon2 {/* фон для центральной колонки (красный) */
 	width: 100%;
@@ -123,6 +125,7 @@ body {
 	float: left;
 	position: relative;
 	right: 230px; /* обнажаем желтый фон для правой колонки. 230 - ширина правой колонки */
+	border-right: 1px solid #c7cacf; 
 
 }
 .fon3 {/* фон для правой колонки (желтый) */
@@ -191,8 +194,8 @@ body {
 	color:#fff;
 	text-decoration:none;
 	font: 14px Tahoma;
-    	line-height: 34px;
-    	padding: 0px 28px;
+    line-height: 34px;
+    padding: 0px 28px;
 }
 
 .nav ul li {
@@ -201,9 +204,9 @@ body {
 	margin:0;
 	padding:0
 }
-
+/*.nav ul ul li:hover {*/
 .nav ul ul li:hover {
-	background: #050505;
+	background: #262626;
 	padding-left: 5px;
 }
 
@@ -215,6 +218,7 @@ body {
 	margin-left: 15px;
 	width:150px;
 	background:#323232;
+	border-top: 1px solid #000;
 	-webkit-box-shadow: -1px 4px 13px 0px rgba(0,0,0,0.55);
 	-moz-box-shadow: -1px 4px 13px 0px rgba(0,0,0,0.55);
 	box-shadow: -1px 4px 13px 0px rgba(0,0,0,0.55);
