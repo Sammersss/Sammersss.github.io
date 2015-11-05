@@ -153,10 +153,11 @@ body {
 /*	color: #ffffff;*/
 /*	font: 400 14px / 62px Tahoma;*/
 /*	text-align: center;*/
-/*	background: url(../images/Fb_button.png) 0 0 no-repeat;*/
+	background: url(../images/Fb_button.png) 0 0 no-repeat;
 	position: absolute;
 	line-height: 0px;
 	width: 276px;
+	height: 35px;
 	top: 36px;
 	left: 25%;
 }
