@@ -133,7 +133,7 @@ body {
 	position: absolute;
 	width: 560px;
 	height: 613px;
-	top: 249px;
+	top: 213px;
 	right: 302px;
 	background: rgba(0, 0, 0, 0.63);
 }
@@ -146,6 +146,8 @@ body {
 .form {
 	border-top: 2px solid #c6ccbe;
 	position: relative;
+	height: 548px;
+	
 }
 .fb-button {
 /*	color: #ffffff;*/
@@ -157,16 +159,21 @@ body {
 	width: 276px;
 	top: 36px;
 	left: 25%;
-
 }
 .button-cover {
 	position: absolute;
-	line-height: 0px;
+/*	border: 1px solid #546bed;*/
 	width: 276px;
 	height: 35px;
 	top: 36px;
 	left: 25%;
+	opacity: 0;
 }
 .button-cover:hover {
-	background: rgba(10, 68, 118, 0.69);
+	background: rgba(10, 68, 118, 0.3);
+	border-radius: 3px;
+	-webkit-box-shadow: inset 0px 0px 5px 0px rgba(41,41,102,1);
+	-moz-box-shadow: inset 0px 0px 5px 0px rgba(41,41,102,1);
+	box-shadow: inset 0px 0px 5px 0px rgba(41,41,102,1);
+	opacity: 1;
 }
