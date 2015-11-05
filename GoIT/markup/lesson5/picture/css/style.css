@@ -1,0 +1,58 @@
+body {
+background: #ead6d6;	
+
+}
+.ramka {
+	position: absolute;
+/*		background: rgba(34, 229, 102, 0.79);*/
+	width: 650px;
+	height: 678px;
+	line-height: 0;
+	top: 48px;
+	left: 25%;
+
+}
+.tab {
+	position: absolute;
+	background: #ead6d6;
+	width: 650px;
+	height: 678px;
+	line-height: 0;
+	top: 48px;
+	left: 25%;
+}
+table {
+	margin: 51px auto;
+	border-collapse: collapse;
+	text-align: center;
+	border: 11px solid #ead6d6;
+	width: 520px;
+}
+#head {
+	height: 53px;
+}
+tr {
+	height: 71px;
+
+}
+td,th {
+	border: 10px solid rgb(26, 25, 25);
+}
+.low {
+	height: 43px;
+}
+.white {
+	background: #fff;
+}
+.yellow {
+	background: #fff160;
+}
+.red {
+	background: #ff6032;
+}
+.black {
+	background: #1f1e1e;
+}
+.blue {
+	background: #054480;
+}
