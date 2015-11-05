@@ -137,7 +137,7 @@ body {
 	right: 302px;
 	background: rgba(0, 0, 0, 0.63);
 }
-.cadastre h1 {
+h1 {
 	color: #ffffff;
 	font: 400 24px / 62px Tahoma;
 	text-align: center;
@@ -153,7 +153,7 @@ body {
 /*	color: #ffffff;*/
 /*	font: 400 14px / 62px Tahoma;*/
 /*	text-align: center;*/
-	background: url(../images/Fb_button.png) 0 0 no-repeat;
+	background: url(../images/fb_button.jpg)0 0 no-repeat;
 	position: absolute;
 	line-height: 0px;
 	width: 276px;
@@ -187,7 +187,7 @@ form{
 
 }
 fieldset{
-	border-top: 3px solid #ccc;
+	border-top: 1px solid #ccc;
 /*	border: none;*/
 /*			border-color: aqua;*/
 /*			border-radius: 3px;*/
@@ -195,10 +195,11 @@ fieldset{
 /*			background: rgba(203, 200, 200, 0.4);*/
 }
 legend{
-	background: rgba(242, 122, 20, 0.67);
 	border-radius: 3px;
 	padding: 5px 10px;
-	color: #741d1d;
+	color: #999999;
+	font: 400 14px / 16px Tahoma;
+	margin-left: 112px;
 
 
 }
@@ -210,7 +211,7 @@ label{
 	cursor: pointer; <!--pointer -превращает курсор в руку при наведении -->
 }
 form p {
-	margin-top: 13px;
+	margin-top: 21px;
 	
 }
 .plase {
