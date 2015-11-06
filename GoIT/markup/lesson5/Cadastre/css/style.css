@@ -71,16 +71,6 @@ body {
 	/*border: 1px solid red;*/
 
 	}
-.minhas-cadastre:before {
-	content: "";
-	display: block;
-	position: absolute;
-	top: 5px;
-	right: 311px;
-	height: 31px;
-	width: 31px;
-	background: url(../images/inventicons-29.png) 0 0 no-repeat;
-	}
 .minhas-cadastre li{
 	float: left;
 	list-style: none;
@@ -129,6 +119,18 @@ body {
 	background: linear-gradient(to bottom, #51b1dc 0%,#2989d8 100%,#207cca 100%,#2e7ac4 100%);
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#51b1dc', endColorstr='#2e7ac4',GradientType=0 );
 	}
+.minhas {
+	width: 161px;
+}
+.minhas a {
+	padding-left: 20px;
+}
+.minhas img {
+	float: left;
+	margin-top: 6px;
+	padding-right: 10px;
+
+}
 /*	end of Second section: ;*/
 
 /*	end of header: ;*/
