@@ -283,7 +283,7 @@ input[type="submit"] {
 	padding: 0 10px;
 	font: 600 14px Tahoma;
 	color: #fff;
-	line-height: 37px;
+	height: 37px;
 	border: 1px solid  #2e7ac4;
 	border-radius: 3px;
 	background: #1e5799;
