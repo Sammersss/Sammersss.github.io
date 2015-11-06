@@ -1,3 +1,7 @@
+* {
+	margin: 0;
+	padding: 0;
+}
 body {
 	font-family:  "Helvetica Neue", Helvetica, Arial, sans-serif;
 	background: rgba(113, 138, 152, 0.47);
@@ -210,6 +214,7 @@ form{
 
 }
 fieldset{
+	border: none;
 	border-top: 2px solid #555555;
 	width: 276px;
 	margin-left: 142px;
