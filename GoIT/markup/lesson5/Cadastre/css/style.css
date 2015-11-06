@@ -2,6 +2,28 @@
 	margin: 0;
 	padding: 0;
 }
+@font-face {
+    font-family: 'Helvetica Neue';
+    src: url('../fonts/helveticaneue-thin-webfont.eot');
+    src: url('../fonts/helveticaneue-thin-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/helveticaneue-thin-webfont.woff2') format('woff2'),
+         url('../fonts/helveticaneue-thin-webfont.woff') format('woff'),
+         url('../fonts/helveticaneue-thin-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'Helvetica Neue';
+    src: url('../fonts/bold/helveticaneue-heavy-webfont.eot');
+    src: url('../fonts/bold/helveticaneue-heavy-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/bold/helveticaneue-heavy-webfont.woff2') format('woff2'),
+         url('../fonts/bold/helveticaneue-heavy-webfont.woff') format('woff'),
+         url('../fonts/bold/helveticaneue-heavy-webfont.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+
+}
 body {
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 	background: rgba(113, 138, 152, 0.47);
@@ -155,7 +177,10 @@ body {
 }
 h1 {
 	color: #ffffff;
-	font: 400 24px / 62px "Helvetica Neue";
+	font-: 400 20px / 62px "Helvetica Neue";
+	font-weight: bold;
+	font-size: 20px;
+	line-height: 62PX;
 	text-align: center;
 	
 }
@@ -199,10 +224,12 @@ h1 {
 .link span:nth-child(3) {
 	float: left;
 	line-height: 35px;
-	width: 35px;
+	width: 30px;
+	padding-left: 5px;
 /*			border: 1px solid #1f3c76;*/
 	color: #fff;
 	font-weight: bold;
+	font-size: 20px;
 }
 
 .fb-button a:hover {
