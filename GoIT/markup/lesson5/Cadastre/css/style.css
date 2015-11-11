@@ -173,7 +173,7 @@ body {
 	width: 560px;
 	top: 213px;
 	right: 302px;
-	background: rgba(0, 0, 0, 0.63);
+/*	background: rgba(0, 0, 0, 0.63);*/
 }
 h1 {
 	color: #ffffff;
@@ -182,15 +182,20 @@ h1 {
 	font-size: 20px;
 	line-height: 62PX;
 	text-align: center;
+	background: rgba(0, 0, 0, 0.63);
 	
 }
 .form {
-	border-top: 2px solid #c6ccbe;
+/*	margin-top: 2px;*/
 	position: relative;
+	background: rgba(0, 0, 0, 0.63);
+	margin-top: 2px;
+	padding-top: 36px;
+	padding-bottom: 22px;
 }
 /*FACEBOOK LINK*/
 .fb-button {
-	margin-top: 36px;
+
 	margin-left: 142px;
 	width: 276px;
 }
