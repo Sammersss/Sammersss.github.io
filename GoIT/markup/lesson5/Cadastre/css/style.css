@@ -252,8 +252,6 @@ form{
 }
 fieldset{
 	border: none;
-	border-top: 2px solid #4b4b4b;
-/*	box-shadow: inset 0px 1px 0px 0px #000000;*/
 	width: 276px;
 	margin-left: 142px;
 }
@@ -262,8 +260,24 @@ legend{
 	color: #999999;
 	font: 600 14px / 16px;
 	margin-left: 112px;
-
-
+}
+legend:before {
+	content:"";
+	position: absolute;
+	width: 113px;
+    top: 12px;
+    left: 141px;
+	border-top: 1px solid #666;
+	border-bottom: 1px solid #000;
+}
+legend:after {
+	content:"";
+	position: absolute;
+    width: 124px;
+    top: 12px;
+    left: 294px;
+	border-top: 1px solid #666;
+	border-bottom: 1px solid #000;
 }
 label{
 /*	width: 214px;*/
