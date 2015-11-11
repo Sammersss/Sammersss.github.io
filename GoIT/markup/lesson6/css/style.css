@@ -195,14 +195,14 @@ body {
     margin-left: 128px;
 }
 .main-menu ul li {
-    /*	border: 1px solid #f00;*/
+/*    	border: 1px solid #f00;*/
     float: left;
     display: block;
     color: #fff;
     padding: 2px 0;
 }
 .main-menu ul li a {
-    /*	border: 1px solid #0f0;*/
+/*    	border: 1px solid #0f0;*/
     display: block;
     padding: 4px 16px;
     font: 13px'Lucida Sans Unicode', Arial, Helvetica, sans-serif;
@@ -213,6 +213,7 @@ body {
 .main-menu ul li a:hover {
     color: #fff;
     border-radius: 20px;
+	height: 18px;
     background: #124366;
     text-decoration: none;
 }
@@ -306,7 +307,7 @@ body {
 }
 .wheels select {
     width: 102px;
-    height: 21px;
+    height: 18px;
     float: right;
     border: 2px solid #a8a8a8;
     border-bottom: none;
@@ -314,7 +315,7 @@ body {
 }
 .yer {
     width: 60px !important;
-    margin-right: 43px;
+    margin-right: 42px;
 	margin-top: 1px;
 }
 .small_text {
@@ -338,7 +339,7 @@ body {
 .tires {
     width: 178px;
     float: right;
-    margin-top: 3px;
+    margin-top: 1px;
     padding-right: 14px;
 	
 }
@@ -871,7 +872,7 @@ a.image {
     margin: 0px 0 22px;
     text-align: center;
 }
-.footer {
+footer {
     margin: 0px auto;
     width: 910px;
     height: 100px;
@@ -879,29 +880,29 @@ a.image {
     font-family: Tahoma, Arial, sans-serif;
     background-color: #213a4d;
 }
-.footer ul {
+footer ul {
     padding: 5px 0 10px 0;
 }
-.footer ul li a {
+footer ul li a {
     color: #bec6c9;
     text-decoration: none;
 }
-.footer ul li {
+footer ul li {
     display: inline;
     color: #bec6c9;
     font-size: 12px;
 	margin-left: 3px;
 }
-.footer ul li a:hover {
+footer ul li a:hover {
     color: #52abcb;
     text-decoration: none;
 }
-.footer p {
+footer p {
     padding: 4px 0 3px 0;
     color: #7f4740;
     font-size: 10px;
 }
-.footer p a {
+footer p a {
     color: #7f4740;
     text-decoration: none;
 }
