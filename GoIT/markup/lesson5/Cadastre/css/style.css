@@ -30,7 +30,7 @@ body {
 	}
 .wrapper {
 	margin: 0 auto;
-	width: 1215px;
+	width: 100%;
 	}
 .clearfix:after{
 	content: '';
@@ -165,7 +165,8 @@ body {
 /*	border: 3px solid red;*/
 	position: relative;
 	height: 1028px;
-	background-image: url(../images/Background-copy.png);
+	background: url(../images/Background-copy.png);
+	background-size: 100%;
 	
 }
 .cadastre {
