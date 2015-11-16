@@ -166,7 +166,7 @@ body {
 	position: relative;
 	height: 1028px;
 	background: url(../images/Background-copy.png);
-	background-size: 100%;
+	background-size: cover;
 	
 }
 .cadastre {
