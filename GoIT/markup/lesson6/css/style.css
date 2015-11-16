@@ -18,6 +18,11 @@ body {
     font-style: normal;
 
 }
+select {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+}
 .wrapper {
     margin: 0 auto;
     width: 910px;
@@ -25,6 +30,7 @@ body {
     background-color: #fff;
     /*			border: 1px solid #ccc;*/
 }
+
 .phones img {
     float: left;
     margin-top: 2px;
@@ -309,9 +315,13 @@ body {
     width: 102px;
     height: 18px;
     float: right;
+	background: #fff url(../img/select.png);
+	background-position: right center;
+    background-repeat: no-repeat;
     border: 2px solid #a8a8a8;
     border-bottom: none;
     border-right: none;
+
 }
 .yer {
     width: 60px !important;
@@ -332,6 +342,9 @@ body {
     width: 103px;
     height: 17px;
     float: right;
+	background: #fff url(../img/select.png);
+	background-position: right center;
+    background-repeat: no-repeat;
 	border: 2px solid #a8a8a8;
     border-bottom: none;
     border-right: none;
@@ -415,10 +428,15 @@ body {
     height: 17px;
 	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
 	font-size: 11px;
+	background: #fff url(../img/select.png);
+	background-position: right center;
+    background-repeat: no-repeat;
 	border: 2px solid #a8a8a8;
     border-bottom: none;
     border-right: none;
 }
+
+
 .width_profile select:nth-child(2) {
     margin-left: 3px;
 }
@@ -440,6 +458,9 @@ body {
     margin-left: 8px;
 	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
 	font-size: 11px;
+		background: #fff url(../img/select.png);
+	background-position: right center;
+    background-repeat: no-repeat;
 	border: 2px solid #a8a8a8;
     border-bottom: none;
     border-right: none;
@@ -530,6 +551,9 @@ body {
     margin-top: 2px;
     margin-left: 12px;
 	font-size: 11px;
+	background: #fff url(../img/select.png);
+	background-position: right center;
+    background-repeat: no-repeat;
 	border: 2px solid #a8a8a8;
     border-bottom: none;
     border-right: none;
@@ -550,6 +574,9 @@ body {
     margin-left: 42px;
     margin-top: 2px;
     font-size: 11px;
+	background: #fff url(../img/select.png);
+	background-position: right center;
+    background-repeat: no-repeat;
     border: 2px solid #a8a8a8;
     border-bottom: none;
     border-right: none;
@@ -571,6 +598,9 @@ body {
     margin-top: 2px;
     margin-left: 28px;
     font-size: 11px;
+	background: #fff url(../img/select.png);
+	background-position: right center;
+    background-repeat: no-repeat;
     border: 2px solid #a8a8a8;
     border-bottom: none;
     border-right: none;
@@ -598,6 +628,9 @@ body {
     width: 58px;
     height: 17px;
 	font-size: 11px;
+	background: #fff url(../img/select.png);
+	background-position: right center;
+    background-repeat: no-repeat;
     border: 2px solid #a8a8a8;
     border-bottom: none;
     border-right: none;
