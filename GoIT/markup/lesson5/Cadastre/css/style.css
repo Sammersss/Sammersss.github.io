@@ -26,11 +26,13 @@
 }
 body {
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-	background: rgba(113, 138, 152, 0.47);
+	background: url(../images/Background-copy.png) no-repeat;
+	background-size: cover;
 	}
-.wrapper {
+.header__wrapper {
 	margin: 0 auto;
 	width: 100%;
+	background-image: url(../images/header.png);
 	}
 .clearfix:after{
 	content: '';
@@ -43,9 +45,10 @@ body {
 	/*HEADER*/
 
 .header {
+	margin: 0 auto;
+	width: 1215px;
 	height: 36px;
 	/*	border: 2px solid blue;*/
-	background-image: url(../images/header.png);
 	position: relative;
 	}
 .nav {
@@ -161,12 +164,15 @@ body {
 /*	end of header: ;*/
 
 /*CONTENT*/
+.content__wrapper {
+	width: 1215px;
+	margin: 0 auto;
+}
 .content {
 /*	border: 3px solid red;*/
 	position: relative;
 	height: 1028px;
-	background: url(../images/Background-copy.png);
-	background-size: cover;
+
 	
 }
 .cadastre {
