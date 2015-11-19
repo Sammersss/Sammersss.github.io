@@ -330,7 +330,7 @@ body {
 }
 .small_text {
     font-size: 9px;
-    color: #8d999d;
+	color: #77858b;
 }
 .block_left {
     float: left;
@@ -643,7 +643,7 @@ body {
 }
 .small_text_dco {
     font-size: 9px;
-    color: #8d999d;
+	color: #77858b;
     line-height: 8px;
 }
 /*FIND BUTTON*/
