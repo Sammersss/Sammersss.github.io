@@ -41,13 +41,16 @@ body {
 }
 .phones>:nth-child(2){
     color: #5e696d;
-    font: 400 18px / 25px Arial, Helvetica, sans-serif;
+    font: 400 18px / 25.46px Arial, Helvetica, sans-serif;
     margin-left: 3px;
+	color: #5e696d;
+	letter-spacing: 0.5px;
 }
 .phones>:nth-child(3) {
     color: #5e696d;
-    font: 400 18px / 25px Arial, Helvetica, sans-serif;
+    font: 400 18px / 25.46px Arial, Helvetica, sans-serif;
     margin-left: 2px;
+	letter-spacing: 0.4px;
 }
 /*---LOGIN FORM---*/
 
@@ -56,7 +59,7 @@ body {
     float: left;
     width: 495px;
     height: 18px;
-    margin: 20px 0px 10px 17px;
+    margin: 20px 0px 10px 14px;
     background: #1e5799;
     background: -moz-linear-gradient(top, #1e5799 0%, #1f6685 0%, #0c3357 100%, #207cca 100%, #7db9e8 100%);
     background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #1e5799), color-stop(0%, #1f6685), color-stop(100%, #0c3357), color-stop(100%, #207cca), color-stop(100%, #7db9e8));
@@ -205,16 +208,16 @@ body {
 .main-menu ul li a {
 /*    	border: 1px solid #0f0;*/
     display: block;
-    padding: 4px 16px;
-    font: 13px'Lucida Sans Unicode', Arial, Helvetica, sans-serif;
-    color: #a2adb0;
+    padding: 4px 14px;
+    font: 400 13.64px / 25.46px 'Lucida Sans Unicode', Arial, Helvetica, sans-serif;
+	color: #b1bcc0;
     text-decoration: none;
     text-align: center;
 }
 .main-menu ul li a:hover {
     color: #fff;
     border-radius: 20px;
-	height: 18px;
+	height: 20px;
     background: #124366;
     text-decoration: none;
 }
@@ -285,6 +288,7 @@ body {
     float: right;
     margin-right: 22px;
 }
+
 /*wheels*/
 
 .wheels {
@@ -296,6 +300,7 @@ body {
 .wheels-side {
     clear: both;
     font-size: 10px;
+	font-weight: 400;
 }
 .wheels .item {
     height: 20px;
@@ -354,6 +359,7 @@ body {
 .tires-side {
     clear: both;
     font-size: 10px;
+	font-weight: 400;
 	
 }
 .tires .item {
@@ -477,7 +483,7 @@ body {
 }
 .seasons label {
     font-size: 11px;
-    font-weight: 600;
+    font-weight: 400;
     float: left;
 }
 /*FIND BUTTON*/
@@ -534,6 +540,7 @@ body {
 .wheel_diameter p {
     float: left;
     font-size: 11px;
+	font-weight: 400;
     margin-top: 5px;
     margin-left: 4px;
 }
@@ -555,6 +562,7 @@ body {
 }
 .fixing_holes p {
     font-size: 11px;
+	font-weight: 400;
     margin-left: 3px;
     margin-top: 1px;
 }
@@ -579,6 +587,7 @@ body {
 .fixing_holes_diameter p {
     clear: both;
     font-size: 11px;
+	font-weight: 400;
     margin-top: -1px;
     margin-left: 4px;
 }
@@ -613,7 +622,7 @@ body {
 }
 .right_side_wheel p {
     font-size: 11px;
-    font-weight: 600;
+    font-weight: 400;
     margin-top: 2px;
 }
 .right_side_wheel span {
@@ -721,12 +730,13 @@ input[type=checkbox]:checked + label:before{
 .product_list li {
     list-style-type: circle;
     color: #bec5c8;
-    margin: 5px 0 6px;
 }
 .product_list a {
-    color: #465961;
+	color: #465961;
+	font: 400 12.73px / 25.46px 'Lucida Sans Unicode';
+	transform: scale(0.909,0.909);
     text-decoration: none;
-    font-size: 13px;
+
 }
 .product_list a:hover {
     font-style: italic;
@@ -735,7 +745,7 @@ input[type=checkbox]:checked + label:before{
     font-weight: 600;
 }
 .product_list .activ {
-    font-style: italic;
+    font: italic 700 14px / 25.46px Arial, Helvetica, sans-serif; 
     color: #0c3256;
     text-decoration: underline;
     font-weight: 600;
@@ -898,16 +908,19 @@ a.image {
     margin-right: 4px;
 }
 
+.right-side-content_list form {
+    margin-top: 4px;
+	margin-bottom: 6px;
+}
 .right-side-content_list form>div {
     border: none;
     font-size: 12px;
     margin-left: 14px;
-    margin-top: 4px;
-    margin-bottom: 10px;
 }
 .right-side-content_list form>div>label {
     margin-left: 10px;
     color: #465961;
+	font: 400 12.73px / 25px 'Lucida Sans Unicode';
 }
 .right-side-content button {
     width: 80px;
