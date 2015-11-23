@@ -94,7 +94,7 @@ body{
 	background: rgba(79, 63, 85, 0.8);
 }
 .menu__item a:hover{
-	border-bottom: 2px solid #edbfff;
+	/*border-bottom: 2px solid #edbfff;*/
 	background: rgba(55, 42, 62, 0.81);
 }
 
