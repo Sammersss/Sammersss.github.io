@@ -104,7 +104,7 @@
 	}
 	.content-section__header {
 		margin-bottom: 18px;
-    	width: 207px;
+    	width: 315px;
 		height: 22px;
 		font-size: 30px;
 
@@ -209,7 +209,7 @@
 		line-height: 40px;
 	}
 /*------MENU------*/
-	.menu{
+	.header__menu{
 		display: none;
 	}
 	.menu--modifi{
@@ -614,10 +614,11 @@
 	.company-section {
 		float: left;
 		overflow: hidden;
-		width: 273px;
+		width: 30%;
 		height: 200px;
 		margin-top: 0;
-    	margin-right: 67px;
+    	margin-right: 5%;
+
 	}
 	.company-section__article {
 		margin-left: 30px;
@@ -645,7 +646,7 @@
 	    font: 400 18px/14px 'League Gothic', Arial, "Helvetica Neue", Tahoma, sans-serif;
 	}
 	.company-section--two {
-		margin-right: 57px;
+		margin-right: 5%;
 	}
 	.company-section__img--modifi1 {
 		background: url(../img/symbol.png) -33px 0 no-repeat;
@@ -655,7 +656,6 @@
 	}
 	.company-section--three {
 		margin-right: 0;
-		padding-left: 7px;
 	}
 	.company-section__img--modifi2 {
 		background: url(../img/symbol.png) -66px 0 no-repeat;
@@ -666,7 +666,7 @@
 	
 /*------end of SUB-HEADER------*/
 	.content-section{
-		width: 445px;
+		width: 46%;
 		
 	}
 	.content-section__slider {
@@ -690,7 +690,7 @@
 		border-right: 10px solid white;
 	   }
 	.content-section__header {
-		width: 207px;
+		width: 315px;
 		height: 22px;
 		margin-bottom: 16px;
 		padding-left: 0px;
@@ -705,7 +705,7 @@
 		font: 300 16px / 24px 'Open Sans', sans-serif;
 	}
 	.content-section:first-child {
-		margin-right: 57px;
+		margin-right: 8%;
 	}
 	.content-section__slide_circle {
 		padding: 22px 0 0 22px;

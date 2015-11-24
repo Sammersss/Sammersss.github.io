@@ -1,0 +1,106 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+
+	background: url(../img/bg_head.jpg) top center no-repeat;
+
+}
+.wrapper{
+	min-width: 320px;
+	margin: 0 auto;
+	
+}
+@font-face {
+    font-family: 'League Gothic';
+    src: url('../fonts/leaguegothic-regular-webfont.eot');
+    src: url('../fonts/leaguegothic-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/leaguegothic-regular-webfont.woff2') format('woff2'),
+         url('../fonts/leaguegothic-regular-webfont.woff') format('woff'),
+         url('../fonts/leaguegothic-regular-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+.header__menu {
+	position: relative;
+	width: 244px;
+	margin: 18px auto;
+	border: 1px solid transparent;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	z-index: 2;
+}
+
+.header__menu li {
+	border-bottom: 1px solid #35273d;
+	border-top : 1px solid #695272;
+}
+
+.header__menu a {
+	font: 400 24px/38px 'League Gothic', Arial, "Helvetica Neue", Tahoma, sans-serif;
+	text-align: center; 
+	text-decoration: none;
+	text-transform: uppercase;
+    font-family: "league_gothic";
+    display: block;
+	line-height: 38px;
+	border-bottom: 2px solid transparent;
+}
+
+.header__menu li {
+	position: relative;
+	display: block
+}
+
+.absolute-menu {
+	width: 244px;
+	position: absolute;
+	top: 100%;
+	left: -1px;
+	display: none;
+	border: 1px solid #000;
+	border-top: 1px solid #35273d;
+}
+
+
+.header__menu:hover{
+	background-color: rgba(54, 41, 62, 0.8);
+	border: 1px solid #000;
+}
+
+.header__menu:hover ul {
+	overflow: hidden;
+	background-color: rgba(54, 41, 62, 0.8);
+	display: block;
+	top: 100%;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+}
+
+.menu__home a {
+    border-top: none;
+    line-height: 51px;
+    border-bottom: 2px solid transparent;
+}
+
+.menu__home:after {
+	content: "";
+	position: absolute;
+	top: 41px;
+	left: 98px;
+	border: 1px solid #edbfff;
+	width: 45px;
+}
+
+.header__menu a:hover {
+   border-bottom: 2px solid #edbfff;
+   background-color: rgba(34, 26, 39, 0.8);
+
+}
+.header__menu .menu__home a:hover {
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+}
+
