@@ -151,11 +151,9 @@ body{
 	margin: 0 auto;
 	margin-top: 115px;
     display: block;
-	width: 201px;
+	width: 230px;
 	height: 51px;
-	padding-left: 11px;
-/*	border: 1px solid #000;*/
-/*	background: url(../img/header-slider.png) 0 0 no-repeat;*/
+	text-align: center;
 	
 }
 .slider__header:before{
@@ -179,11 +177,16 @@ body{
 }
 .slider__header h4{
 	margin: 0 0 2px 0;
+	width: 203px;
 	color: #fefefe;
 	font: 400 36px / 30px 'League Gothic', Arial, "Helvetica Neue", Tahoma, sans-serif;
 }
 .slider__header span{
 	margin: 0;
+	display: block;
+	overflow: hidden;
+	width: 203px;
+    height: 24px;
 	color: #edbfff;
 	font: 400 18px / 24px 'League Gothic', Arial, "Helvetica Neue", Tahoma, sans-serif;
 	text-transform: uppercase;
@@ -196,7 +199,6 @@ body{
 /*	border: 1px solid #000;*/
 	margin: 0 auto;
 	margin-top: 80px;
-	padding: 0 0 0 11px;
 	width: 87px;
 	height: 18px;
 }
@@ -216,6 +218,10 @@ body{
 	width: 18px;
 	height: 18px;
 	background: url(../img/circle_white.png) -20px -1px no-repeat;
+}
+.slider__circle .slider__circle__active{
+	background: url(../img/circle_white.png) -20px -21px no-repeat;
+	
 }
 .slider__circle a:hover{
 	background: url(../img/circle_white.png) -20px -21px no-repeat;
@@ -360,7 +366,7 @@ body{
 
 .content-section__slide_circle{
 	margin: 0 auto;
-	padding: 22px 0 0 48px;
+	padding-top: 22px;
 	width: 90px;
 	height: 18px;
 }
@@ -380,6 +386,10 @@ body{
 	width: 18px;
 	height: 18px;
 	background: url(../img/circle_white.png) 0 0 no-repeat;
+}
+.content-section__slide_circle .active{
+	background: url(../img/circle_white.png) 0 -20px no-repeat;
+	
 }
 .content-section__slide_circle a:hover{
 	background: url(../img/circle_white.png) 0 -20px no-repeat;

@@ -37,6 +37,7 @@
 		width: 480px;
 		margin-top: 120px;
 		padding-left: 32px;
+		text-align: left;
 	}
 	
 	.slider__header:before {
@@ -275,16 +276,19 @@
 	}
 	.slider__header h4 {
 		margin-bottom: 9px;
+		width: 310px;
 		font: 400 49px / 36px 'League Gothic', Arial, "Helvetica Neue", Tahoma, sans-serif;
 		letter-spacing: -0.5px;
 	}
 	.slider__header span{
+		width: 310px;
+		height: 36px;
 		font: 400 24px / 36px 'League Gothic', Arial, "Helvetica Neue", Tahoma, sans-serif;
 		letter-spacing: -0.1px;
 }
 	.slider__header p {
 		display: block;
-		width: 272px;
+		width: 310px;
 		height: 115px;
 		margin: 0;
 		color: #ffffff;
@@ -516,7 +520,7 @@
 @media (min-width: 960px) {
 	.wrapper{
 		max-width: 960px;
-			
+		padding: 0 5px 0 5px;
 	}
 	.header {
 		height: 779px;
@@ -525,7 +529,7 @@
 	.header .logo{
 		float: left;
 	    width: 151px;
-		margin-left: -2px;
+		margin-left: 0;
 	}
 
 	.logo{
@@ -567,7 +571,6 @@
 		width: 502px;
 		height: 231px;
 		margin-top: 92px;
-		margin-left: -2px;
 		padding-left: 0px;
 }
 	.slider__header h4 {
@@ -726,7 +729,7 @@
 	.content-section__article1 p,
 	.content-section__article2 p,
 	.content-section__article3 p {
-		width: 375px;
+		width: 100%;
 	}
 /*------end of CONTENT------*/
 	.sponsors-logo {
