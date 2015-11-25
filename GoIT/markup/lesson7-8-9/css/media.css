@@ -1,15 +1,19 @@
 @media (min-width: 480px){
-	.wrapper{
-		max-width: 480px;
-	}
+
 	.header{
 		height: 478px;
 	}
 	.header a{
-		line-height: 40px;
+		line-height: 38px;
+	}
+	.menu__home a{
+		padding-top: 6px;
 	}
 	.menu--modifi{
 		display: none;
+	}
+	.header__menu {
+    margin: 22px auto;
 	}
 	.menu__list{
 		margin-top: 23px;
@@ -23,42 +27,31 @@
     	top: 40px;
 	}
 
-	.slider:before{
-		content:"";
-		position: absolute;
-		top: 203px;
-		left: 0px;
+	.slider{
+		position: relative;
 		width: 100%;
-		height: 121px;
-		padding-top: 125px;
+		padding: 96px 0;
 		background: rgba(0, 0, 0, 0.47);
 	}
+	.slider__img{
+		display: block;
+		position: absolute;
+		top: -105px;
+		right: 0px;
+		height: 304px;
+	}
 	.slider__header {
-		width: 480px;
-		margin-top: 120px;
-		padding-left: 32px;
+		position: relative;
+		width: 87%;
 		text-align: left;
 	}
-	
-	.slider__header:before {
-    	left: -12px;
-	}
-	.slider__header:after {
-    	right: 36px;
-	}
-	.slider_img:after{
-		content:"";
-		position: absolute;
-		top: -104px;
-		left: 248px;
-		width: 192px;
-		height: 280px;
-		background: url(../img/Iphone.png) 0 0 no-repeat;
-		background-size: 192px 304px;
+	.slider__header span {
+    	margin: 0;
 	}
 	
+
 	.slider__circle {
-	    margin-top: 121px;
+	    margin-top: 20px;
 	}
 	
 	
@@ -82,7 +75,7 @@
 
 }
 	.company-section__link {
-    	margin: 20px 0 0 315px;
+    	margin: 18px 0 0 315px;
 	}
 	
 	
@@ -179,6 +172,9 @@
 	.news__categories {
     	padding-top: 82px;
 	}
+	.news__categories .categories-two {
+		margin-bottom: 67px;
+	}
 	.news__categories h3 {
     	margin-bottom: 15px;
 	}
@@ -191,16 +187,14 @@
 	.footer p {
 	    padding-top: 23px;
     	padding-left: 4px;
-		
+	}
 
 }
+
+/*---------------(MIN-WIDTH: 768PX)---------------*/
 	
-	
-	
+
 @media (min-width: 768px){
-	.wrapper{
-		max-width: 768px;
-	}
 	.header{
 		height: 728px;
 	}
@@ -218,7 +212,7 @@
 		margin: 0;
 		width: 652px;
 		padding-top: 27px;
-}
+	}
 
 	.menu__list--modifi, .menu__list--modifi li {
 		margin: 0;
@@ -254,25 +248,18 @@
 /*------end of MENU------*/
 
 	.slider{
-		height: 400px;
-		padding-top: 67px;
+		margin-top: 67px;
+		padding: 102px 0 108px 0;
 	}
-	.slider:before{
-		content:"";
-		position: absolute;
-		top: 244px;
-		left: 0px;
-		width: 100%;
-		height: 400px;
-		padding-top: 0px;
-		background: rgba(0, 0, 0, 0.47);
+	.slider__img{
+		top: -125px;
+		right: 11px;
+		height: 434px;
 	}
 	.slider__header {
-		width: 303px;
+		width: 92%;
 		height: 190px;
-		margin-top: 103px;
-		margin-left: 0px;
-		padding-left: 32px;
+		padding-left: 3px;
 	}
 	.slider__header h4 {
 		margin-bottom: 9px;
@@ -296,26 +283,8 @@
 		overflow: hidden;
 	}
 	
-	.slider__header:before {
-		top: 76px;
-		left: -16px;
-	}
-	.slider__header:after {
-		top: 76px;
-		right: -457px;
-	}
-	.slider_img:after{
-		content:"";
-		position: absolute;
-		top: -125px;
-		left: 436px;
-		width: 274px;
-		height: 437px;
-		background: url(../img/Iphone2.png) 0 0 no-repeat;;
-		background-size: 274px 434px;
-	}
 	.slider__circle {
-		margin-top: 153px;
+		margin-top: 35px;
 		padding-left: 396px;
 	}
 /*------end of SLIDER------*/
@@ -397,7 +366,6 @@
 	.content-section__article2,
 	.content-section__article3 {
     	margin-left: 0px;
-		padding-left: 67px
 	}
 	
 	.content-section__article1 {
@@ -462,7 +430,7 @@
 	
 	.news{
 		display: block;
-		height: 396px;
+		height: 398px;
 	}
 	.news__categories {
     	width: 734px;
@@ -514,15 +482,18 @@
     	padding-top: 17px;
     	padding-left: 6px;
 	}
+}
 
+/*-----------------(MIN-WIDTH: 960PX)------------------*/
 	
-	
+
 @media (min-width: 960px) {
 	.wrapper{
-		max-width: 960px;
-		padding: 0 5px 0 5px;
+		overflow: hidden;
+		height: 779px;
 	}
 	.header {
+		position: relative;
 		height: 779px;
 		padding-top: 67px;
 	}
@@ -541,38 +512,45 @@
 	}
 	.menu--modifi{
 		float: right;
-		margin-right: -8px;
+		margin-right: -18px;
 		padding-top: 0;
 		
 	}
-	.menu__list{
+	.menu__list--modifi{
 		display: block;
 		overflow: hidden;
 	}
-	.menu__list li{  /*отключаем все ненужные стили для нового масштаба*/
+	.menu__list--modifi li{  /*отключаем все ненужные стили для нового масштаба*/
 		list-style: none;
 		background: none;
 		float: left;
-		margin: 0 50px 0 0;
+		margin: 0 26px 0 26px;
 		font: 400 24px/24px 'League Gothic', Arial, "Helvetica Neue", Tahoma, sans-serif;
 		text-transform: uppercase;
 		text-decoration: none;
 	}
-
+	.menu__list--modifi .menu__n0{
+		margin-left: 0;
+	}
+	.menu__list--modifi .menu__n5{
+		margin-right: 0;
+	}
+	.menu__list--modifi a{
+		margin: 0 auto;;
+	}
 /*------end of MENU------*/
 	
 	.slider {
-    	padding-top: 208px;
-	}
-	.slider:before {
-    	top: 278px;
+		position: absolute;
+		left: 0;
+		margin-top: 211px;
+		padding: 88px 0 80px 0;
 	}
 	.slider__header {
-		width: 502px;
+    	max-width: 960px;
 		height: 231px;
-		margin-top: 92px;
 		padding-left: 0px;
-}
+	}
 	.slider__header h4 {
     	margin-bottom: 9px;
 		width: 300px;
@@ -582,29 +560,22 @@
 		.slider__header span{
 		font: 400 32px / 36px 'League Gothic', Arial, "Helvetica Neue", Tahoma, sans-serif;
 		letter-spacing: -0.1px;
-}
+	}
 	.slider__header p {
 		width: 502px;
     	height: 150px;
 		margin-top: 4px;
 		font: 300 18px / 24px 'Open Sans', sans-serif;
 	}
-	.slider__header:before {
-		top: 89px;
-		left: -294px;
-	}
-	.slider__header:after {
-		top: 89px;
-		right: -779px;
-	}
-	.slider_img:after {
-		top: -107px;
-		left: 614px;
+	.slider__img {
+    	top: -105px;
+		right: 14px;
 	}
 	.slider__circle {
-		margin-top: 173px;
-		padding-left: 541px;
-	}
+		margin-top: 703px;
+		padding-left: 565px;
+}
+
 
 /*------end of HEADER------*/
 	.sub-header {
@@ -852,3 +823,4 @@
 		margin: 27px 0px 0 0;
 
 	}
+}

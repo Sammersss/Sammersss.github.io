@@ -7,7 +7,7 @@ body{
 
 }
 .wrapper{
-	min-width: 320px;
+	max-width: 960px;
 	margin: 0 auto;
 	
 }
@@ -143,46 +143,63 @@ body{
 
 
 
+/* end of menu-list */
 
-
-
+.slider {
+	width: 100%;
+	padding-top: 115px;
+/*	border: 1px solid #00f;*/
+}
+.slider__img{
+	display: none;
+}
+.slider__bg{
+	position: relative;
+/*	border: 1px solid #f00;*/
+	
+}
 .slider__header{
 	position: relative;
 	margin: 0 auto;
-	margin-top: 115px;
     display: block;
-	width: 230px;
+	width: 72%;
 	height: 51px;
 	text-align: center;
 	
 }
-.slider__header:before{
-	position: absolute;
-	content: "";
-	width: 30px;
-	height: 42px;
-	top: 6px;
-	left: -57px;
-	background: url(../img/haeder_slide_left_arrow.png) 0 0 no-repeat;
+.slider__arrow {
+    display: table;
+    margin: auto;
 }
-.slider__header:after{
-	position: absolute;
-	content: "";
-	width: 30px;
-	height: 42px;
-	top: 6px;
-	right: -57px;
-	background: url(../img/haeder_slide_right_arrow.png) 0 0 no-repeat;
-	
+
+
+.slider__arrow img{
+	vertical-align:middle;
+	text-align: center;
 }
+.slider__arrow--right{
+    position: absolute;
+    top: 50%;
+    right: 0;
+/*	right: -10px;*/
+    bottom: 50%;
+}
+.slider__arrow--left{
+    position: absolute;
+    top: 50%;
+    left: 0;
+/*	left: -16px;*/
+    bottom: 50%;
+}
+
 .slider__header h4{
 	margin: 0 0 2px 0;
-	width: 203px;
+	width: 100%;
 	color: #fefefe;
 	font: 400 36px / 30px 'League Gothic', Arial, "Helvetica Neue", Tahoma, sans-serif;
 }
 .slider__header span{
-	margin: 0;
+	margin: 0 auto;
 	display: block;
 	overflow: hidden;
 	width: 203px;
