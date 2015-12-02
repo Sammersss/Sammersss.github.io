@@ -1,7 +1,13 @@
 var arr = [];
 
 for (var i = 5; i > 0; i--) {
+	while (true) {
 	arr[i] =  prompt('Введите имя п`яти пользователей (еще ' + i + '):');
+	if  ( (arr[i] != null) && (arr[i] != '') ) {
+		break;
+	}
+	alert ('Введите правильное им`я!!!');
+	}
 }
 
 console.log(arr);
@@ -13,12 +19,12 @@ var flag = false;
 for (var i = 0; i < arr.length; i++) {
 	if (arr[i] === userName){
 		flag = true;
+		console.log(userName,', Вы успешно вошли!');
 		break;
-//		console.log(userName);
 	} 
 }
 if (flag){
-	alert(userName + ', вы успешно вошли!')
+	alert(userName + ', Вы успешно вошли!')
 }else{
 	alert('Ошибка ! Такого пользователя не существует!!!')
 	
