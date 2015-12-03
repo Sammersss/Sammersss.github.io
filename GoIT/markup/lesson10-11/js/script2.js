@@ -2,11 +2,13 @@ var arr = [];
 
 for (var i = 5; i > 0; i--) {
 	while (true) {
-	arr[i] =  prompt('Введите имя п`яти пользователей (еще ' + i + '):');
-	if  ( (arr[i] != null) && (arr[i] != '') ) {
+	arr[i] =  prompt('Введите имя п`яти пользователей (осталось ввести ' + i + '):');
+	var flag = (arr[i] != null) && (arr[i] != '') && (arr[i] != ' ');
+	if  ( flag ) {
 		break;
-	}
+	}else {
 	alert ('Введите правильное им`я!!!');
+	}
 	}
 }
 
