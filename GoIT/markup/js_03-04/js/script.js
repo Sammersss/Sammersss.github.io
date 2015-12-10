@@ -31,12 +31,13 @@ Jumbotron.prototype = {
 		var div	= this.mkElem('div');
 		this.addClass(div, 'container');
 		this.append(this.getTarget(), div);
-		var div	= this.mkElem('div');
-		this.addClass(div, 'jumbotron');	
+		var form = this.mkElem('form');
+		form.setAttribute('action', '#')
+		this.addClass(form, 'jumbotron');	
 		var container = this.getElem('.container');
-		this.append(container, div);
+		this.append(container, form);
 		
-		return div;
+		return form;
 	},
 	
 	mkTest: function (target, title) {	
