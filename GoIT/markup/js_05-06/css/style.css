@@ -1,0 +1,176 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+font,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+@font-face {
+    font-family: 'MyDigital';
+    src: url('../fonts/led_counter-7-webfont.eot');
+    src: url('../fonts/led_counter-7-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/led_counter-7-webfont.woff2') format('woff2'),
+         url('../fonts/led_counter-7-webfont.woff') format('woff'),
+         url('../fonts/led_counter-7-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'Digital7';
+    src: url('../fonts/digital-7-webfont.eot');
+    src: url('../fonts/digital-7-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/digital-7-webfont.woff2') format('woff2'),
+         url('../fonts/digital-7-webfont.woff') format('woff'),
+         url('../fonts/digital-7-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+body {
+    background-color: #f2e9cd;
+    text-align: center;
+    margin-top: 200px;
+    font: 0.75em 'MyDigital', 'Digital7', Verdana, sans-serif;
+}
+#timer {
+    font-family: "Lato";
+    font-size: 100px;
+    font-weight: 300;
+}
+
+.wrapper {
+    margin: 20% auto;
+	background: rgba(255, 204, 204, 0.5);
+    width: 100%;
+    min-width: 380px;
+    max-width: 728px;
+	border-radius: 20px;
+}
+#output {
+    font-size: 5em;
+    margin: 10px auto;
+	text-align: center;
+
+}
+
+button:hover {
+    border-top: solid 3px #ff8900;
+    border-bottom: solid 3px #ff8900;
+    color: #FF0000;
+    cursor: pointer;
+}
+
+button {
+    display: inline-block;
+    font-size: 2.2em;
+    width: 30%;
+	margin: 8% 8% 1% 8%;
+	border: solid 3px #9d9191;
+	border-radius: 20px;
+    padding: 2% 0;
+    text-align: center;
+    color: rosybrown;
+}
+button:active, 
+button:focus {
+    outline: none;
+}
+#startPause {
+	margin-left: 8%;
+	
+}
+#controls {
+	background: rgba(222, 217, 217, 0.8);
+    margin: 0 auto;
+    padding-bottom: 15px;
+	border-radius: 20px;
+
+}
+#tm2 {
+    margin: 0 auto;
+    width: 525px;
+    background: rgba(204, 221, 255, 0.69);
+    font: 1.75em 'MyDigital', 'Digital7', Verdana, sans-serif;
+}
+#startPause {
+    background: rgba(71, 219, 27, 0.3);
+
+}
+.reset {
+    background: rgba(255, 0, 0, 0.3);
+}
+.slise{
+    display: block;
+    margin: 0 auto;
+    width: 11%;
+    font-size: 17px;
+    background: rgb(249, 219, 205);
+
+}
+
+
+    
