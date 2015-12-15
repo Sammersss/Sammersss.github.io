@@ -55,15 +55,15 @@ function DisplayTime() {
 
 	
 		if ( milliseconds === 996) {
-			seconds = ++seconds;
+			seconds++;
 		} 
 		if (seconds >= 60) {
 			seconds = 0;
-			minutes = ++minutes;
+			minutes++;
 		} 
 		if (minutes >= 60) {
 			minutes = 0;
-			hours = ++hours;
+			hours++;
 		} 
 		if (seconds < 10) {
 			secondsNum = '0' + seconds;
