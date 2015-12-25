@@ -84,15 +84,9 @@ $(function($) {
 
 		//help button on_click
 			$('.help').on('click', function(){
-					$('.tooltip1').animate({
+					$('.tooltip').animate({
 						opacity: 1
-					}, 1000)
-					$('.tooltip2').animate({
-						opacity: 1
-					}, 1000)
-					$('.tooltip3').animate({
-						opacity: 1
-					}, 1000)
+					}, 100)
 				})
 
 });
