@@ -10,11 +10,17 @@ $(function($) {
 
     //  =====================CREATE FORM ON_CLICK FUNCTION=====================
     
+        $("input").each(function(){
+            var msg = $(this).attr("title");
+            $(this).removeAttr("title");
+            var tooltip = $("<p></p>").text(msg).addClass("tooltip");
+            $(this).after(tooltip);
+        });
+    
         var $input = $('input');
         $input.on('mouseover', function() {
             $(this).siblings('.tooltip').addClass('show');
         });
-        var $input = $('input');
         $input.on('mouseout', function() {
             $(this).siblings('.tooltip').removeClass('show');
         });
