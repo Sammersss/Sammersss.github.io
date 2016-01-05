@@ -10,42 +10,42 @@ $(function($) {
 
     //  =====================CREATE FORM ON_CLICK FUNCTION=====================
     
-        $("input").each(function(){
-            var msg = $(this).attr("title");
-            $(this).removeAttr("title");
-            var tooltip = $("<p></p>").text(msg).addClass("tooltip");
-            $(this).after(tooltip);
-        });
-    
-        var $input = $('input');
-        $input.on('mouseover', function() {
-            $(this).siblings('.tooltip').addClass('show');
-        });
-        $input.on('mouseout', function() {
-            $(this).siblings('.tooltip').removeClass('show');
-        });
+    var $input = $('input');
+    $input.each(function(){
+        var msg = $(this).attr("title");
+        $(this).removeAttr("title");
+        var tooltip = $("<p></p>").text(msg).addClass("tooltip");
+        $(this).after(tooltip);
+    });
+
+    $input.on('mouseover', function() {
+        $(this).siblings('.tooltip').addClass('show');
+    });
+    $input.on('mouseout', function() {
+        $(this).siblings('.tooltip').removeClass('show');
+    });
 
     //help button on_click function
 
-        $('.help').on('click', function(){
-            $('.tooltip').addClass('show').css({
-                transition: '0.5s'
+    $('.help').on('click', function(){
+        $('.tooltip').addClass('show').css({
+            transition: '0.5s'
 
-            });
         });
+    });
 
     //help button modification
 
-        $('.help').on('mouseover', function(){
-            $('.help').css({
-                background: '#f7b883',
-                color: 'white'
-            });
+    $('.help').on('mouseover', function(){
+        $('.help').css({
+            background: '#f7b883',
+            color: 'white'
         });
-        $('.help').on('mouseout', function(){
-            $('.help').css({
-                background: '#efefef',
-                color: '#72675a'
-            });
+    });
+    $('.help').on('mouseout', function(){
+        $('.help').css({
+            background: '#efefef',
+            color: '#72675a'
         });
+    });
 });
