@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Awesome Stuff</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/jquery.formstyler/1.7.4/jquery.formstyler.css">
+    <script src="http://use.edgefonts.net/unifrakturcook:n7:all.js"></script>
+    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-color/2.1.2/jquery.color.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jcarousel/0.3.4/jquery.jcarousel.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.formstyler/1.7.4/jquery.formstyler.min.js"></script>
+    <script src="js/script.js"></script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+            <h1><a class="logo" href="#">Awesome Stuff</a></h1>
+            <nav>
+                <ul class="content clearfix">
+                    <li><a href="#">Nav 1</a></li>
+                    <li><a href="#">Nav 2</a></li>
+                    <li class="dropdown">
+                        <a href="#">Nav 3</a>
+                        <ul class="sub-menu">
+                            <li><a href="#">Nav 3.1</a></li>
+                            <li><a href="#">Nav 3.2</a></li>
+                            <li><a href="#">Nav 3.3</a></li>
+                            <li class="dropdown">
+                                <a href="#">Nav 3.4</a>
+                                <ul class="sub-menu">
+                                    <li><a href="#">Nav 3.4.1</a></li>
+                                    <li class="dropdown">
+                                        <a href="#">Nav 3.4.2</a>
+                                        <ul class="sub-menu">
+                                            <li><a href="#">Nav 3.4.2.1</a></li>
+                                            <li><a href="#">Nav 3.4.2.2</a></li>
+                                            <li><a href="#">Nav 3.4.2.3</a></li>
+                                            <li><a href="#">Nav 3.4.2.4</a></li>
+                                            <li><a href="#">Nav 3.4.2.5</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">Nav 3.4.3</a></li>
+                                    <li><a href="#">Nav 3.4.4</a></li>
+                                    <li><a href="#">Nav 3.4.5</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Nav 3.5</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Nav 4</a></li>
+                    <li><a href="#">Nav 5</a></li>
+                </ul>
+            </nav>
+
+        </header>
+        <section class="carousel">
+            <h2 class="best">Our best Staff</h2>
+            <div class="jcarousel_wrapper">
+                <div class="jcarousel">
+                    <ul>
+                        <li>
+                            <img src="http://lorempicsum.com/simpsons/800/600/3" alt="simpsons">
+                        </li>
+                        <li>
+                            <img src="http://lorempicsum.com/nemo/800/600/2" alt="nemo">
+                        </li>
+                        <li>
+                            <img src="http://lorempicsum.com/futurama/800/600/2" alt="futurama">
+                        </li>
+                        <li>
+                            <img src="http://lorempicsum.com/rio/800/600/3" alt="rio">
+                        </li>
+                        <li>
+                            <img src="http://lorempicsum.com/up/800/600/1" alt="up">
+                        </li>
+                    </ul>
+                </div>
+                <a class="jcarousel_prev" href="#">
+                    <</a>
+                        <a class="jcarousel_next" href="#">></a>
+                        <div class="jcarousel_pagination">
+                        </div>
+            </div>
+        </section>
+        <section class="custom_select">
+            <h2>Select ready Stuff</h2>
+            <select name="Stuff_select" id="Stuff_select">
+                <option value="Choose Stuff">-- Choose Stuff --</option>
+                <option value="Stuff 1">Stuff 1</option>
+                <option value="Stuff 2">Stuff 2</option>
+                <option value="Stuff 3">Stuff 3</option>
+                <option value="Stuff 4">Stuff 4</option>
+                <option value="Stuff 5">Stuff 5</option>
+            </select>
+        </section>
+        <section class="custom_checkboxes">
+            <h2>Customize Staff</h2>
+            <div class="jquery_checkbox">
+                <p>jQuery checkbox</p>
+                <label>
+                    <input type="checkbox">Add tuning 1</label>
+                <label>
+                    <input type="checkbox">Add tuning 2</label>
+                <label>
+                    <input type="checkbox">Add tuning 3</label>
+                <label class="disabled">
+                    <input type="checkbox" disabled>Add tuning 4</label>
+                <button>Order Stuff</button>
+            </div>
+            <div class="css_checkbox">
+                <p>CSS checkbox</p>
+                <input type="checkbox" id="css_checkbox1">
+                <label for="css_checkbox1">Add tuning 1</label>
+                <input type="checkbox" id="css_checkbox2">
+                <label for="css_checkbox2">Add tuning 2</label>
+                <input type="checkbox" id="css_checkbox3">
+                <label for="css_checkbox3">Add tuning 3</label>
+                <input type="checkbox" id="css_checkbox4" disabled>
+                <label class="disabled" for="css_checkbox4">Add tuning 4</label>
+                <button>Order Stuff</button>
+            </div>
+        </section>
+
+
+
+    </div>
+</body>
+
+</html>
