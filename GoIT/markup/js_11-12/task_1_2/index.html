@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>простая jQuery карусель</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script src="js/template.js"></script>
+    <script src="js/script_profile.js"></script>
+    <script src="js/jquery.carousel.js"></script>
+    <script src="js/script.js"></script>
+</head>
+<body>
+    <script type="text/template" id="test">
+    <div class="wrapper">
+        <h1><%=name%></h1>
+        <p class="photo">
+            <img src="<%=photo_url%>" alt="my profile photo">
+        </p>
+        <h3 id="work"><%=work%></h3>
+        <div class="learning_reasons">
+            <h3><%=learning_reasons%></h3>
+            <ul class="profile_list">
+                <% for ( var i = 0; i < reasons_list.length; i++ ) { %>
+                <li><%=reasons_list[i]%></li>
+                    <% }; %>
+        </ul>
+        </div>
+        <div class="contacts">
+            <h3  id="contact_phone"><%=contact_phone%></h3>
+            <p id="phone_number"><%=phone_number%></p>
+            <h3 id="social_profile"><%=social_profile%></h3>
+            <p id="social_network">
+                <a href="<%=social_network%>"><%=facebook_url%></a>
+        </p>
+        </div>
+        <h3 id="feedback"><%=feedback_title%></h3>
+        <p><%=feedback%></p>
+    </div>
+
+    </script>
+    <div class="carousel-container">
+        <div class="carousel-arrow-left navy prev-slide"><span>	&lang;</span></div>
+        <div class="carousel-hider slide-list">
+            <ul class="carousel-list slide-wrap">
+                <li class="carousel-element slide-item">
+                    <a href="http://lorempicsum.com/nemo/640/480/1" class="fancybox">
+                        <img src="http://lorempicsum.com/nemo/640/480/1">
+                        <p>Description 1</p>
+                    </a>
+                </li>
+                <li class="carousel-element slide-item">
+                    <a href="http://lorempicsum.com/futurama/640/480/1" class="fancybox">
+                       <img src="http://lorempicsum.com/futurama/640/480/1">
+                        <p>Description 2</p>
+                    </a>
+                </li>
+                <li class="carousel-element slide-item">
+                    <a href="http://lorempicsum.com/rio/640/480/1" class="fancybox">
+                       <img src="http://lorempicsum.com/rio/640/480/1">
+                        <p>Description 3</p>
+                    </a>
+                </li>
+                <li class="carousel-element slide-item">
+                    <a href="http://lorempicsum.com/simpsons/640/480/1" class="fancybox">
+                       <img src="http://lorempicsum.com/simpsons/640/480/1">
+                        <p>Description 4</p>
+                    </a>
+                </li>
+                <li class="carousel-element slide-item">
+                    <a href="http://lorempicsum.com/up/640/480/1" class="fancybox">
+                       <img src="http://lorempicsum.com/up/640/480/1">
+                        <p>Description 5</p>
+                    </a>
+                </li>
+                <li class="carousel-element slide-item">
+                    <a href="http://lorempicsum.com/nemo/640/480/2" class="fancybox">
+                       <img src="http://lorempicsum.com/nemo/640/480/2">
+                        <p>Description 6</p>
+                    </a>
+                </li>
+                <li class="carousel-element slide-item">
+                    <a href="http://lorempicsum.com/rio/640/480/2" class="fancybox">
+                       <img src="http://lorempicsum.com/futurama/640/480/2">
+                        <p>Description 7</p>
+                    </a>
+                </li>
+                <li class="carousel-element slide-item">
+                    <a href="http://lorempicsum.com/rio/640/480/2" class="fancybox">
+                       <img src="http://lorempicsum.com/rio/640/480/2">
+                        <p>Description 8</p>
+                    </a>
+                </li>
+                <li class="carousel-element slide-item">
+                    <a href="http://lorempicsum.com/simpsons/640/480/2" class="fancybox">
+                       <img src="http://lorempicsum.com/simpsons/640/480/2">
+                        <p>Description 9</p>
+                    </a>
+                </li>
+                <li class="carousel-element slide-item">
+                    <a href="http://lorempicsum.com/up/640/480/2" class="fancybox">
+                       <img src="http://lorempicsum.com/up/640/480/2">
+                        <p>Description 10</p>
+                    </a>
+                </li>
+                <li class="carousel-element slide-item">
+                    <a href="http://lorempicsum.com/simpsons/640/480/3" class="fancybox">
+                       <img src="http://lorempicsum.com/simpsons/640/480/3">
+                        <p>Description 11</p>
+                    </a>
+                </li>
+                <li class="carousel-element slide-item">
+                    <a href="http://lorempicsum.com/up/640/480/3" class="fancybox">
+                       <img src="http://lorempicsum.com/up/640/480/3">
+                        <p>Description 12</p>
+                    </a>
+                </li>
+            
+            </ul>
+        </div>
+        <div class="carousel-arrow-right navy next-slide"><span>&rang;</span></div>
+    </div>
+
+</body>
+</html>

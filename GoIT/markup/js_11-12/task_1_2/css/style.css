@@ -1,0 +1,216 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+body{
+    font: normal 13pt Times;
+
+
+}
+.wrapper {
+    width: 512px;
+/*    height: 751px;*/
+    margin: 0 auto;
+    background: #fffef9; /* Цвет фона блока*/
+    padding: 30px 50px 72px 50px; /* Поля вокруг текста*/
+    border-color: #d5d5d5; /* Цвет границы блока*/
+    border-style: solid; /* Стиль линии вокруг блока*/
+    border-width: 1px; /* Толщина линии вокруг блока*/
+    box-shadow: 0 0 3px rgba(0,0,0,0.3); /* Параметры тени */
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+
+}
+.learning_reasons {
+    border-top: 1px solid #7a7a7a;
+    border-bottom: 1px solid #7a7a7a;
+}
+
+.contacts {
+    border-bottom: 1px solid #7a7a7a;
+}
+
+.photo > img{
+    -webkit-border-radius: 1px;
+    -moz-border-radius: 1px;
+    border-radius: 15px;
+    width: 135px;
+    height: 130px;
+}
+.photo{
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+h1 {
+    font: bold 23px Times;
+    text-align: center;
+
+}
+
+h3{
+    text-indent: 14px; /* Отступ первой строки */
+    font: normal 13pt Times;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+p{
+    text-indent: 14px; /* Отступ первой строки */
+    font-size: 16px;
+
+
+}
+
+#work{
+    margin-top: 0;
+}
+
+#contact_phone #phone_number{
+    margin-bottom: 10px;
+}
+
+#social_profile #feedback{
+    margin-bottom: 11px;
+}
+
+#social_network{
+    margin-bottom: 20px; 
+}
+
+.profile_list{
+    font-size: 16px;
+    line-height: 28px;
+    margin-top: 10px;
+    margin-left: 40px;
+    margin-bottom: 19px;
+}
+
+
+
+
+/*====================================carousel====================================*/
+.carousel-container {
+    position: relative;
+    width: 890px;
+    padding: 15px;
+    margin: 20px auto;
+    background: rgba(0, 0, 0, 0.21);
+    background: rgb(255, 228, 209);;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+.carousel-hider {
+    margin: 0 auto;
+    width: 890px;
+    height: 100%;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.carousel-list {    
+    position: relative;
+    list-style: none;
+    width: 10000px;
+}
+
+.fancybox > p{
+    visibility: hidden;
+    position: absolute;
+    width: 100%;
+    height: 30px;
+    bottom: 5px;
+    background: rgba(0,0,0,.4);
+    color: #eee;
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    line-height: 30px;
+    text-align: center;
+    transition: all .3
+}
+.carousel-element {
+    display: block;
+    position: relative;
+    margin-right: 25px;
+    float: left;
+    width: 280px;
+    height: 200px;
+    text-align: center;
+}
+
+.fancybox img {
+    max-width: 280px;
+    border-radius: 10px;
+}
+.carousel-element:hover p {
+    visibility: visible;
+}
+
+.carousel-arrow-left, .carousel-arrow-right {
+    position: absolute;
+    display: block;
+    top: 5px;
+    font-size: 180px;
+/*    color: chocolate;*/
+    color: #eaba98;
+    border-radius: 20px;
+    -webkit-user-select: none;
+    
+/*    border: 1px solid red;*/
+}
+
+.carousel-arrow-left:hover, .carousel-arrow-right:hover {
+    cursor: pointer;
+    color: #ccc;
+}
+
+.carousel-arrow-left {
+    margin-right: 5px;
+    left: -70px;
+/*    padding: 5px 30px 5px 95px;*/
+}
+
+.carousel-arrow-right {
+    margin-left: 5px;
+    right: -70px;
+/*    padding: 5px 95px 5px 30px;*/
+}
+/*=======================================fancybox=======================================*/
+a.fancybox {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+.fancybox-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    opacity: 0.8;
+}
+
+.fancybox-modal {
+    position: absolute;
+    width: 640px;
+    height: 480px;
+    top: 50%;
+    left: 50%;
+    margin: -240px 0 0 -320px;
+    border: 10px solid #fff;
+    border-radius: 5px;
+    -webkit-box-shadow: 10px 6px 49px 1px rgba(0,0,0,1);
+    -moz-box-shadow: 10px 6px 49px 1px rgba(0,0,0,1);
+    box-shadow: 10px 6px 49px 1px rgba(0,0,0,1);
+}
+
+.fancybox-modal img {
+    margin: 0 auto;
+}
