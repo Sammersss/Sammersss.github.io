@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>lesson 13_14</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="js/template.js"></script> 
+    <script src="js/script.js"></script>
+    </head>
+<body>
+<script type = "text/template" id = "test">
+    <div class="main">
+        <div class="wrapper">
+            <h1 class="testTitle">Веселый тест</h1>
+            <form method="#" action="#">
+                    <% for (var i=0; i<data.length; i++){ %>
+                        <div class="answersBlock">
+                            <div class="questionTitle"><span><%=i+1%>.</span><span><%=data[i].question%></span></div>
+                            <div><input type="checkbox" class="checkbox" name="answer_1" id="<%=data[i].idKey%>.<%=i+1%>" value="<%=data[i].answer[0]%>"><label for="<%=data[i].idKey%>.<%=i+1%>" class="answer"><%=data[i].answer[0]%></label></div>
+                            <div><input type="checkbox" class="checkbox" name="answer_2" id="<%=data[i].idKey%>.<%=i+2%>" value="<%=data[i].answer[1]%>"><label for="<%=data[i].idKey%>.<%=i+2%>" class="answer"><%=data[i].answer[1]%></label></div>
+                            <div><input type="checkbox" class="checkbox" name="answer_3" id="<%=data[i].idKey%>.<%=i+3%>" value="<%=data[i].answer[2]%>"><label for="<%=data[i].idKey%>.<%=i+3%>" class="answer"><%=data[i].answer[2]%></label></div>
+                            <div><input type="checkbox" class="checkbox" name="answer_4" id="<%=data[i].idKey%>.<%=i+4%>" value="<%=data[i].answer[3]%>"><label for="<%=data[i].idKey%>.<%=i+4%>" class="answer"><%=data[i].answer[3]%></label></div>
+                        </div>
+                        <% }%>
+                <input type="submit" value="Проверить мои результаты">
+            </form>
+        </div>
+    </div>
+</script>
+</body>
+</html>
+
