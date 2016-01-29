@@ -9,7 +9,6 @@ $(function() {
                 "За границу",
                 "В камыши",
             ],
-            idKey: 1
         },
         {
             question: "Какое из этих животных чаще всего подвержено бреду?",
@@ -19,7 +18,6 @@ $(function() {
                 "Дареный конь",
                 "Злая собака",
             ],
-            idKey: 2
         },
         {
             question: "При падении чего загадывают желание?",
@@ -28,8 +26,7 @@ $(function() {
                 "Дисциплины",
                 "Звезды",
                 "Курса рубля",
-            ],
-            idKey: 3
+            ]
         }];
 
     var correctAnswers = ["За буйки", "Сивая кобыла", "Звезды"];
@@ -51,6 +48,7 @@ $(function() {
     });
 
 //verification of results
+
     var checkResult = $('input[type="submit"]');
     checkResult.one('click', verification);
 
@@ -70,6 +68,7 @@ $(function() {
                 result.push('false');
             }
         }
+//            console.log(result);
 
 //create modal
         var owerlay = $('<div class="owerlayWindov"><div class="modal"><h3>Результаты теста</h3><div class="modal_close">&otimes;</div></div></div>');
@@ -78,15 +77,15 @@ $(function() {
 
         var modalResult = [];
         for(var k=0; k<result.length; k++){
-            if(result[k] == 'true'){
+            if(result[k] === 'true'){
                 modalResult[k] = '<span style="color:green">Правильный ответ!</span>';
             } else {
                 modalResult[k] = 'Вы ответили неверно!';
             }
         }
-
-        for (var l=0; l<correctAnswers.length; l++){
-            var questionDiv = $('<div class="questionTitle">'+(l+1)+'.'+data[l].question+'</div>');
+//console.log(modalResult);
+        for (var l=0; l<tempOut.length; l++){
+            var questionDiv = $('<div class="questionTitle">'+(l+1)+'.'+tempOut[l].question+'</div>');
             var modal = $(".modal");
             modal.append(questionDiv);
             var answerDiv = $('<div class="answer warning">'+modalResult[l]+'</div>');
