@@ -95,7 +95,8 @@ input[type=submit]:hover {
     text-decoration: none;
     text-align: center;
     font-family: Arial,sans-serif;
-    font-size: 15px;
+    font-size: 20px;
+    line-height: 18px;
     font-weight: bold;
     border-radius: 50%;
     background-color: #000;
