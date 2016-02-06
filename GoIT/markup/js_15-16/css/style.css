@@ -1,12 +1,30 @@
-* {
-    padding: 0;
-    margin: 0;
+*{margin:0;padding:0;}
+
+li{
+	list-style: none;
+	margin-bottom: 20px;
+}
+a {
+    color: #1a0dab;
+    text-decoration: none;
+}
+a:hover{
+	text-decoration: underline;
+}
+a:visited{
+	color: #609;
 }
 
-body {
-    font-family: Arial, sans-serif;
+.wrapper {
+    position: fixed;
+	top: 0;
+	left: 0;
+    width: 100%;
+    padding-top: 10px;
+    background-color: #f1f1f1;
+    border-bottom: 1px solid #666;
+    border-color: #e5e5e5;
 }
-
 .clearfix:after {
     content: '.';
     display: block;
@@ -15,21 +33,13 @@ body {
     visibility: hidden;
 }
 
-.wrapper {
-    padding-top: 10px;
-    padding-bottom: 5px;
-    background-color: #f1f1f1;
-    border-bottom: 1px solid #666;
-    border-color: #e5e5e5;
-}
-
 .logo {
-    float: left;
+    display: inline-block;
     padding: 5px 13px;
 }
 
 .logo__link {
-    display: block;
+    display: inline-block;
     width:95px;
     height:37px;
     position: relative;
@@ -41,9 +51,9 @@ body {
     left: 0;
     top: -41px;
 }
-
-.content {
-    float: left;
+form{
+	display: inline-block;
+	margin: 0 auto;
 }
 
 .search__input {
@@ -84,45 +94,40 @@ body {
     color: transparent;
 }
 
-.results {
-    width: 80%;
+.result {
+	max-width: 600px;
+    min-width: 512px;
     padding: 20px 0; 
     margin: 0 auto;
     margin-left: 120px;
+	margin-top: 65px;
 }
 
-.result__list {
-    list-style: none;
+.page_nav_list{
+	margin: 15px 0;
 }
-
-.result__list__item {
-    width: 512px;
-    margin-bottom: 23px;
+a.page-list {
+	margin: 0 5px;
+	text-decoration: none;
+	color: #4285f4;
 }
-
-.result__list__item__title {
-    font-size: 18px;
-}
-
-.result__list__item__link {
+a.page-prev {
+    margin-right: 30px;
     text-decoration: none;
-    text-transform: capitalize;
-    color: #473DBB;
+    color: #4285f4;
 }
-
-.result__list__item__link:hover {
-    text-decoration: underline;
+a.page-next {
+	margin-left: 30px;
+	text-decoration: none;
+	color: #4285f4;
 }
-
-.result__list__item__content__url {
-    text-decoration: none;
-    font-style: normal;
+.visibleURL {
     color: #006621;
 }
-
-.result__list__item__content__data {
-    line-height: 1.4;
-    word-wrap: break-wrap;
-    font-size: small;
-    color: #545454;
+.content{
+	color: #545454;
+}
+a.active{
+	color: #000;
+	text-decoration: underline;
 }
