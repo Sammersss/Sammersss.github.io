@@ -5,27 +5,33 @@
     <title>lesson 13_14</title>
     <link rel="stylesheet" href="css/style.css">
     <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
-    <script src="js/template.js"></script> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.0.0/lodash.min.js"></script>
     <script src="js/script.js"></script>
     </head>
 <body>
-    <script type = "text/template" id = "test">
+<script type = "text/template" id = "test">
     <div class="main">
         <div class="wrapper">
             <h1 class="testTitle">Веселый тест</h1>
-            <form method="#" action="#">
-                    <% for (var i =0; i<data.length; i++) { %>
-                        <div class="answersBlock box<%=i%>">
-                            <div class="questionTitle"><span><%=data[i].question%></span></div>
-                            <% for (var k =0; k<data[i].answer.length; k++) { %>
-                                <label class="answer"><input type="checkbox" class="checkbox" value="<%=data[i].answer[k]%>"><span><%=data[i].answer[k]%></span></label>
-                            <%}; %> 
-                        </div>
-                    <%};%>
-                <input type="submit" value="Проверить мои результаты">
+            <form action="" class = "form">
+                <% for(var item in data){%>
+                    <div class ="answersBlock box<%=item%>">
+                        <div class="questionTitle"><span><%= data[item].question%></span></div>
+                        <% if(data[item]){%>
+                            <% var count = 0%>
+                            <% data[item].answers.forEach(function(answer){%>
+                                <label class="answer"><input type = "radio" class="checkbox" value="<%=answer%>">
+                                    <span><%=answer%></span>
+                                </label>
+                                <% count++; if(count === 4){count = 0;}%>
+                            <%})%>
+                        <%}%>
+                    </div>
+                <%};%>
+                <input type = "button" id = "buttonOn" value="Проверить мои результаты">
             </form>
         </div>
-        </div>
-    </script>
+    </div>
+</script>
 </body>
 </html>
