@@ -1,0 +1,86 @@
+/*====================================carousel====================================*/
+.carousel-container {
+    position: relative;
+    width: 890px;
+    padding: 15px;
+    margin: 20px auto;
+    background: rgba(0, 0, 0, 0.21);
+    background: rgb(255, 228, 209);;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+.carousel-hider {
+    margin: 0 auto;
+    width: 890px;
+    height: 100%;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.carousel-list {    
+    position: relative;
+    list-style: none;
+    width: 10000px;
+}
+
+.fancybox > p{
+    visibility: hidden;
+    position: absolute;
+    width: 100%;
+    height: 30px;
+    bottom: 5px;
+    background: rgba(0,0,0,.4);
+    color: #eee;
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    line-height: 30px;
+    text-align: center;
+    transition: all .3
+}
+.carousel-element {
+    display: block;
+    position: relative;
+    margin-right: 25px;
+    float: left;
+    width: 280px;
+    height: 200px;
+    text-align: center;
+}
+
+.fancybox img {
+    max-width: 280px;
+    border-radius: 10px;
+}
+.carousel-element:hover p {
+    visibility: visible;
+}
+
+.carousel-arrow-left, .carousel-arrow-right {
+    position: absolute;
+    display: block;
+    top: 5px;
+    font-size: 180px;
+    /*    color: chocolate;*/
+    color: #eaba98;
+    border-radius: 20px;
+    -webkit-user-select: none;
+
+    /*    border: 1px solid red;*/
+}
+
+.carousel-arrow-left:hover, .carousel-arrow-right:hover {
+    cursor: pointer;
+    color: #ccc;
+}
+
+.carousel-arrow-left {
+    margin-right: 5px;
+    left: -70px;
+    /*    padding: 5px 30px 5px 95px;*/
+}
+
+.carousel-arrow-right {
+    margin-left: 5px;
+    right: -70px;
+    /*    padding: 5px 95px 5px 30px;*/
+}

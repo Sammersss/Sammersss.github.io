@@ -1,0 +1,38 @@
+
+/*=======================================fancybox=======================================*/
+a.fancybox {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+.fancybox-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    opacity: 0.8;
+}
+
+.fancybox-modal {
+    position: absolute;
+    width: 640px;
+    height: 480px;
+    top: 50%;
+    left: 50%;
+    margin: -240px 0 0 -320px;
+    border: 10px solid #fff;
+    border-radius: 5px;
+    -webkit-box-shadow: 10px 6px 49px 1px rgba(0,0,0,1);
+    -moz-box-shadow: 10px 6px 49px 1px rgba(0,0,0,1);
+    box-shadow: 10px 6px 49px 1px rgba(0,0,0,1);
+}
+
+.fancybox-modal img {
+    margin: 0 auto;
+}
