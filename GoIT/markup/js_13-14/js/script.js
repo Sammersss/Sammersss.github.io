@@ -42,14 +42,14 @@ $(function(){
         var tmp = {data};
         
         localStorage.setItem('funnytest', JSON.stringify(tmp));
-        console.log(localStorage);
+//        console.log(localStorage);
     }
     
     function getObject(){
         return localStorage.getItem('funnytest');
     }
 
-    console.log(testing);
+//    console.log(testing);
 
     //leave one checkbox selectable
     $('.checkbox').click(function() {
@@ -89,12 +89,14 @@ $(function(){
     }	
     function createModal(){
         
-        var owerlay = $('<div class="owerlayWindov"><div class="modal"><h3>Результаты теста</h3><div class="modal_close">&otimes;</div></div></div>');
-        var main = $(".main");
-        main.append(owerlay);
+
+        var owerlay = $('<div class="owerlayWindov"></div>');
+        var modal = $('<div class="modal"><h3>Результаты теста</h3><div class="modal_close">&otimes;</div></div>');
+        var main = $('.main');
+        main.append(owerlay)
+			.append(modal);
         
         var list = $('<ol class = "list"></ol>');
-        var modal = $(".modal");
         modal.append(list);
         for(var index in testing.data)
         {
@@ -117,7 +119,8 @@ $(function(){
     }
     /*delete modal window*/			
     function removeModal(){
-        $("input").attr("checked", false);
+        $('input').attr('checked', false);
         $('.owerlayWindov').remove();
+        $('.modal').remove();
     }
 });
