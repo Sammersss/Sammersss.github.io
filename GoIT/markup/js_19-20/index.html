@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Document</title>
+<!--
+<link rel="stylesheet" href="css/orbit.css">
+<link rel="stylesheet" href="css/style.css">
+-->
+<link rel="stylesheet" href="css/concatenated.min.css">
+<script src="http://use.edgefonts.net/ubuntu-condensed:n4:all.js"></script>
+<script src="http://use.edgefonts.net/ubuntu:n4,i4,n7,i7,n3,i3,n5,i5:all.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/lodash/4.5.0/lodash.min.js"></script>
+<!--<script src="js/script"></script>-->
+<!--<script src="js/jquery.orbit.min.js"></script>-->
+<script src="js/script_main.min.js"></script>
+<script src="js/data.json.js"></script>
+<script src="js/script_lodash.js"></script>
+</head>
+<body>
+	<div id="scroller" class="b-top" style="display: none;"><span class="b-top-but">HOME</span></div>
+	<header class="clearfix">
+		<div class="wrapper clearfix">
+			<!—-==========--========== START social ==========--==========-—>
+			<ul class="social">
+				<li class="social__facebook"><a href="#">facebook</a></li>
+				<li class="social__twitter"><a href="#">twitter</a></li>
+				<li class="social__rss"><a href="#">rss</a></li>
+				<li class="social__linkedin"><a href="#">linkedin</a></li>
+				<li class="social__skype"><a href="#">skype</a></li>
+			</ul>
+			<!--==========--========== END social ==========--==========-->
+			<!—-==========--========== START logo ==========--==========-—>
+			<div class="logo">
+				<a href="#"><img src="img/Logo.png" alt="logo"></a>
+			</div>
+			<!--==========--========== END logo ==========--==========-->
+			<!—-==========--========== START menu ==========--==========-—>
+			<div class="menu">
+				<ul>
+					<li class="menu__item">
+						<a href="#" class="menu__link menu__link--active">Home</a>
+					</li>
+					<li class="menu__item">
+						<a href="#features" class="menu__link">Features</a>
+					</li>
+					<li class="menu__item">
+						<a href="#services" class="menu__link">Services</a>
+					</li>
+					<li class="menu__item">
+						<a href="#news" class="menu__link">News</a>
+					</li>
+					<li class="menu__item">
+						<a href="#shop" class="menu__link">Shop</a>
+					</li>
+				</ul>
+				<form>
+					<input type="search" placeholder="Search">
+				</form>
+
+			</div>
+			<!—-==========--========== END menu ==========--==========-—>
+			<!—-==========--========== START slider ==========--==========-—>
+			<div id="featured">
+				<img src="img/slider.png" alt="Build your business">
+				<img src="img/slider2.jpg" alt="Main street">
+				<img src="img/slider3.jpg" alt="Night city">
+			</div>
+
+			<!--==========--========== END slider ==========--==========-->
+			<!—-==========--========== START features ==========--==========-—>
+			<div class="features-wrapper clearfix" id="features">
+				<div class="features clearfix">
+					<p class="features__number">01</p>
+					<div class="features__text">
+						<h3 class="features__title">Power Inside</h3>
+						<p class="features__desc">Cum sociis natoque penatibus et magnis dis parturient montesmus. Pro vel nibh et elit mollis commodo et nec augueique Nemo enim ipsam voluptatem quia ptas sit aspernatur samomo enim ipsam voluptatem.</p>
+						<a href="#" class="features__link">Read More
+							<svg>
+								<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#right-arrow">
+								</use>
+							</svg>
+						</a>
+					</div>
+				</div>
+				<div class="features clearfix">
+					<p class="features__number">02</p>
+					<div class="features__text">
+						<h3 class="features__title features__title--center-icon">New Technologies</h3>
+						<p class="features__desc">Cum sociis natoque penatibus et magnis dis parturient montesmus. Pro vel nibh et elit mollis commodo et nec augueique Nemo enim ipsam voluptatem quia ptas sit aspernatur samomo enim ipsam voluptatem.</p>
+						<a href="#" class="features__link">Read More
+							<svg>
+								<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#right-arrow">
+								</use>
+							</svg>
+						</a>
+					</div>
+				</div>
+				<div class="features clearfix">
+					<p class="features__number">03</p>
+					<div class="features__text">
+						<h3 class="features__title features__title--right-icon">Fast Support</h3>
+						<p class="features__desc">Cum sociis natoque penatibus et magnis dis parturient montesmus. Pro vel nibh et elit mollis commodo et nec augueique Nemo enim ipsam voluptatem quia ptas sit aspernatur samomo enim ipsam voluptatem.</p>
+						<a href="#" class="features__link">Read More
+							<svg>
+								<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#right-arrow">
+								</use>
+							</svg>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+			<!--==========--========== END features ==========--==========-->
+	</header>
+	<main>
+			<!—-==========--========== START Services ==========--==========-—>
+		<div class="services-container" id="services">
+			<div class="wrapper">
+				<h3>Our Services</h3>
+				<section class="services">
+					<figure class="pic">
+						<img src="img/Schedule_serv.png" alt="Schedule Services">
+						<span class="pic-caption open-left">
+							<img class="pic-title" src="img/cross.png" alt="cross">
+						</span>
+						<figcaption>
+							<a href="#">Schedule Services</a>
+						</figcaption>
+					</figure>
+					<figure class="pic">
+						<img src="img/prevet_machine.png" alt="Preventive Maintence">
+						<span class="pic-caption open-left">
+							<img class="pic-title" src="img/cross.png" alt="cross">
+						</span>
+						<figcaption>
+							<a href="#">Preventive Maintence</a>
+						</figcaption>
+					</figure>
+					<figure class="pic">
+						<img src="img/Tire_and_Wheel_Services.png" alt="Tire and Wheel Services">
+						<span class="pic-caption open-left">
+							<img class="pic-title" src="img/cross.png" alt="cross">
+						</span>
+						<figcaption>
+							<a href="#">Tire &amp; Wheel Services</a>
+						</figcaption>
+					</figure>
+					<figure class="pic">
+						<img src="img/Selective-Color-1.png" alt="Repair Services">
+						<span class="pic-caption open-left">
+							<img class="pic-title" src="img/cross.png" alt="cross">
+						</span>
+						<figcaption>
+							<a href="#">Repair Services</a>
+						</figcaption>
+					</figure>
+				</section>
+			</div>
+		</div>
+			<!--==========--========== END Services ==========--==========-->
+
+			<!—-==========--=========== START news ===========--==========-—>
+		<div class="news-container" id="news">
+			<div class="wrapper clearfix">
+				<section class="news">
+					<h3 class="news__title">Latest News</h3>
+					<section class="news__box clearfix">
+						<a href="#" class="news__img">
+							<p class="news__month">Jan</p>
+							<p class="news__date">23</p>
+						</a>
+						<article class="news__text">
+							<a href="#" class="news__link"><h4>Advanced Machinery Helps Improve Quality</h4></a>
+							<p class="news__creator">by <a href="#">cmsmasters</a> Comments (<a href="#">6</a>)</p>
+							<p class="news__desc">Cum sociis natoque penatibus et magnis dis parturient ontesmus. Pro vel nibh et elit mollis commodo et nec augueique Nemo enim ipsam voluptatem quia ptas sit aspernatur samomo enim ipsam voluptatem.</p>
+						</article>
+					</section>
+					<section class="news__box clearfix">
+						<a href="#" class="news__img news__img--sec">
+							<p class="news__month">Jan</p>
+							<p class="news__date">21</p>
+						</a>
+						<article class="news__text">
+							<a href="#" class="news__link"><h4>Powerful Techniques for Advanced Service</h4></a>
+							<p class="news__creator">by <a href="#">cmsmasters</a> Comments (<a href="#">3</a>)</p>
+							<p class="news__desc">Cum sociis natoque penatibus et magnis dis parturient ontesmus. Pro vel nibh et elit mollis commodo et nec augueique Nemo enim ipsam voluptatem quia ptas sit aspernatur samomo enim ipsam voluptatem.</p>
+						</article>
+					</section>
+				</section>
+				<!--==========--========== END news ==========--==========-->
+
+				<!—-==========--========== START banner ==========--==========-—>
+				<section class="banners clearfix">
+					<h3 class="news__title">Banners Place</h3>
+					<div class="accordion">
+						<div class="accordion__tab accordion__tab--active">
+							<p class="accordion__title accordion__title--active">Accordion Panel 1</p>
+						</div>
+						<p class="accordion_article" style="display: block;">Cum sociis natoque penatibus et magnis dis parturient mus. Pro vel nibh et elit mollis commodo et nec augueique Nemo enim ipsam voluptatem quia ptas sit aspernatur momo. Cum sociis natoque penatibus et magnis dis parturient ontesmus. Nemo enim ipsam voluptatem quia ptas sit aspernatur samomoPro vel nibh et elit mollis commodo et nec augueique Nemo enim ipsam voluptatem quia ptas sit aspernatur samomo enim ipsam voluptatem.</p>
+					</div>
+					<div class="accordion">
+						<div class="accordion__tab">
+							<p class="accordion__title">Accordion Panel 2</p>
+						</div>
+						<p class="accordion_article" style="display: none;">Cum sociis natoque penatibus et magnis dis parturient mus. Pro vel nibh et elit mollis commodo et nec augueique Nemo enim ipsam voluptatem quia ptas sit aspernatur momo. Cum sociis natoque penatibus et magnis dis parturient ontesmus. Nemo enim ipsam voluptatem quia ptas sit aspernatur samomoPro vel nibh et elit mollis commodo et nec augueique Nemo enim ipsam voluptatem quia ptas sit aspernatur samomo enim ipsam voluptatem.</p>
+					</div>
+					<div class="accordion">
+						<div class="accordion__tab">
+							<p class="accordion__title">Accordion Panel 3</p>
+						</div>
+						<p class="accordion_article" style="display: none;">Cum sociis natoque penatibus et magnis dis parturient mus. Pro vel nibh et elit mollis commodo et nec augueique Nemo enim ipsam voluptatem quia ptas sit aspernatur momo. Cum sociis natoque penatibus et magnis dis parturient ontesmus. Nemo enim ipsam voluptatem quia ptas sit aspernatur samomoPro vel nibh et elit mollis commodo et nec augueique Nemo enim ipsam voluptatem quia ptas sit aspernatur samomo enim ipsam voluptatem.</p>
+					</div>
+					<div class="accordion">
+						<div class="accordion__tab">
+							<p class="accordion__title">Accordion Panel 4</p>
+						</div>
+						<p class="accordion_article" style="display: none;">Cum sociis natoque penatibus et magnis dis parturient mus. Pro vel nibh et elit mollis commodo et nec augueique Nemo enim ipsam voluptatem quia ptas sit aspernatur momo. Cum sociis natoque penatibus et magnis dis parturient ontesmus. Nemo enim ipsam voluptatem quia ptas sit aspernatur samomoPro vel nibh et elit mollis commodo et nec augueique Nemo enim ipsam voluptatem quia ptas sit aspernatur samomo enim ipsam voluptatem.</p>
+					</div>
+				</section>
+			</div>
+				<!--==========--========== END banner ==========--==========-->
+
+				<!—-==========--========== START shop ==========--==========-—>
+			<div class="wrapper">
+				<section class="shop clearfix" id="shop">
+					<a href="#" class="shop__link"><img src="img/shop/rbp.png" alt="rbp wheels"></a>
+					<a href="#" class="shop__link"><img src="img/shop/moto.png" alt="moto metal"></a>
+					<a href="#" class="shop__link"><img src="img/shop/2crave.png" alt="2crave"></a>
+					<a href="#" class="shop__link"><img src="img/shop/atx.png" alt="atx series"></a>
+					<a href="#" class="shop__link"><img src="img/shop/cruiser.png" alt="cruiser alloy"></a>
+					<a href="#" class="shop__link"><img src="img/shop/gear.png" alt="gear"></a>
+				</section>
+			</div>
+				<!--==========--============ END shop ============--==========-->
+		</div>
+	</main>
+	<footer>
+		<div class="footer-container">
+			<div class="wrapper clearfix">
+					<ul class="footer-menu">
+						<li class="footer-menu__title">Socials</li>
+						<li class="footer-menu__item"><a href="#" class="footer-menu__link">Facebook</a></li>
+						<li class="footer-menu__item"><a href="#" class="footer-menu__link">Flickr</a></li>
+						<li class="footer-menu__item"><a href="#" class="footer-menu__link">Twitter</a></li>
+						<li class="footer-menu__item"><a href="#" class="footer-menu__link">Vimeo</a></li>
+					</ul>
+					<ul class="footer-menu">
+						<li class="footer-menu__title">Links</li>
+						<li class="footer-menu__item"><a href="#" class="footer-menu__link">How to Write a Blog</a></li>
+						<li class="footer-menu__item"><a href="#" class="footer-menu__link">Create a Blog in 4 Steps</a></li>
+						<li class="footer-menu__item"><a href="#" class="footer-menu__link">15 Tips to Increase Traffic</a></li>
+						<li class="footer-menu__item"><a href="#" class="footer-menu__link">20 Blog Post Ideas</a></li>
+					</ul>
+					<ul class="footer-menu">
+						<li class="footer-menu__title">Blogroll</li>
+						<li class="footer-menu__item"><a href="#" class="footer-menu__link">Blogs Blog</a></li>
+						<li class="footer-menu__item"><a href="#" class="footer-menu__link">Roll Up Roll Up</a></li>
+						<li class="footer-menu__item"><a href="#" class="footer-menu__link">Blog Free</a></li>
+						<li class="footer-menu__item"><a href="#" class="footer-menu__link">Wordpress Blog</a></li>
+					</ul>
+					<ul class="footer-menu">
+						<li class="footer-menu__title">About us</li>
+						<li class="footer-menu__item"><a href="#" class="footer-menu__link">Agriculture</a></li>
+						<li class="footer-menu__item"><a href="#" class="footer-menu__link">Harvest</a></li>
+						<li class="footer-menu__item"><a href="#" class="footer-menu__link">Company news</a></li>
+						<li class="footer-menu__item"><a href="#" class="footer-menu__link">Investor relations</a></li>
+					</ul>
+			</div>
+		</div>
+		<div class="contacts">
+			<div class="wrapper">
+				<span class="contacts__adress">BuildHomeLtd.  Street Name 123   23 45 Cityname</span>
+				<span class="contacts__phone">+123 900 123 456</span>
+				<span class="contacts__email">info@buildhome.web</span>
+				<span class="conatcts__copyrights">© 2014 Build Home</span>
+			</div>
+		</div>
+	</footer>
+
+
+	<svg xmlns="http://www.w3.org/TR/2011/REC-SVG11-20110816/" style="display:none"><symbol id="right-arrow" viewbox="0 0 611.98 611.981"><path d="M600.792 278.842L371.4 49.602c-14.957-14.956-39.228-14.956-54.185 0-14.956 14.956-14.956 39.208 0 54.164l164.1 164.002H38.25C17.118 267.768 0 284.885 0 306c0 21.113 17.117 38.23 38.25 38.23h443.064L317.217 508.234c-14.956 14.957-14.956 39.207 0 54.145 14.957 14.956 39.228 14.956 54.185 0l229.372-229.24C608.27 325.642 612 315.83 611.98 306c.04-9.83-3.69-19.66-11.188-27.158z"/></symbol></svg>
+</body>
+</html>
