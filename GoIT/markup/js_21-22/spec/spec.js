@@ -25,6 +25,18 @@ describe("app", function() {
 		//assert
 		expect(result).toEqual(3);
 	});
+
+
+	it("army ()", function() {
+		//prepare
+		var result;
+
+		//act
+		result = app.army(2);
+
+		//assert
+		expect(result).toBe(2);
+	});
 });
 
 
