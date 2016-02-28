@@ -3,7 +3,7 @@ var app = {
 		return 'Hello, ' + name + '!';
 	},
 	sum: function (a, b) {
-		return a*b;
+		return a+b;
 	}
 
 }
