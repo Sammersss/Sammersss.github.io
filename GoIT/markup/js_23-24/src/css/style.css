@@ -1,0 +1,142 @@
+*{margin:0;padding:0;}
+@font-face {
+	  font-family: 'fontello';
+	  src: url('../font/fontello.eot?50573067');
+	  src: url('../font/fontello.eot?50573067#iefix') format('embedded-opentype'),
+		   url('../font/fontello.woff?50573067') format('woff'),
+		   url('../font/fontello.ttf?50573067') format('truetype'),
+		   url('../font/fontello.svg?50573067#fontello') format('svg');
+	  font-weight: normal;
+	  font-style: normal;
+	}
+body{
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	background-color: #fdfbf9;
+	background: url(../img/wood.png) 0 0 repeat
+}
+.data{
+	position: relative;
+	width: 1024px;
+	margin: 0 auto;
+	padding: 10px;
+}
+.data__title {
+	font-size: 36px;
+	padding: 5px;
+	margin-bottom: 10px;
+	text-align: center;
+	font-weight: bold;
+	letter-spacing: 5px;
+	text-transform: uppercase;
+	color: #fff;
+}
+.data__result {
+	position: absolute;
+	top: 120px;
+	left: 10px;
+	padding: 10px 0 10px 10px;
+	font-size: 10px;
+	color: #cf6a0c;
+	font-family: "Times New Roman", serif;
+	letter-spacing: 5px;
+	text-shadow: 1px 3px 3px #ddd;
+}
+.data__input--value{
+	padding: 15px;
+	font-size: 15px;
+	font-style: italic;
+	letter-spacing: 3px;
+	text-shadow: 0px 1px 0px #c6bdbd;
+	outline: none;
+	border: 1px solid #DDD;
+	border-radius: 3px;
+}
+.data__input--value::-webkit-input-placeholder       {line-height: 20px;  transition: line-height 0.5s ease;}
+.data__input--value::-moz-placeholder                {line-height: 20px;  transition: line-height 0.5s ease;}
+.data__input--value:-moz-placeholder                 {line-height: 20px;  transition: line-height 0.5s ease;}
+.data__input--value:-ms-input-placeholder            {line-height: 20px;  transition: line-height 0.5s ease;}
+.data__input--value:focus::-webkit-input-placeholder {line-height: 100px; transition: line-height 0.5s ease;}
+.data__input--value:focus::-moz-placeholder          {line-height: 100px; transition: line-height 0.5s ease;}
+.data__input--value:focus:-moz-placeholder           {line-height: 100px; transition: line-height 0.5s ease;}
+.data__input--value:focus:-ms-input-placeholder      {line-height: 100px; transition: line-height 0.5s ease;}
+
+.data__input--add {
+	border: 1px solid #dbdbdb;
+	border-radius: 3px;
+	font: bold 15px Sans-Serif;
+	padding: 15px 25px;
+	white-space: nowrap;
+	color: #666;
+	background: #e8e6e6;
+	cursor: pointer;
+}
+.data__input--add:hover, .data__input--add:focus {
+	color: #fff;
+	border-color: #999;
+	background: -webkit-linear-gradient(top, #4dadf4, #618be8);
+	background:    -moz-linear-gradient(top, #4dadf4, #618be8);
+	background:     -ms-linear-gradient(top, #4dadf4, #618be8);
+	background:      -o-linear-gradient(top, #4dadf4, #618be8);
+}
+.data__list{
+	margin-top: 25px;
+}
+.data__list__item{
+	position: relative;
+	list-style: none;
+	padding: 5px;
+	padding-left: 0;
+}
+.item-edit {
+	position: absolute;
+	top: 10px;
+	right: 0px;
+	padding: 0 10px;
+	visibility: hidden;
+	color: rgba(80, 188, 224, 0.7);
+}
+.item-edit:hover {
+	color: #50bce0;
+	-webkit-transform: scale(1.2, 1.2);
+	-ms-transform: scale(1.2, 1.2);
+	transform: scale(1.2, 1.2);
+}
+.data__new-value{
+	width: 100%;
+    height: 11em;
+    resize: none;
+}
+.data__list__item:hover .item-edit {
+	visibility: visible;
+	-webkit-transition: -webkit-transform .2s;
+	transition: -webkit-transform .2s;
+	transition: transform .2s;
+	transition: transform .2s, -webkit-transform .2s;
+}
+.item-delete{
+	position: absolute;
+	top: -40px;
+	right: -40px;
+	padding: 25px;
+	color: #ff9797;
+	text-align: center;
+	vertical-align: middle;
+	cursor: pointer;
+	font-family: "fontello";
+	font-style: normal;
+	font-weight: normal;
+	visibility: hidden;
+}
+.item-delete:hover{
+	color: red;
+	-webkit-transform: scale(1.5, 1.5);
+	-ms-transform: scale(1.5, 1.5);
+	transform: scale(1.5, 1.5);
+}
+.data__list__item:hover .item-delete {
+	visibility: visible;
+	-webkit-transition: -webkit-transform .2s;
+	transition: -webkit-transform .2s;
+	transition: transform .2s;
+	transition: transform .2s, -webkit-transform .2s;
+}
