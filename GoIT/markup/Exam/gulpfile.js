@@ -1,13 +1,16 @@
-var gulp =      require('gulp');
-var sass =      require('gulp-sass');
-var concat =    require('gulp-concat');
-var rename =    require('gulp-rename');
-var notify =    require('gulp-notify');
-var uglify =    require('gulp-uglify');
-var prefix =    require('gulp-autoprefixer');
-var imagemin =  require('gulp-imagemin');
-var cleanCSS =  require('gulp-clean-css');
-var webserver = require('gulp-webserver');
+var gulp =        require('gulp');
+var sass =        require('gulp-sass');
+var gulpif =      require("gulp-if");
+var concat =      require('gulp-concat');
+var rename =      require('gulp-rename');
+var notify =      require('gulp-notify');
+var uglify =      require('gulp-uglify');
+var prefix =      require('gulp-autoprefixer');
+var imagemin =    require('gulp-imagemin');
+var cleanCSS =    require('gulp-clean-css');
+var webserver =   require('gulp-webserver');
+var spritesmith = require('gulp.spritesmith');
+
 
 gulp.task('webserver', function() {
 	gulp.src('')
@@ -60,6 +63,17 @@ gulp.task('imageMin', function() {
 		.pipe(gulp.dest('dist/img'));
 });
 
+//spriteData
+
+gulp.task('sprite', function () {
+	var spriteData = gulp.src('src/img/sprite_images/*.png').pipe(spritesmith({
+		imgName: 'sprite.png',
+		cssName: 'sprite.css'
+	}))
+	.pipe(gulpif('*.png', gulp.dest('src/img/')))
+	.pipe(gulpif('*.css', gulp.dest('src/css/sprite/')));
+});
+
 //watch
 
 gulp.task('watch', function () {
@@ -70,4 +84,4 @@ gulp.task('watch', function () {
 });
 
 //default
-gulp.task('default', ['sass' ,'css', 'jsUglify','imageMin', 'webserver', 'watch']);
+gulp.task('default', ['sass' ,'css', 'jsUglify','imageMin','sprite' ,'webserver', 'watch']);
