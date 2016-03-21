@@ -44,6 +44,34 @@
 		$('.partners__wrap').append(content);
 
 
+		//	partners slider
+
+		var opened = false;
+
+		function showMorePartners(e) {
+			e.preventDefault();
+			var $partners = $('.partners__list-hidden');
+			if (opened) {
+
+				opened = false;
+
+				$partners.slideUp();
+				$('.partners__button').html('See other partners');
+
+			} else {
+				opened = true;
+				$partners.slideDown();
+				$('.partners__button').html('Collapse');
+			}
+		}
+		$('.partners__button').on("click", showMorePartners);
+
+
+		// fancybox init
+		$('.fancybox').fancybox();
+
+
+
 		//	 smooth scrolling
 
 		$('a[href^="#"]').bind('click.smoothscroll',function (e) {
@@ -59,7 +87,7 @@
 			});
 		});
 
-//		picture ajax request
+		//	picture ajax request
 
 		var pictureRequest = '';
 
@@ -70,23 +98,28 @@
 				cache: false,
 				url: 'http://api.pixplorer.co.uk/image?word=' + pictureRequest + '&amount=7&size=s',
 				success: function(data) {
+//					console.log( 'API pixplorer is working now!' );
 //					console.log(data);
 					var pictureData = tmpl($('#picture-template').html(), data);
 
 					$('.ideas__list').remove();
-
 					$('.ideas__wrap').append(pictureData);
 					$('.ideas__list').isotope({
 						itemSelector: '.ideas__item',
 						layoutMode: 'masonry',
+						transitionDuration: '1.3s',
 						masonry: {
 							gutter: 20
 						}
 					});
+				},
+					error: function () {
+						console.log( 'Attention! API pixplorer is not working again!' );
 				}
 			});
 		}
 
+		//	search img button
 		$('.discover__search').submit(function(e) {
 			e.preventDefault();
 			var userInput = encodeURIComponent($('.discover__input').val());

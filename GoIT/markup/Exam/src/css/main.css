@@ -6,6 +6,13 @@
   font-family: 'Roboto', sans-serif;
   src: url(fonts/Roboto-Regular.ttf), url(fonts/Roboto-Light.ttf), url(fonts/Roboto-Bold.ttf); }
 
+@font-face {
+  font-family: 'fontello';
+  src: url("fonts/fontello.eot?50573067");
+  src: url("fonts/fontello.eot?50573067#iefix") format("embedded-opentype"), url("fonts/fontello.woff?50573067") format("woff"), url("fonts/fontello.ttf?50573067") format("truetype"), url("fonts/fontello.svg?50573067#fontello") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
 body {
   margin: 0;
   padding: 0; }
@@ -385,6 +392,9 @@ body {
   margin: 97px 0 17px 0;
   cursor: default;
   color: #333333; }
+
+.partners__list-hidden {
+  display: none; }
 
 .partners__list {
   overflow: hidden;
@@ -926,6 +936,50 @@ body {
     width: 5%; }
   .b-top-but {
     left: 60px; } }
+
+/*==============================START of fancybox=============================*/
+.fancybox-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #111111;
+  opacity: 0.8; }
+
+.modal-wrap:before {
+  content: '';
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle; }
+
+.modal-wrap {
+  position: fixed;
+  width: 100%;
+  height: 480px;
+  bottom: 25%;
+  left: 0;
+  text-align: center; }
+
+.fancybox-modal {
+  display: inline-block;
+  vertical-align: middle;
+  border: 10px solid #735F5F;
+  border-radius: 5px;
+  -webkit-box-shadow: 10px 6px 49px 1px black;
+  -moz-box-shadow: 10px 6px 49px 1px black;
+  box-shadow: 10px 6px 49px 1px black;
+  text-align: center;
+  cursor: pointer; }
+  .fancybox-modal img {
+    max-width: 640px;
+    max-height: 480px;
+    vertical-align: middle; }
+
+@media all and (max-width: 767px) {
+  .fancybox-modal img {
+    max-width: 240px;
+    max-height: 320px; } }
 
 .clearfix:after {
   content: "";

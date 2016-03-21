@@ -4,6 +4,8 @@
 	<meta charset="UTF-8">
 	<title>URLAUBSGLÜCK</title>
 	<link rel="stylesheet" href="dist/css/styles.min.css"/>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+<!--	<link rel="stylesheet" href="dist/css/style.css"/>-->
 	<!--[if lte IE 9]>
 		<script src="http://cdn.jsdelivr.net/html5shiv/3.7.3/html5shiv.min.js"></script>
 	<![endif]-->
@@ -158,10 +160,22 @@
 
 	<!--PARTNERS-->
 	<section class="partners" id="partner">
-		<div class="partners__wrap">
+		<div class="partners__wrap clearfix">
 			<h2 class="partners__title">Meet a partner for your best holiday</h2>
 			<script type="text/template" id="partners__list">
-				<ul class="partners__list">
+				<ul class="partners__list clearfix">
+					<% for (var key in partners) {%>
+						<li class="partners__item partner_<%=[key]%>">
+							<img src="<%=partners[key].photo %>" alt="<%=partners[key].name %>" title="<%=partners[key].name %>" class="partner__photo"/>
+							<div class="partners__circle circle_<%=[key]%>">
+								<div class="partners__icon icon_<%=[key]%>"></div>
+							</div>
+							<h3 class="partner__name"><%=partners[key].name %></h3>
+							<p class="partner__text"><%=partners[key].hobby %></p>
+						</li>
+					<% }; %>
+				</ul>
+				<ul class="partners__list partners__list-hidden clearfix">
 					<% for (var key in partners) {%>
 						<li class="partners__item partner_<%=[key]%>">
 							<img src="<%=partners[key].photo %>" alt="<%=partners[key].name %>" title="<%=partners[key].name %>" class="partner__photo"/>
@@ -188,7 +202,7 @@
 				<% for (var i =0; i<images.length; i++) { %>
 					<li class="ideas__item<% if ((i==5)||(i==4)){%>
 						ideas__item-double<%}%> animated zoomIn" style = "background: url(<%=images[i].imageurl%>) center no-repeat; background-size: cover">
-						<a href="#" class="ideas__link"><span class="ideas__inner"><%=images[i].word%></span></a>
+						<a href="<%=images[i].imageurl%>" class="ideas__link fancybox"><span class="ideas__inner"><%=images[i].word%></span></a>
 					</li>
 				<%}; %>
 			</ul>
