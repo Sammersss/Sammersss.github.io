@@ -49,10 +49,20 @@ gulp.task('css', function () {
 
 gulp.task('jsUglify', function() {
 	return gulp.src('src/js/*.js')
-		.pipe(concat("script.min.js"))
+		.pipe(concat("main.min.js"))
 		.pipe(uglify())
 		.pipe(gulp.dest('dist/js'))
 		.pipe(notify('JS is DONE!'));
+});
+
+//VendorJs
+
+gulp.task('jsVendorUglify', function() {
+	return gulp.src('src/js/vendor/*.js')
+		.pipe(concat("vendor.min.js"))
+		.pipe(uglify())
+		.pipe(gulp.dest('dist/js'))
+		.pipe(notify('Vendor JS is DONE!'));
 });
 
 //img
@@ -66,7 +76,7 @@ gulp.task('imageMin', function() {
 //spriteData
 
 gulp.task('sprite', function () {
-	var spriteData = gulp.src('src/img/sprite_images/*.png').pipe(spritesmith({
+	var spriteData = gulp.src('images/*.png').pipe(spritesmith({
 		imgName: 'sprite.png',
 		cssName: 'sprite.css'
 	}))
@@ -80,8 +90,9 @@ gulp.task('watch', function () {
 	gulp.watch('./src/scss/*.scss',['sass']);
 	gulp.watch('./src/css/*.css',['css']);
 	gulp.watch('./src/js/*.js',['jsUglify']);
+	gulp.watch('./src/js/vendor/*.js',['jsVendorUglify']);
 	gulp.watch('./src/img/*.*',['imageMin']);
 });
 
 //default
-gulp.task('default', ['sass' ,'css', 'jsUglify','imageMin','sprite' ,'webserver', 'watch']);
+gulp.task('default', ['sass' ,'css', 'jsUglify','jsVendorUglify','imageMin','webserver', 'watch']);
