@@ -96,7 +96,7 @@
 				type: "GET",
 				dataType: "json",
 				cache: false,
-				url: 'http://api.pixplorer.co.uk/image?word=' + pictureRequest + '&amount=7&size=s',
+				url: 'http://api.pixplorer.co.uk/image?word=' + pictureRequest + '&amount=7&size=tb',
 				success: function(data) {
 //					console.log( 'API pixplorer is working now!' );
 //					console.log(data);
