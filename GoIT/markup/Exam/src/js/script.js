@@ -88,6 +88,28 @@
 		});
 
 		//	picture ajax request
+		
+				var picData = {
+			"images":[
+				{"imageurl": "dist/img/ideas__bg1.jpg", "word": "Sport"},
+				{"imageurl": "dist/img/ideas__bg2.jpg", "word": "Wellnes"},
+				{"imageurl": "dist/img/ideas__bg3.jpg", "word": "Extreme Sports"},
+				{"imageurl": "dist/img/ideas__bg4.jpg", "word": "Games"},
+				{"imageurl": "dist/img/ideas__bg5.jpg", "word": "Culture"},
+				{"imageurl": "dist/img/ideas__bg6.jpg", "word": "Relaxation"},
+				{"imageurl": "dist/img/ideas__bg7.jpg", "word": "Travelling"}
+			]};
+		var pictureData = tmpl($('#picture-template').html(), picData);
+		$('.ideas__wrap').append(pictureData);
+		$('.ideas__list').isotope({
+			itemSelector: '.ideas__item',
+			layoutMode: 'masonry',
+			transitionDuration: '1.3s',
+			masonry: {
+				gutter: 20
+			}
+		});
+		
 
 		var pictureRequest = '';
 
