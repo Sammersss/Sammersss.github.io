@@ -88,67 +88,96 @@
 		});
 
 		//	picture ajax request
-		
-				var picData = {
-			"images":[
-				{"imageurl": "dist/img/ideas__bg1.jpg", "word": "Sport"},
-				{"imageurl": "dist/img/ideas__bg2.jpg", "word": "Wellnes"},
-				{"imageurl": "dist/img/ideas__bg3.jpg", "word": "Extreme Sports"},
-				{"imageurl": "dist/img/ideas__bg4.jpg", "word": "Games"},
-				{"imageurl": "dist/img/ideas__bg5.jpg", "word": "Culture"},
-				{"imageurl": "dist/img/ideas__bg6.jpg", "word": "Relaxation"},
-				{"imageurl": "dist/img/ideas__bg7.jpg", "word": "Travelling"}
-			]};
-		var pictureData = tmpl($('#picture-template').html(), picData);
-		$('.ideas__wrap').append(pictureData);
-		$('.ideas__list').isotope({
-			itemSelector: '.ideas__item',
-			layoutMode: 'masonry',
-			transitionDuration: '1.3s',
-			masonry: {
-				gutter: 20
-			}
-		});
-		
+		var img = {
+			photos: [
+			],
+			word: [ ""
+			],
+			firstInit: true
+		};
 
-		var pictureRequest = '';
+		var firstLoad = true;
+		var discoverIdeas = document.querySelector('.discover__input');
 
-		function renderList(pictureRequest) {
-			$.ajax({
-				type: "GET",
-				dataType: "json",
-				cache: false,
-				url: 'http://api.pixplorer.co.uk/image?word=' + pictureRequest + '&amount=7&size=tb',
-				success: function(data) {
-//					console.log( 'API pixplorer is working now!' );
-//					console.log(data);
-					var pictureData = tmpl($('#picture-template').html(), data);
+		function getPic() {
+				img.photos = [];
 
-					$('.ideas__list').remove();
-					$('.ideas__wrap').append(pictureData);
-					$('.ideas__list').isotope({
-						itemSelector: '.ideas__item',
-						layoutMode: 'masonry',
-						transitionDuration: '1.3s',
-						masonry: {
-							gutter: 20
+				var requestStr = 'https://pixabay.com/api/?key=2274518-319e8a01ddf6f389d5b69e89d&q='+ img.word[0] + '&image_type=photo&per_page=50';
+
+				function firstLoadData(data) {
+						img.word = [];
+						firstLoad = false;
+						var i = 0;
+						while(i < 7) {
+							function getRandom(min, max) {
+							  return Math.random() * (max - min) + min;
+							}
+							var random = Math.round(getRandom(0, 49));
+							img.photos.push(data.hits[random].webformatURL);
+							img.word.push(data.hits[random].tags);
+							i++;
 						}
-					});
-				},
-					error: function () {
-						console.log( 'Attention! API pixplorer is not working again!' );
+							render();
+							initIsotope();
+					}
+					function searchData(data) {
+						img.word = [];	
+						img.word[0] = discoverIdeas.value;
+						var i = 0;
+						while(i < 7) {
+							function getRandom(min, max) {
+							  return Math.random() * (max - min) + min;
+							}
+							random = Math.round(getRandom(0, 49));
+							img.photos.push(data.hits[random].webformatURL);
+							img.word.push(img.word[0]);
+							i++;
+						}
+							render();
+							initIsotope();
+							discoverIdeas.value = '';
+					}
+				var request = $.ajax({
+					url: requestStr
+				});
+				if (firstLoad) {
+					request.done(firstLoadData);
+				} else {
+				request.done(searchData);
+				}
+		}
+		function initIsotope() {
+			var elem = document.querySelector('.ideas__data');
+			var isotopeInst = new Isotope( elem, {
+				itemSelector: '.ideas__item',
+				layoutMode: 'masonry',
+				transitionDuration: '1.6s',
+				masonry: {
+					gutter: 20
 				}
 			});
 		}
+		function render() {
+			var ideasList = $('#picture-template').html();
+			var ideasContent = tmpl(ideasList,  {
+						img: img
+					});
+			var element = document.querySelector('.ideas__data');
+			element.innerHTML = ideasContent;
+
+		}
+		function firstInit() {
+			getPic();
+		}
+		firstInit();
 
 		//	search img button
 		$('.discover__search').submit(function(e) {
 			e.preventDefault();
-			var userInput = encodeURIComponent($('.discover__input').val());
-			renderList(userInput);
+			img.word[0] = discoverIdeas.value;
+			getPic();
 		});
 
-		renderList();
 
 	});
 

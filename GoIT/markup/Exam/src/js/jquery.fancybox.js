@@ -8,13 +8,8 @@
 		function showModal(e) {
 			$link = $(this);
 			var href = $link.attr('href');
-
-//			$modal = $('<div class="fancybox-modal"  animated zoomIn" style = "background: url('+ href +') center no-repeat; background-size: cover"></div>');
-
-			$modal = $('<div class="modal-wrap"><div class="fancybox-modal"><img src="' + href + '"></div><div>');
-			$overlay = $('<div class="fancybox-overlay"></div>');
-
-
+			
+			$modal = $('<div class="modal-wrap"><div class="fancybox-modal"><img src="' + href + '"></div></div>');
 			$overlay = $('<div class="fancybox-overlay"></div>');
 
 			e.stopPropagation();
@@ -27,12 +22,10 @@
 		}
 
 		function hideModal() {
-			$modal.hide();
-			$overlay.hide();
+			$modal.remove();
+			$overlay.remove();
 		}
 
-
-		//		$link.on('click', showModal);
 		$('body').on('click', '.fancybox', showModal);
 
 

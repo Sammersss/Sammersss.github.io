@@ -193,32 +193,31 @@
 	<section class="ideas">
 		<div class="ideas__wrap">
 			<h2 class="ideas__title">Discover holiday activity ideas</h2>
-			<script type="text/template" id = "picture-template">
-			<ul class="ideas__list">
-				<% for (var i =0; i<images.length; i++) { %>
-					<li class="ideas__item<% if ((i==5)||(i==4)){%>
-						ideas__item-double<%}%> animated zoomIn" style = "background: url(<%=images[i].imageurl%>) center no-repeat; background-size: cover">
-						<a href="<%=images[i].imageurl%>" class="ideas__link fancybox"><span class="ideas__inner"><%=images[i].word%></span></a>
-					</li>
-				<%}; %>
-			</ul>
-			</script>
+			<div class="ideas__data clearfix">
+			</div>
+			<section class="discover">
+				<div class="discover__wrap">
+					<p class="discover__title">Discover holiday activity ideas</p>
+					<form class="discover__search" action="#">
+						<p class="discover__intro">Hi! What are your holiday interests?</p>
+						<input type="text" class="discover__input" placeholder="Enter your interests" required> 
+						<button type="submit" class="discover__button">Search partners</button>
+					</form>
+				</div>
+			</section>	
 		</div>
 	</section>
+	<script type="text/template" id = "picture-template">
+		<ul class="ideas__list">
+			<% for (var i =0; i<img.photos.length; i++) { %>
+				<li class="ideas__item<% if ((i==5)||(i==4)){%>
+					ideas__item-double<%}%> animated zoomIn" style = "background: url(<%=img.photos[i]%>) center no-repeat; background-size: cover">
+					<a href="<%=img.photos[i]%>" class="ideas__link fancybox"><span class="ideas__inner"><%=img.word[i]%></span></a>
+				</li>
+			<%}; %>
+		</ul>
+	</script>
 	<!--end of ideas-->
-
-	<!--DISCOVER IDEAS-->
-	<section class="discover">
-	   <div class="discover__wrap">
-		   <h2 class="discover__title">Discover holiday activity ideas</h2>
-		   <p class="discover__intro">Hi! What are your holiday interests?</p>
-		   <form action="#" class="discover__search">
-			   <input type="search" class="discover__input" placeholder="Enter your interests"/>
-			   <input type="submit" class="discover__button" value="Search partners"/>
-		   </form>
-	   </div>
-	</section>
-	<!--end of discover ideas-->
 
 	<footer class="footer">
 		<div class="footer__wrap">
