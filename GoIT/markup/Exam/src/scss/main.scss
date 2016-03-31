@@ -81,56 +81,59 @@ body {
 
 /*==============================START of fancybox=============================*/
 
-//.fancybox-overlay {
-//	position: fixed;
-//	top: 0;
-//	left: 0;
-//	width: 100%;
-//	height: 100%;
-//	background-color: $main-dark/3;
-//	opacity: 0.8;
-//}
-//
-//.modal-wrap:before {
-//	content: '';
-//	display: inline-block;
-//	height: 100%;
-//	vertical-align: middle;
-//}
-//
-//.modal-wrap {
-//	position: absolute;
-//	width: 100%;
-//	max-height: 480px;
-//	bottom: 30%;
-//	left: 0;
-//	text-align: center;
-//}
-//
-//.fancybox-modal {
-//	display: inline-block;
-//	vertical-align: middle;
-//	border: 10px solid #735F5F;
-//	border-radius: 5px;
-//	-webkit-box-shadow: 10px 6px 49px 1px rgba(0, 0, 0, 1);
-//	-moz-box-shadow: 10px 6px 49px 1px rgba(0, 0, 0, 1);
-//	box-shadow: 10px 6px 49px 1px rgba(0, 0, 0, 1);
-//	text-align: center;
-//	cursor: pointer;
-//	img {
-//		max-width: 640px;
-//		max-height: 480px;
-//		vertical-align: middle;
-//	}
-//}
-//@media all and (max-width: 767px) {
-//	.fancybox-modal {
-//		img {
-//			max-width: 240px;
-//			max-height: 320px;
-//		}
-//	}
-//}
+.fancybox-overlay {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: $main-dark/3;
+	opacity: 0.8;
+}
+
+.modal-wrap:before {
+	content: '';
+	display: inline-block;
+	height: 100%;
+	vertical-align: middle;
+}
+
+.modal-wrap {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	bottom: 100px;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	text-align: center;
+}
+
+.fancybox-modal {
+	display: inline-block;
+	vertical-align: middle;
+	border: 10px solid #735F5F;
+	border-radius: 5px;
+	-webkit-box-shadow: 10px 6px 49px 1px rgba(0, 0, 0, 1);
+	-moz-box-shadow: 10px 6px 49px 1px rgba(0, 0, 0, 1);
+	box-shadow: 10px 6px 49px 1px rgba(0, 0, 0, 1);
+	text-align: center;
+	cursor: pointer;
+	img {
+		max-width: 640px;
+		max-height: 480px;
+		vertical-align: middle;
+	}
+}
+@media all and (max-width: 767px) {
+	.fancybox-modal {
+		img {
+			max-width: 240px;
+			max-height: 320px;
+		}
+	}
+}
 .clearfix:after {
 	content: "";
 	display: table;

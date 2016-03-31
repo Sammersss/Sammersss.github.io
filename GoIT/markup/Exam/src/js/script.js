@@ -121,7 +121,7 @@
 							initIsotope();
 					}
 					function searchData(data) {
-						img.word = [];
+						img.word = [];	
 						img.word[0] = discoverIdeas.value;
 						var i = 0;
 						while(i < 7) {

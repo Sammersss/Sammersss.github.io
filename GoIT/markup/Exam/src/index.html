@@ -4,25 +4,20 @@
 	<meta charset="UTF-8">
 	<title>URLAUBSGLÜCK</title>
 	<link rel="stylesheet" href="css/main.css"/>
-	<link rel="stylesheet" href="css/jquery.fancybox.css"/>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 	<!--[if lte IE 9]>
 		<script src="http://cdn.jsdelivr.net/html5shiv/3.7.3/html5shiv.min.js"></script>
 	<![endif]-->
 	<!--[if (gte IE 6)&(lte IE 8)]>
+	<script type="text/javascript" src="http://cdn.jsdelivr.net/selectivizr/1.0.3b/selectivizr.min.js"></script>
+	<noscript><link rel="stylesheet" href="[fallback css]" /></noscript>
 	<style>
 		.ideas__item{border: 1px solid #ccc;}
 		.discover__input{padding-top: 10px;}
 	</style>
 	<![endif]-->
-	<script src="js/vendor/1_jquery-1.9.1.min.js"></script>
-	<script src="js/vendor/2_jquery.xdomainrequest.min.js"></script>
-	<script src="js/vendor/3_jquery.jcarousel.min.js"></script>
-	<script src="js/vendor/4_isotope.pkgd.min.js"></script>
-	<script src="js/vendor/5_jquery.fancybox.js"></script>
-	<script src="js/vendor/tmpl.js"></script>
-	<script src="js/partnersData.js"></script>
-	<script src="js/script.js"></script>
+	<script src="../dist/js/vendor.min.js"></script>
+	<script src="../dist/js/main.min.js"></script>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body class="page__body">
@@ -205,11 +200,11 @@
 					<p class="discover__title">Discover holiday activity ideas</p>
 					<form class="discover__search" action="#">
 						<p class="discover__intro">Hi! What are your holiday interests?</p>
-						<input type="text" class="discover__input" placeholder="Enter your interests" required>
+						<input type="text" class="discover__input" placeholder="Enter your interests" required> 
 						<button type="submit" class="discover__button">Search partners</button>
 					</form>
 				</div>
-			</section>
+			</section>	
 		</div>
 	</section>
 	<script type="text/template" id = "picture-template">
