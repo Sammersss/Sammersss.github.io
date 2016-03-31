@@ -938,49 +938,6 @@ body {
     left: 60px; } }
 
 /*==============================START of fancybox=============================*/
-.fancybox-overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: #111111;
-  opacity: 0.8; }
-
-.modal-wrap:before {
-  content: '';
-  display: inline-block;
-  height: 100%;
-  vertical-align: middle; }
-
-.modal-wrap {
-  position: fixed;
-  width: 100%;
-  height: 480px;
-  bottom: 30%;
-  left: 0;
-  text-align: center; }
-
-.fancybox-modal {
-  display: inline-block;
-  vertical-align: middle;
-  border: 10px solid #735F5F;
-  border-radius: 5px;
-  -webkit-box-shadow: 10px 6px 49px 1px black;
-  -moz-box-shadow: 10px 6px 49px 1px black;
-  box-shadow: 10px 6px 49px 1px black;
-  text-align: center;
-  cursor: pointer; }
-  .fancybox-modal img {
-    max-width: 640px;
-    max-height: 480px;
-    vertical-align: middle; }
-
-@media all and (max-width: 767px) {
-  .fancybox-modal img {
-    max-width: 240px;
-    max-height: 320px; } }
-
 .clearfix:after {
   content: "";
   display: table;

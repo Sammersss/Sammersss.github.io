@@ -34,7 +34,7 @@ gulp.task('sass', function () {
 
 gulp.task('css', function () {
 	gulp.src('src/css/*.css')
-//		.pipe(concat("styles.css"))
+		.pipe(concat("*.css"))
 		.pipe(prefix({
 			browsers: ['last 2 versions','> 1%', 'ie 9'],
 			cascade: false
