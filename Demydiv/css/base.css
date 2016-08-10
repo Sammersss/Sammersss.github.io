@@ -8,6 +8,7 @@
 	min-height: 150px;
 	overflow: hidden;
 	padding: 10px;
+	padding-left: 30px;
 	position: relative;
 
 	/* CSS3 Box sizing property */
@@ -30,41 +31,25 @@
 .column div {
 	background-color: #888888;
 	float: left;
-	height: 80px;
-	margin: 0 10px 10px 0;
-	width: 80px;
+	width: 46%;
+	height: 175px;
+	margin: 0 20px 20px 0;
+	box-sizing: border-box;
 }
 #left {
 	background-color: #C8FC98;
 	float: left;
-	width: 25%;
+	width: 20%;
 }
 #right {
 	background-color: #FDE95E;
 	float: right;
-	width: 25%;
+	width: 20%;
 }
 #center {
-	margin: 0 25%;
+	margin: 0 20%;
 }
 
-
-/*-------------------------------------variants-------------------------------------*/
-.variants {
-	height: 32px;
-	margin: 20px auto;
-	width: 200px;
-}
-.variants a {
-	cursor: pointer;
-	float: left;
-	height: 30px;
-	margin: 0 5px;
-	width: 30px;
-}
-.variants .var1 {
-	background-color: red;
-}
 
 /*-------------------------------------variants-------------------------------------*/
 

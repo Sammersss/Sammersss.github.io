@@ -368,6 +368,10 @@
 	.mcd-menu li:hover ul a i {
 		font-size:14px;
 	}
+
+	.column div {
+		width: 45%;
+	}
 }
 
 @media only screen and (min-width: 480px) and (max-width: 767px) {
@@ -457,6 +461,9 @@
 		left:10%;
 		top:-8px;
 	}
+	.column div {
+		width: 95%;
+	}
 }
 
 @media only screen and (max-width: 479px) {
@@ -542,6 +549,9 @@
 		border-right:5px solid transparent;
 		left:10%;
 		top:-8px;
+	}
+	.column div {
+		width: 95%;
 	}
 
 }
