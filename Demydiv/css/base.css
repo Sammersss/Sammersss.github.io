@@ -1,0 +1,82 @@
+
+.columns {
+	overflow: hidden;
+	width: 100%;
+}
+.column {
+	border: 1px dashed #CCCCCC;
+	min-height: 150px;
+	overflow: hidden;
+	padding: 10px;
+	position: relative;
+
+	/* CSS3 Box sizing property */
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	box-sizing: border-box;
+
+	/* CSS3 transition */
+	-moz-transition: all 0.2s linear;
+	-ms-transition: all 0.2s linear;
+	-o-transition: all 0.2s linear;
+	-webkit-transition: all 0.2s linear;
+	transition: all 0.2s linear;
+}
+.column img {
+	float: left;
+	margin: 0 10px 10px 0;
+}
+.column div {
+	background-color: #888888;
+	float: left;
+	height: 80px;
+	margin: 0 10px 10px 0;
+	width: 80px;
+}
+#left {
+	background-color: #C8FC98;
+	float: left;
+	width: 25%;
+}
+#right {
+	background-color: #FDE95E;
+	float: right;
+	width: 25%;
+}
+#center {
+	margin: 0 25%;
+}
+
+
+/*-------------------------------------variants-------------------------------------*/
+.variants {
+	height: 32px;
+	margin: 20px auto;
+	width: 200px;
+}
+.variants a {
+	cursor: pointer;
+	float: left;
+	height: 30px;
+	margin: 0 5px;
+	width: 30px;
+}
+.variants .var1 {
+	background-color: red;
+}
+
+/*-------------------------------------variants-------------------------------------*/
+
+
+
+/* вариант 1 */
+#var1:target ~ .columns #left {
+	width: 25%;
+}
+#var1:target ~ .columns #right {
+	width: 25%;
+}
+#var1:target ~ .columns #center {
+	margin: 0 25%;
+}
