@@ -13,6 +13,7 @@
 @media only screen and (min-width: 768px) and (max-width: 959px) {
 	.container {
 		width: 682px;
+		margin: 0 auto;
 	}
 }
 

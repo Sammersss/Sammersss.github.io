@@ -11,7 +11,7 @@
 body{
 	text-align:center;
 	min-height: 100%;
-	padding-top: 5px;
+	padding-top: 25px;
 	font-family: 'Open Sans Condensed', sans-serif;
 /*	background: #ffd5b0 url('../img/fon2.jpg') no-repeat;*/
 	background-size: cover;
@@ -47,8 +47,8 @@ li{
 .header {
 	position: static;
 	height: 300px;
-	background: url("../img/Demydiv2.jpg") top right no-repeat;
-	background-size: cover;
+	background: url("../img/Demydiv21.png") top right no-repeat;
+	background-size: contain;
 	border-top-left-radius: 5px;
 	border-top-right-radius: 5px;
 
@@ -83,6 +83,11 @@ li{
 .logo {
 	display: block;
 	margin:  0 auto;
+	width: 15%;
+	height: 48%;
+	background-image: url(../img/vyshgorod-rayon.png);
+	background-size: contain;
+	background-repeat: no-repeat;
 }
 
 .slogan_1,
@@ -124,8 +129,9 @@ li{
 .base {
 	min-height: 1620px;
 	margin-top: 10px;
+	margin-bottom: 50px;
 	padding-bottom: 100px;
-	background: #FFF;
+	background-color: #fffeee;
 }
 
 /*----------------------------------------------END of BASE----------------------------------------------*/
