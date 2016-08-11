@@ -8,9 +8,8 @@
 <link rel="stylesheet" media="all" href="css/main.css"/>
 <link rel="stylesheet" media="all" href="css/social_buttons.css"/>
 <link rel="stylesheet" media="all" href="css/base.css"/>
-<link rel="stylesheet" media="all" href="css/primariNav.css"/>
 <link rel="stylesheet" media="all" href="css/footer.css"/>
-<link rel="stylesheet" media="all" href="css/stiky.css"/>
+<link rel="stylesheet" media="all" href="css/primariNav.css"/>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
 
 
@@ -23,9 +22,9 @@
 
 	<!—-==========--========== START header ==========--==========-—>
 	<header class="header clearfix">
-		<div class="date clearfix">
-			<p id="daydisplay"></p>
-			<p id="timedisplay"></p>
+		<div class="date resize clearfix">
+			<div id="daydisplay"></div>
+			<div id="timedisplay"></div>
 		</div>
 
 	<!—-==========--========== START clock ==========--==========-—>
@@ -39,33 +38,33 @@
 		<div class="slogan_2">
 			<span>Офіційний веб-сайт громади</span>
 		</div>
-			<ul class="social">
-				<li class="social__item social__item--face"><a href="#" class="social__link">
-					<svg>
-						<use xlink:href="#face">
-							</svg>
-						</a></li>
-				<li class="social__item"><a href="#" class="social__link">
-					<svg>
-						<use xlink:href="#twitter">
-							</svg>
-						</a></li>
-				<li class="social__item social__item--rss"><a href="#" class="social__link">
-					<svg>
-						<use xlink:href="#rss">
-							</svg>
-						</a></li>
-				<li class="social__item"><a href="#" class="social__link">
-					<svg>
-						<use xlink:href="#in">
-							</svg>
-						</a></li>
-				<li class="social__item"><a href="#" class="social__link">
-					<svg>
-						<use xlink:href="#skype">
-							</svg>
-						</a></li>
-			</ul>
+		<ul class="social">
+			<li class="social__item social__item--face"><a href="#" class="social__link">
+				<svg>
+					<use xlink:href="#face">
+						</svg>
+					</a></li>
+			<li class="social__item"><a href="#" class="social__link">
+				<svg>
+					<use xlink:href="#twitter">
+						</svg>
+					</a></li>
+			<li class="social__item social__item--rss"><a href="#" class="social__link">
+				<svg>
+					<use xlink:href="#rss">
+						</svg>
+					</a></li>
+			<li class="social__item"><a href="#" class="social__link">
+				<svg>
+					<use xlink:href="#in">
+						</svg>
+					</a></li>
+			<li class="social__item"><a href="#" class="social__link">
+				<svg>
+					<use xlink:href="#skype">
+						</svg>
+					</a></li>
+		</ul>
 
 
 	</header>
@@ -78,7 +77,7 @@
 					<a href="" class="menu__link active">
 						<i class="fa fa-home"></i>
 						<strong>Головна</strong>
-						<small>інформація</small>
+						<small>&nbsp;</small>
 					</a>
 				</li>
 				<li>
@@ -190,7 +189,7 @@
 					<a href="" class="menu__link">
 						<i class="fa fa-envelope-o"></i>
 						<strong>Контакти</strong>
-						<small>завітайте</small>
+						<small>&nbsp;</small>
 					</a>
 				</li>
 				<li class="float">
@@ -242,7 +241,7 @@
 	<!--==========--========== END base ==========--==========-->
 	<!—-==========--========== START footer ==========--==========-—>
 	<footer class="contacts">
-		<div class="contacts_wrap">
+		<div class="contacts_wrap resize">
 				<span class="contacts__adress">с. Демидів, вул. Фастова, 2</span>
 				<span class="contacts__phone">Приймальня тел.: +38 (045-96) 33-242</span>
 				<span class="contacts__email">demydivgov@in.ua</span>
@@ -255,6 +254,7 @@
 <script src="js/clock.js"></script>
 <script src="js/main.js"></script>
 <script src="js/sticky.js"></script>
+<script src="js/resize.js"></script>
 </body>
 </html>
 

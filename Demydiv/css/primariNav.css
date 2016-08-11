@@ -1,12 +1,15 @@
+/*
 @media only screen and (min-width: 1200px) {
 	.container {
 		width: 1024px;
 	}
 }
+*/
 
-@media only screen and (min-width: 960px) and (max-width: 1199px) {
+@media only screen and (min-width: 960px) and (max-width: 1023px) {
 	.container {
-		width: 1030px;
+		width: 960px;
+		margin: 0 auto;
 	}
 }
 
@@ -305,6 +308,29 @@
 }
 
 @media only screen and (min-width: 768px) and (max-width: 959px) {
+	
+	.header {
+		height: 225px;
+	}
+	.slogan_1>span {
+		font-size: 20px;
+	}
+	.slogan_2>span {
+		font-size: 10px;
+	}
+	.social {
+    margin-top: 15px;
+	}
+	.social__item svg {
+		width: 15px;
+		height: 15px;
+		fill: #ccc;
+		transition: fill 0.3s, width 0.3s, height 0.3s; 
+	}
+	.social__item:hover svg {
+		width: 20px;
+		height: 20px;
+	}
 	.mcd-menu {
 		height: 85px;
 	}
@@ -372,7 +398,19 @@
 	.column div {
 		width: 45%;
 	}
+	.contacts__adress {
+		margin-right: 10px; 
+	}
+
+	.contacts__phone {
+		margin-right: 10px; 
+	}
+
+	.contacts__email {
+		margin-right: 15px; 
+	}
 }
+
 
 @media only screen and (min-width: 480px) and (max-width: 767px) {
 	.mcd-menu {
