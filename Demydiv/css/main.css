@@ -2,10 +2,21 @@
 	margin: 0;
 	padding: 0;
 }
+
+*, *:before, *:after {
+	box-sizing: border-box;
+}
+
 .clearfix:after {
 	content: "";
 	display: table;
 	clear: both;
+}
+
+
+html {
+	background-color: antiquewhite;
+	font-weight: 600;
 }
 
 body{
@@ -15,6 +26,7 @@ body{
 	font-family: 'Open Sans Condensed', sans-serif;
 /*	background: #ffd5b0 url('../img/fon2.jpg') no-repeat;*/
 	background-size: cover;
+	box-sizing: border-box;
 /*
 	background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAGCAYAAAAPDoR2AAAALUlEQVQIW2P8/ZuhnnXSn7O/81iMGaAAxmdEloQJUlESZh+MBrkBbCe6Q2B8AJrNQsUrWkCyAAAAAElFTkSuQmCC
 		) repeat;
