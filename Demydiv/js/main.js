@@ -1,13 +1,6 @@
 $(function($) {
 
 	//add class active to menu link
-	var $menuItem = $('.Nav-item');
-	$menuItem.on('click', function(e) {
-		e.preventDefault();
-		$(this).addClass('active').siblings().removeClass('active');
-	});
-
-	//add class active to menu link
 	var $menuLink = $('.menu__link');
 	$menuLink.on('click', function(e) {
 		e.preventDefault();
