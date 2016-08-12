@@ -8,7 +8,7 @@
 	min-height: 150px;
 	overflow: hidden;
 	padding: 10px;
-	padding-left: 30px;
+/*	padding-left: 30px;*/
 	position: relative;
 
 	/* CSS3 Box sizing property */
@@ -28,6 +28,7 @@
 	float: left;
 	margin: 0 10px 10px 0;
 }
+/*
 .column div {
 	background-color: #888888;
 	float: left;
@@ -36,6 +37,7 @@
 	margin: 0 20px 20px 0;
 	box-sizing: border-box;
 }
+*/
 #left {
 	background-color: #C8FC98;
 	float: left;

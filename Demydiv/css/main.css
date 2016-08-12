@@ -128,7 +128,6 @@ li{
 	text-align: center;
 	text-transform: uppercase;
 	text-shadow: -1px 0px #fff, 0px -1px #fff, 1px 0px #fff, 0px 1px #fff, -1px -1px #fff, 1px 1px #fff, -1px 1px #fff, 1px -1px #fff, 1px 0px 4px #fff, 0px 0px 2px #fff, 0px 0px 3px #fff, 0px 0px 2px #fff, 0px 0px 3px #fff, 0px 0px 4px #fff, 0px 0px 4px #fff, 0px 0px 4px #fff, 0px 0px 4px #fff, 0px 0px 4px #fff;
-	text-transform: uppercase;
 }
 
 
@@ -139,7 +138,7 @@ li{
 
 
 .base {
-	min-height: 1620px;
+/*	min-height: 1620px;*/
 	margin-top: 10px;
 	margin-bottom: 50px;
 	padding-bottom: 100px;
