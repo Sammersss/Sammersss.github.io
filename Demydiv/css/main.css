@@ -20,7 +20,6 @@ html {
 }
 
 body{
-	text-align:center;
 	min-height: 100%;
 	padding-top: 25px;
 	font-family: 'Open Sans Condensed', sans-serif;
@@ -52,6 +51,9 @@ body{
 }
 li{
 	list-style: none;
+}
+a {
+	text-decoration: none;
 }
 
 

@@ -4,12 +4,10 @@
 	width: 100%;
 }
 .column {
-	border: 1px dashed #CCCCCC;
-	min-height: 150px;
+	position: relative;
+	min-height: 482px;
 	overflow: hidden;
 	padding: 10px;
-/*	padding-left: 30px;*/
-	position: relative;
 
 	/* CSS3 Box sizing property */
 	-moz-box-sizing: border-box;
@@ -28,17 +26,9 @@
 	float: left;
 	margin: 0 10px 10px 0;
 }
-/*
-.column div {
-	background-color: #888888;
-	float: left;
-	width: 46%;
-	height: 175px;
-	margin: 0 20px 20px 0;
-	box-sizing: border-box;
-}
-*/
+
 #left {
+	padding: 0px;
 	background-color: #C8FC98;
 	float: left;
 	width: 20%;
