@@ -1,0 +1,23 @@
+/*
+* Third Party
+*/
+//@import "../../bower_components/normalize-css/normalize.css";
+
+/*
+* Custom
+*/
+@import "partials/mixin.scss";
+@import "partials/variable.scss";
+@import "partials/header.scss";
+@import "partials/nav.scss";
+@import "partials/base.scss";
+@import "partials/menu.scss";
+@import "partials/news.scss";
+@import "partials/footer.scss";
+@import "partials/media.scss";
+
+.clearfix:after {
+	content: "";
+	display: table;
+	clear: both;
+}

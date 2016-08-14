@@ -1,0 +1,291 @@
+@media only screen and (min-width: 960px) and (max-width: 1032px) {
+	.mcd-menu {
+		width: 97%;
+		margin-left: 4px;
+	}
+	.view-banner-block a{
+		height: 50px;
+	}
+	.news__box {
+		width: 30%;
+	}
+	.news__img {
+		width: 100%;
+	}
+}
+
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+	.header {
+		height: 225px;
+	}
+	.slogan_1 > span {
+		font-size: 20px;
+	}
+	.slogan_2 > span {
+		font-size: 10px;
+	}
+	.social__item {
+		svg {
+			width: 15px;
+			height: 15px;
+			transition: fill 0.3s, width 0.3s, height 0.3s;
+		}
+		&:hover svg {
+			width: 20px;
+			height: 20px;
+		}
+	}
+	.mcd-menu {
+		width: 95%;
+		margin-left: 4px;
+		li {
+			a {
+				height: 50px;
+				padding: 12px 15px;
+
+				i {
+					font-size: 22px;
+				}
+				strong {
+					font-size: 12px;
+				}
+				small {
+					font-size: 10px;
+				}
+				&.search {
+					input {
+						width: 90px;
+						font-size: 11px;
+					}
+					button {
+						margin-left: 0px;
+						padding: 7px 7px 7px;
+					}
+				}
+			}
+			> ul {
+				min-width: 180px;
+			}
+			&:hover > ul {
+				min-width: 180px;
+				left: 200px;
+			}
+			ul {
+				li {
+					> ul, ul li > ul {
+						min-width: 150px;
+					}
+					&:hover > ul {
+						left: 180px;
+						min-width: 150px;
+					}
+					ul li:hover > ul {
+						left: 150px;
+						min-width: 150px;
+					}
+				}
+				a {
+					font-size: 12px;
+					i {
+						font-size: 14px;
+					}
+				}
+			}
+		}
+	}
+	.view-banner-block a{
+		height: 40px;
+	}
+	.news__box {
+		width: 40%;
+		margin: 10px 1px 15px 39px;
+	}
+	.news__img {
+		width: 100%;
+	}
+}
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+	#left {
+		width: 10%;
+	}
+	#center {
+		margin: 0 10%;
+	}
+	.mcd-menu {
+		width: 90%;
+		margin-left: 4px;
+		li {
+			a {
+				position: relative;
+				padding: 10px 6px;
+				height: 40px;
+				vertical-align:middle;
+
+				i {
+					margin: 0 0 0 6px;
+				}
+				small,strong {
+					display: none;
+				}
+				&.active:after,&.active:before{
+					top: 45%;
+				}
+				&:hover strong, &.active strong {
+					display: block;
+					font-size: 10px;
+					padding: 3px 0;
+					position: absolute;
+					bottom: 0px;
+					left: 0;
+					background: #e67e22;
+					color: #FFF;
+					min-width: 100%;
+					text-transform: lowercase;
+					font-weight: normal;
+					text-align: center;
+				}
+			}
+			.search {
+				display: none;
+			}
+			> ul {
+				min-width: 180px;
+				left: 70px;
+			}
+			&:hover > ul {
+				min-width: 180px;
+				left: 50px;
+			}
+			ul {
+				li {
+					> ul, ul li > ul {
+						min-width: 150px;
+					}
+					&:hover > ul {
+						left: 180px;
+						min-width: 150px;
+					}
+					ul li {
+						> ul {
+							left: 35px;
+							top: 45px;
+							border: 0;
+							border-top: 4px solid #e67e22;
+							&:before {
+								left: 30px;
+								top: -9px;
+								border: 0;
+								border-bottom: 5px solid #e67e22;
+								border-left: 5px solid transparent;
+								border-right: 5px solid transparent;
+							}
+						}
+						&:hover > ul {
+							left: 30px;
+							min-width: 150px;
+							top: 35px;
+						}
+					}
+				}
+				a {
+					font-size: 12px;
+					i {
+						font-size: 14px;
+					}
+				}
+			}
+		}
+	}
+}
+
+@media only screen and (max-width: 479px) {
+	.mcd-menu {
+		width: 50px;
+		li {
+			a {
+				position: relative;
+				padding: 12px 16px;
+				height: 20px;
+				small, strong {
+					display: none;
+				}
+				&:hover strong, &.active strong {
+					display: block;
+					font-size: 10px;
+					padding: 3px 0;
+					position: absolute;
+					bottom: 0px;
+					left: 0;
+					background: #e67e22;
+					color: #FFF;
+					min-width: 100%;
+					text-transform: lowercase;
+					font-weight: normal;
+					text-align: center;
+				}
+			}
+			.search {
+				display: none;
+			}
+			> ul {
+				min-width: 180px;
+				left: 70px;
+			}
+			&:hover > ul {
+				min-width: 180px;
+				left: 50px;
+			}
+			ul {
+				li {
+					> ul, ul li > ul {
+						min-width: 150px;
+					}
+					&:hover > ul {
+						left: 180px;
+						min-width: 150px;
+					}
+					ul li {
+						> ul {
+							left: 35px;
+							top: 45px;
+							border: 0;
+							border-top: 4px solid #e67e22;
+							&:before {
+								left: 30px;
+								top: -9px;
+								border: 0;
+								border-bottom: 5px solid #e67e22;
+								border-left: 5px solid transparent;
+								border-right: 5px solid transparent;
+							}
+						}
+						&:hover > ul {
+							left: 30px;
+							min-width: 150px;
+							top: 35px;
+						}
+					}
+				}
+				a {
+					font-size: 12px;
+					i {
+						font-size: 14px;
+					}
+				}
+			}
+		}
+	}
+}
+
+.PrimaryNav {
+	&:before {
+		content: " ";
+		display: table;
+	}
+	&:after {
+		content: " ";
+		display: table;
+		clear: both;
+	}
+}
