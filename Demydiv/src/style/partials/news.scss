@@ -1,14 +1,27 @@
 
 .informers-layout {
 	margin-top: 0px;
+	padding-bottom: 20px;
+	border-bottom: 1px solid #ddd;
 	font-size: 10px;
+
 }
 .header-simple {
-	h1{
+	margin-bottom: 5px;
+	padding-left: 15px;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	text-align: left;
+	h2{
 		.inf-links{
 			font-size: 15px;
+			font-weight: bold;
+			color: #656565;
 		}
 	}
+}
+#segodnya_ua_inner, .last-inf-item{
+	padding: 0px 10px;
 }
 .inf-item {
 	width: 100%;
@@ -28,13 +41,15 @@
 
 .news {
 width: 100%;
+padding: 10px;
 }
 
 .news__box {
 float: left;
 width: 47%;
-margin: 8px;
-margin: 8px 1px 30px 16px;
+margin: 8px 1px 10px 16px;
+padding-bottom: 20px;
+border-bottom: 1px solid #ddd;
 }
 
 .news__img {
@@ -74,7 +89,7 @@ background-color: #f4b60d;
 }
 
 .news__text {
-width: 160px;
+width: 155px;
 margin-left: 5px;
 float: left;
 }
@@ -123,7 +138,9 @@ line-height: 13px;
 .news__box-big {
 	width: 540px;
 	margin: 0 auto;
-	margin-bottom: 30px;
+	margin-bottom: 20px;
+	padding-bottom: 20px;
+	border-bottom: 1px solid #ddd;
 
 	.news__img {
 		float: left;

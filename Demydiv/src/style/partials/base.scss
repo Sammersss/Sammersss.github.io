@@ -3,9 +3,9 @@
 	/*	min-height: 1620px;*/
 	margin-top: 10px;
 	margin-bottom: 50px;
-	background-color: #fffeee;
-	border-top: 1px dashed #ccc;
-	border-bottom: 1px dashed #ccc;
+//	background-color: #fffeee;
+//	border-top: 1px dashed #ccc;
+//	border-bottom: 1px dashed #ccc;
 }
 .columns {
 //	overflow: hidden;
@@ -18,7 +18,7 @@
 	position: relative;
 	min-height: 482px;
 	overflow: hidden;
-	padding: 10px;
+//	padding: 10px;
 	/* CSS3 Box sizing property */
 	-moz-box-sizing: border-box;
 	-webkit-box-sizing: border-box;
@@ -40,18 +40,22 @@
 	float: left;
 	overflow: visible;
 	width: 20%;
+	margin-right: 1%;
 	padding: 0px;
+	background-color: #fff;
 //	background-color: #C8FC98;
-	border-right: 1px dashed #ccc;
+//	border-right: 1px dashed #ccc;
 }
 .holiday {
 	display: block;
 	width: 100%;
-	margin-top: 30px;
+	margin-top: 20px;
+	padding-bottom: 20px;
+	border-bottom: 1px solid #ddd;
 }
 .view-banner-block {
-	margin-top: 30px;
-	
+	margin:20px 0;
+
 }
 .view-banner-block a{
 	display: block;
@@ -65,23 +69,34 @@
 }
 #right {
 	float: right;
+	margin-left: 1%;
 	width: 20%;
-	padding-top: 0;
-//	background-color: #FDE95E;
-	border-left: 1px dashed #ccc;
+	padding: 0;
+	background-color: #fff;
+//	border-left: 1px dashed #ccc;
 }
 
 #center {
 	position: relative;
-	margin: 0 20%;
+	margin: 0 21%;
+	background-color: #fff;
 }
-.weather {
-	margin-top: 10px;
-	padding: 10px;
-	text-align: center;
+#metaWeatherContainer{
+	margin: 20px 0;
+	padding-bottom: 20px;
+	border-bottom: 1px solid #ddd;
+
 }
-.weather a {
-	display: inline-block;
+#metaWeatherInformer{
+	margin: 0 auto;
+	width: 150px;
+	a{
+		display: block;
+
+		&:nth-child(3) {
+			display: none;
+		}
+	}
 }
 
 

@@ -14,6 +14,8 @@
 .container {
 	margin: 0px auto;
 	width: 100%;
+	padding-bottom: 30px;
+	border-bottom: 1px solid #ddd;
 	clear: both;
 }
 
@@ -465,7 +467,7 @@
 				padding: 10px 6px;
 				height: 40px;
 				vertical-align:middle;
-				
+
 				i {
 					margin: 0 0 0 6px;
 				}
