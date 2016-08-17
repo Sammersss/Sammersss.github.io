@@ -7,6 +7,9 @@
 	}
 	.amazingcarousel-image img {
 		border: 1px dashed #0589CE;
+		&:hover img{
+	}
+
 	}
 	.amazingcarousel-text{
 //		width: 270px;
@@ -19,7 +22,6 @@
 			background-color: #f4b60d;
 
 		}
-
 
 	}
 }
