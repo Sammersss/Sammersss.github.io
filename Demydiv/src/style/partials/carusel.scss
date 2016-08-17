@@ -6,7 +6,8 @@
 		top: 40%;
 	}
 	.amazingcarousel-image img {
-		border: 1px dashed #0589CE;
+		border: 1px dashed #f4b60d;
+//		border: 1px dashed #0589CE;
 		&:hover img{
 	}
 
@@ -19,7 +20,7 @@
 			display: inline-block;
 			color: #046496;
 			border-radius: 5px;
-			background-color: #f4b60d;
+			background: #f4b60d url('../img/patern/stone1.png') repeat;
 
 		}
 
@@ -29,9 +30,9 @@
 	max-width: 1024px !important;
 	height: 170px;
 //	background-color: rgba(255, 255, 255, 0.58);
-	background: rgba(255, 255, 255, 0.75) url('../img/patern/stone1.png') repeat;
+	background: rgba(36,140,236,0.97) url('../img/patern/stone1.png') repeat;
 	border-radius: 15px;
-	border: 1px solid #ddd;
+	border: 1px dashed #f4b60d;
 	.amazingcarousel-list-container{
 		padding-top: 0px;
 
