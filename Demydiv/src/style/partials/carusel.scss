@@ -1,0 +1,41 @@
+#amazingcarousel-container-1{
+	margin-top: 10px;
+	padding: 0 0 15px 0;
+	.amazingcarousel-next,
+	.amazingcarousel-prev {
+		top: 40%;
+	}
+	.amazingcarousel-image img {
+		border: 1px dashed #0589CE;
+	}
+	.amazingcarousel-text{
+//		width: 270px;
+
+		cite{
+			padding: 2px;
+			display: inline-block;
+			color: #046496;
+			border-radius: 5px;
+			background-color: #f4b60d;
+
+		}
+
+
+	}
+}
+#amazingcarousel-1{
+	max-width: 1024px !important;
+	height: 170px;
+//	background-color: rgba(255, 255, 255, 0.58);
+	background: rgba(255, 255, 255, 0.75) url('../img/patern/stone1.png') repeat;
+	border-radius: 15px;
+	border: 1px solid #ddd;
+	.amazingcarousel-list-container{
+		padding-top: 0px;
+
+	}
+	.amazingcarousel-nav{
+		top: 100%;
+
+	}
+}
