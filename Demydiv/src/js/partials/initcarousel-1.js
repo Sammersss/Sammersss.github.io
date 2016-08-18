@@ -54,7 +54,7 @@ jQuery(document).ready(function(){
 		lightboxshowdescription:true,
 		navswitchonmouseover:false,
 		showhoveroverlayalways:true,
-		transitioneasing:"easeInOutElastic",
+		transitioneasing:"easeInOutCubic",
 		lightboxshownavigation:true,
 		showitembackgroundimage:false,
 		itembackgroundimage:"",
@@ -101,11 +101,11 @@ jQuery(document).ready(function(){
 		screenquery:{
 	tablet: {
 		screenwidth: 900,
-		visibleitems: 2
+		visibleitems: 3
 	},
 	mobile: {
 		screenwidth: 600,
-		visibleitems: 1
+		visibleitems: 2
 	}
 },
 		navwidth:24,

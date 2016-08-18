@@ -9,9 +9,13 @@ $(function($) {
 
 			.parent().siblings().find('.active')
 			.removeClass('active');
-		console.log('this:', this);
+//		console.log('this:', this);
 	});
+	var $menuAllLink = $('.mcd-menu a');
+	$menuAllLink.on('click', function(e) {
+		e.preventDefault();
 
+	});
 	//	 smooth scrolling
 //	$('a[href^="#"]').bind('click.smoothscroll',function (e) {
 //		e.preventDefault();

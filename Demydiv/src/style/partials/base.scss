@@ -43,8 +43,48 @@
 	margin-right: 1%;
 	padding: 0px;
 	background-color: #fff;
+	font-family: Arial;
+	font-size: 12px;
+	font-weight: 400;
+	line-height: 40px;
+	text-decoration: none;
 //	background-color: #C8FC98;
 //	border-right: 1px dashed #ccc;
+		text-align: center;
+	.sideGalleryBlock {
+		padding-bottom: 20px;
+		border-bottom: 1px solid #ddd;
+
+//		font-size:0; /* убираем горизонтальные отступы */
+		line-height:0; /* ...и вертикальные в некоторых браузерах */
+		letter-spacing:-1px;
+		a {
+			display: inline-block;
+			color: #248CEC;
+
+			line-height:normal;
+			letter-spacing:normal;
+			display: -moz-inline-stack!important;
+			display:inline-block;
+			img{
+				display: inline-block;
+				margin: 0;
+				padding: 5%;
+				vertical-align:bottom;
+			}
+
+		}
+		p {
+//			line-height: 0px;
+//			margin-top: -20px;
+
+
+			a {
+				line-height: 15px;
+
+			}
+		}
+	}
 }
 .holiday {
 	display: block;

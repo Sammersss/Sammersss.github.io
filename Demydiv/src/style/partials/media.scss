@@ -1,8 +1,17 @@
 @media only screen and (min-width: 960px) and (max-width: 1032px) {
-	.mcd-menu {
-		width: 97%;
-		margin-left: 4px;
+	.container {
+		width: 100%;
+		margin: 0 auto;
 	}
+	.mcd-menu li a.search input {
+		width: 210px;
+
+
+	}
+//	.mcd-menu {
+//		width: 97%;
+//		margin-left: 4px;
+//	}
 	.view-banner-block a{
 		height: 50px;
 	}
@@ -35,64 +44,151 @@
 			height: 20px;
 		}
 	}
+	.container {
+		width: 100%;
+		margin: 0 auto;
+	}
 	.mcd-menu {
-		width: 95%;
-		margin-left: 4px;
-		li {
-			a {
-				height: 50px;
-				padding: 12px 15px;
+		height: 75px;
+		li a {
+			padding: 9px;
+			i {
+				font-size: 22px;
+			}
+			strong {
+				font-size: 12px;
+			}
+			small {
+				font-size: 10px;
+			}
 
-				i {
-					font-size: 22px;
-				}
-				strong {
-					font-size: 12px;
-				}
-				small {
-					font-size: 10px;
-				}
-				&.search {
-					input {
-						width: 90px;
-						font-size: 11px;
-					}
-					button {
-						margin-left: 0px;
-						padding: 7px 7px 7px;
-					}
-				}
-			}
-			> ul {
-				min-width: 180px;
-			}
-			&:hover > ul {
-				min-width: 180px;
-				left: 200px;
-			}
-			ul {
-				li {
-					> ul, ul li > ul {
-						min-width: 150px;
-					}
-					&:hover > ul {
-						left: 180px;
-						min-width: 150px;
-					}
-					ul li:hover > ul {
-						left: 150px;
-						min-width: 150px;
-					}
-				}
-				a {
-					font-size: 12px;
-					i {
-						font-size: 14px;
-					}
-				}
+			&.search {
+//				display: none;
 			}
 		}
 	}
+	.mcd-menu li a.search {
+		padding: 17px 10px 15px 10px;
+		input {
+			width: 190px;
+			height: 40px;
+		}
+		button {
+			height: 40px;
+			vertical-align: bottom;
+
+		}
+	}
+	.search-mobile {
+//		display: block !important;
+		margin: 20px;
+		border-radius: 3px;
+		-moz-border-radius: 3px;
+		-webkit-border-radius: 3px;
+	}
+	.mcd-menu li {
+		&:hover > ul {
+			top: 85px;
+			min-width: 170px;
+		}
+		ul li {
+			> ul {
+				min-width: 150px;
+				left: 200px;
+				top: 0;
+			}
+			&:hover > ul {
+				min-width: 170px;
+				left: 175px;
+				top: 0;
+			}
+			ul li {
+				ul {
+					min-width: 150px;
+					left: 50px !important;
+					top: 54px;
+					border: 0;
+					border-top: 3px solid #e67e22;
+				}
+				&:hover ul {
+					top: 30px;
+				}
+				ul:before {
+					border: 0;
+					border-bottom: 5px solid #e67e22;
+					border-left: 5px solid transparent;
+					border-right: 5px solid transparent;
+					left: 10%;
+					top: -8px;
+				}
+			}
+		}
+		&:hover ul a {
+			font-size: 12px;
+			i {
+				font-size: 14px;
+			}
+		}
+	}
+
+//	.mcd-menu {
+//		width: 95%;
+//		margin-left: 4px;
+//		li {
+//			a {
+//				height: 50px;
+//				padding: 12px 15px;
+//
+//				i {
+//					font-size: 22px;
+//				}
+//				strong {
+//					font-size: 12px;
+//				}
+//				small {
+//					font-size: 10px;
+//				}
+//				&.search {
+//					input {
+//						width: 90px;
+//						font-size: 11px;
+//					}
+//					button {
+//						margin-left: 0px;
+//						padding: 7px 7px 7px;
+//					}
+//				}
+//			}
+//			> ul {
+//				min-width: 180px;
+//			}
+//			&:hover > ul {
+//				min-width: 180px;
+//				left: 200px;
+//			}
+//			ul {
+//				li {
+//					> ul, ul li > ul {
+//						min-width: 150px;
+//					}
+//					&:hover > ul {
+//						left: 180px;
+//						min-width: 150px;
+//					}
+//					ul li:hover > ul {
+//						left: 150px;
+//						min-width: 150px;
+//					}
+//				}
+//				a {
+//					font-size: 12px;
+//					i {
+//						font-size: 14px;
+//					}
+//				}
+//			}
+//		}
+////	}
 	.view-banner-block a{
 		height: 40px;
 	}
@@ -112,170 +208,388 @@
 	#center {
 		margin: 0 10%;
 	}
+	.container {
+		width: 428px;
+		margin: 0 auto;
+	}
 	.mcd-menu {
-		width: 90%;
-		margin-left: 4px;
+		height: 42px;
+		position: relative;
 		li {
 			a {
-				position: relative;
-				padding: 10px 6px;
-				height: 40px;
-				vertical-align:middle;
-
-				i {
-					margin: 0 0 0 6px;
-				}
-				small,strong {
+				padding: 12px 17.7px;
+				strong, small, &.search {
 					display: none;
 				}
-				&.active:after,&.active:before{
-					top: 45%;
+				i {
+					margin: 0;
+					font-size: 18px;
 				}
-				&:hover strong, &.active strong {
+			}
+			position: static;
+			ul {
+				min-width: 100%;
+				left: 0;
+				top: 50px;
+			}
+			&:hover > ul {
+				top: 42px;
+			}
+			> ul:before {
+				border: 0;
+			}
+			ul {
+				> li {
+					position: relative;
+				}
+				li:hover > ul {
+					left: 34px;
+				}
+			}
+			a {
+				position: relative;
+				font-size: 12px;
+				&:hover strong {
 					display: block;
 					font-size: 10px;
 					padding: 3px 0;
 					position: absolute;
-					bottom: 0px;
+					top: -20px;
 					left: 0;
 					background: #e67e22;
 					color: #FFF;
 					min-width: 100%;
 					text-transform: lowercase;
 					font-weight: normal;
-					text-align: center;
 				}
-			}
-			.search {
-				display: none;
-			}
-			> ul {
-				min-width: 180px;
-				left: 70px;
-			}
-			&:hover > ul {
-				min-width: 180px;
-				left: 50px;
-			}
-			ul {
-				li {
-					> ul, ul li > ul {
-						min-width: 150px;
+				&.active {
+					strong {
+						display: block;
+						font-size: 10px;
+						padding: 3px 0;
+						position: absolute;
+						top: -20px;
+						left: 0;
+						background: #e67e22;
+						color: #FFF;
+						min-width: 100%;
+						text-transform: lowercase;
+						font-weight: normal;
 					}
-					&:hover > ul {
-						left: 180px;
-						min-width: 150px;
-					}
-					ul li {
-						> ul {
-							left: 35px;
-							top: 45px;
-							border: 0;
-							border-top: 4px solid #e67e22;
-							&:before {
-								left: 30px;
-								top: -9px;
-								border: 0;
-								border-bottom: 5px solid #e67e22;
-								border-left: 5px solid transparent;
-								border-right: 5px solid transparent;
-							}
-						}
-						&:hover > ul {
-							left: 30px;
-							min-width: 150px;
-							top: 35px;
-						}
-					}
-				}
-				a {
-					font-size: 12px;
-					i {
-						font-size: 14px;
+					&:before {
+						left: 40%;
 					}
 				}
 			}
 		}
 	}
+	.search-mobile {
+		display: block !important;
+	}
+	.mcd-menu li ul li {
+		> ul {
+			min-width: 200px;
+			left: 200px;
+		}
+		&:hover ul {
+			left: 180px;
+		}
+		ul {
+			&:before {
+				left: -9px;
+			}
+			li {
+				ul {
+					min-width: 200px;
+					border: 0;
+					border-top: 3px solid #e67e22;
+					left: 25px !important;
+					top: 45px;
+				}
+				&:hover ul {
+					top: 40px;
+				}
+				ul:before {
+					border: 0;
+					border-bottom: 5px solid #e67e22;
+					border-left: 5px solid transparent;
+					border-right: 5px solid transparent;
+					left: 10%;
+					top: -8px;
+				}
+			}
+		}
+	}
+
+//	.mcd-menu {
+//		width: 90%;
+//		margin-left: 4px;
+//		li {
+//			a {
+//				position: relative;
+//				padding: 10px 6px;
+//				height: 40px;
+//				vertical-align:middle;
+//
+//				i {
+//					margin: 0 0 0 6px;
+//				}
+//				small,strong {
+//					display: none;
+//				}
+//				&.active:after,&.active:before{
+//					top: 45%;
+//				}
+//				&:hover strong, &.active strong {
+//					display: block;
+//					font-size: 10px;
+//					padding: 3px 0;
+//					position: absolute;
+//					bottom: 0px;
+//					left: 0;
+//					background: #e67e22;
+//					color: #FFF;
+//					min-width: 100%;
+//					text-transform: lowercase;
+//					font-weight: normal;
+//					text-align: center;
+//				}
+//			}
+//			.search {
+//				display: none;
+//			}
+//			> ul {
+//				min-width: 180px;
+//				left: 70px;
+//			}
+//			&:hover > ul {
+//				min-width: 180px;
+//				left: 50px;
+//			}
+//			ul {
+//				li {
+//					> ul, ul li > ul {
+//						min-width: 150px;
+//					}
+//					&:hover > ul {
+//						left: 180px;
+//						min-width: 150px;
+//					}
+//					ul li {
+//						> ul {
+//							left: 35px;
+//							top: 45px;
+//							border: 0;
+//							border-top: 4px solid #e67e22;
+//							&:before {
+//								left: 30px;
+//								top: -9px;
+//								border: 0;
+//								border-bottom: 5px solid #e67e22;
+//								border-left: 5px solid transparent;
+//								border-right: 5px solid transparent;
+//							}
+//						}
+//						&:hover > ul {
+//							left: 30px;
+//							min-width: 150px;
+//							top: 35px;
+//						}
+//					}
+//				}
+//				a {
+//					font-size: 12px;
+//					i {
+//						font-size: 14px;
+//					}
+//				}
+//			}
+//		}
+//	}
 }
 
 @media only screen and (max-width: 479px) {
 	.mcd-menu {
-		width: 50px;
+		height: 42px;
+		position: relative;
 		li {
 			a {
-				position: relative;
-				padding: 12px 16px;
-				height: 20px;
-				small, strong {
+				strong, small, &.search {
 					display: none;
 				}
-				&:hover strong, &.active strong {
+				padding: 12px 13.8px;
+				font-size: 12px;
+				i {
+					margin: 0;
+					font-size: 18px;
+				}
+			}
+			position: static;
+			ul {
+				min-width: 100%;
+				left: 0;
+				top: 50px;
+			}
+			&:hover > ul {
+				top: 42px;
+			}
+			> ul:before {
+				border: 0;
+			}
+			ul {
+				> li {
+					position: relative;
+				}
+				li:hover > ul {
+					left: 34px;
+				}
+			}
+			a {
+				position: relative;
+				&:hover strong {
 					display: block;
 					font-size: 10px;
 					padding: 3px 0;
 					position: absolute;
-					bottom: 0px;
+					top: -20px;
 					left: 0;
 					background: #e67e22;
 					color: #FFF;
 					min-width: 100%;
 					text-transform: lowercase;
 					font-weight: normal;
-					text-align: center;
+				}
+				&.active {
+					strong {
+						display: block;
+						font-size: 10px;
+						padding: 3px 0;
+						position: absolute;
+						top: -20px;
+						left: 0;
+						background: #e67e22;
+						color: #FFF;
+						min-width: 100%;
+						text-transform: lowercase;
+						font-weight: normal;
+					}
+					&:before {
+						left: 40%;
+					}
 				}
 			}
-			.search {
-				display: none;
-			}
-			> ul {
-				min-width: 180px;
-				left: 70px;
-			}
-			&:hover > ul {
-				min-width: 180px;
-				left: 50px;
-			}
-			ul {
-				li {
-					> ul, ul li > ul {
-						min-width: 150px;
+			ul li {
+				> ul {
+					min-width: 150px;
+					left: 160px;
+				}
+				&:hover ul {
+					left: 120px;
+				}
+				ul {
+					&:before {
+						left: -9px;
 					}
-					&:hover > ul {
-						left: 180px;
-						min-width: 150px;
-					}
-					ul li {
-						> ul {
-							left: 35px;
-							top: 45px;
+					li {
+						ul {
+							min-width: 160px;
+							left: 25px !important;
+							top: 39px;
 							border: 0;
-							border-top: 4px solid #e67e22;
-							&:before {
-								left: 30px;
-								top: -9px;
-								border: 0;
-								border-bottom: 5px solid #e67e22;
-								border-left: 5px solid transparent;
-								border-right: 5px solid transparent;
-							}
+							border-top: 3px solid #e67e22;
 						}
-						&:hover > ul {
-							left: 30px;
-							min-width: 150px;
-							top: 35px;
+						&:hover ul {
+							top: 39px;
 						}
-					}
-				}
-				a {
-					font-size: 12px;
-					i {
-						font-size: 14px;
+						ul:before {
+							border: 0;
+							border-bottom: 5px solid #e67e22;
+							border-left: 5px solid transparent;
+							border-right: 5px solid transparent;
+							left: 10%;
+							top: -8px;
+						}
 					}
 				}
 			}
 		}
 	}
+//	.mcd-menu {
+//		width: 50px;
+//		li {
+//			a {
+//				position: relative;
+//				padding: 12px 16px;
+//				height: 20px;
+//				small, strong {
+//					display: none;
+//				}
+//				&:hover strong, &.active strong {
+//					display: block;
+//					font-size: 10px;
+//					padding: 3px 0;
+//					position: absolute;
+//					bottom: 0px;
+//					left: 0;
+//					background: #e67e22;
+//					color: #FFF;
+//					min-width: 100%;
+//					text-transform: lowercase;
+//					font-weight: normal;
+//					text-align: center;
+//				}
+//			}
+//			.search {
+//				display: none;
+//			}
+//			> ul {
+//				min-width: 180px;
+//				left: 70px;
+//			}
+//			&:hover > ul {
+//				min-width: 180px;
+//				left: 50px;
+//			}
+//			ul {
+//				li {
+//					> ul, ul li > ul {
+//						min-width: 150px;
+//					}
+//					&:hover > ul {
+//						left: 180px;
+//						min-width: 150px;
+//					}
+//					ul li {
+//						> ul {
+//							left: 35px;
+//							top: 45px;
+//							border: 0;
+//							border-top: 4px solid #e67e22;
+//							&:before {
+//								left: 30px;
+//								top: -9px;
+//								border: 0;
+//								border-bottom: 5px solid #e67e22;
+//								border-left: 5px solid transparent;
+//								border-right: 5px solid transparent;
+//							}
+//						}
+//						&:hover > ul {
+//							left: 30px;
+//							min-width: 150px;
+//							top: 35px;
+//						}
+//					}
+//				}
+//				a {
+//					font-size: 12px;
+//					i {
+//						font-size: 14px;
+//					}
+//				}
+//			}
+//		}
+//	}
 }
 
 .PrimaryNav {
