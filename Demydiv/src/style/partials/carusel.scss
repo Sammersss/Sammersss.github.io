@@ -1,26 +1,31 @@
 #amazingcarousel-container-1{
-	margin-top: 3px;
+	margin-top: 10px;
 	padding: 0 0 15px 0;
 	.amazingcarousel-next,
 	.amazingcarousel-prev {
-		top: 40%;
+		top: 50%;
 	}
 	.amazingcarousel-image img {
-		border: 1px dashed #f4b60d;
+//		border: 1px dashed #f4b60d;
 //		border: 1px dashed #0589CE;
+		box-shadow: 0 11px 15px -7px rgba(0,0,0,.2),0 24px 38px 3px rgba(0,0,0,.14),0 9px 46px 8px rgba(0,0,0,.12);
+		-moz-box-shadow: 0 11px 15px -7px rgba(0,0,0,.2),0 24px 38px 3px rgba(0,0,0,.14),0 9px 46px 8px rgba(0,0,0,.12);
+		-webkit-box-shadow: 0 11px 15px -7px rgba(0,0,0,.2),0 24px 38px 3px rgba(0,0,0,.14),0 9px 46px 8px rgba(0,0,0,.12);
+
+
 		&:hover img{
 	}
 
 	}
 	.amazingcarousel-text{
-//		width: 270px;
+		margin-top: 10px;
 
 		cite{
-			padding: 2px;
 			display: inline-block;
+			padding: 5px;
 			color: #046496;
 			border-radius: 5px;
-			background: #f4b60d url('../img/patern/stone1.png') repeat;
+			background: #F3D890 url('../img/patern/stone1.png') repeat;
 
 		}
 
@@ -28,15 +33,11 @@
 }
 #amazingcarousel-1{
 	max-width: 1024px !important;
-	height: 170px;
+//	height: 170px;
 //	background-color: rgba(255, 255, 255, 0.58);
-	background: rgba(36,140,236,0.97) url('../img/patern/stone1.png') repeat;
+	background: rgb(69, 176, 232) url('../img/patern/stone1.png') repeat;
 	border-radius: 15px;
-	border: 1px dashed #f4b60d;
-	.amazingcarousel-list-container{
-		padding-top: 0px;
-
-	}
+//	border: 1px dashed #f4b60d;
 	.amazingcarousel-nav{
 		top: 100%;
 

@@ -16,6 +16,10 @@ $(function($) {
 		e.preventDefault();
 
 	});
+
+	$("#demo01").animatedModal();
+
+
 	//	 smooth scrolling
 //	$('a[href^="#"]').bind('click.smoothscroll',function (e) {
 //		e.preventDefault();

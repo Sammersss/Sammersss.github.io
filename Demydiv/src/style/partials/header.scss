@@ -34,6 +34,10 @@ body {
 	background: url(../img/patern/tileable_wood_texture.png) repeat;
 	color: #656565;
 }
+html, body {
+	height: 100%;
+}
+
 
 .wrapper {
 	position: static;

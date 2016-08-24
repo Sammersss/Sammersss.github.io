@@ -14,4 +14,5 @@
 //= partials/resize.js
 //= partials/classie.js
 //= partials/nav.js
+//= partials/animatedModal.js
 
