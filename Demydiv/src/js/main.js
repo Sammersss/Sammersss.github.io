@@ -15,4 +15,5 @@
 //= partials/classie.js
 //= partials/nav.js
 //= partials/animatedModal.js
+//= partials/jquery.adaptive-modal.js
 

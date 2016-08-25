@@ -1,5 +1,12 @@
 #amazingcarousel-container-1{
-	margin-top: 10px;
+//	margin-top: 10px;
+	position: fixed;
+	width: 1024px;
+	top: 0;
+	left: 50%;
+	transform: translate(-50%, 0);
+	z-index: 200;
+
 	padding: 0 0 15px 0;
 	.amazingcarousel-next,
 	.amazingcarousel-prev {
@@ -36,10 +43,10 @@
 //	height: 170px;
 //	background-color: rgba(255, 255, 255, 0.58);
 	background: rgb(69, 176, 232) url('../img/patern/stone1.png') repeat;
-	border-radius: 15px;
+//	border-radius: 15px;
 //	border: 1px dashed #f4b60d;
 	.amazingcarousel-nav{
-		top: 100%;
+		background-color: rgba(41, 37, 34, 0.9);
 
 	}
 }

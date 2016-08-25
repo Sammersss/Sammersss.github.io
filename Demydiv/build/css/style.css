@@ -1,0 +1,20 @@
+.am-modal-content {
+  padding: 20px;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+
+.demo4 .main p a {
+  background: #E67F22;
+}
+
+body .am-expanded.am-modal.modal1 {
+  width: 400px;
+  margin-left: -200px;
+}
+
+body .am-expanded.am-modal.modal1 .am-expanded.am-back {
+  width: 400px;
+  border-radius: 5px;
+}
