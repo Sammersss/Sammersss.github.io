@@ -1,5 +1,4 @@
 #amazingcarousel-container-1{
-//	margin-top: 10px;
 	position: fixed;
 	width: 1024px;
 	top: 0;
@@ -13,8 +12,6 @@
 		top: 50%;
 	}
 	.amazingcarousel-image img {
-//		border: 1px dashed #f4b60d;
-//		border: 1px dashed #0589CE;
 		box-shadow: 0 11px 15px -7px rgba(0,0,0,.2),0 24px 38px 3px rgba(0,0,0,.14),0 9px 46px 8px rgba(0,0,0,.12);
 		-moz-box-shadow: 0 11px 15px -7px rgba(0,0,0,.2),0 24px 38px 3px rgba(0,0,0,.14),0 9px 46px 8px rgba(0,0,0,.12);
 		-webkit-box-shadow: 0 11px 15px -7px rgba(0,0,0,.2),0 24px 38px 3px rgba(0,0,0,.14),0 9px 46px 8px rgba(0,0,0,.12);
@@ -40,11 +37,7 @@
 }
 #amazingcarousel-1{
 	max-width: 1024px !important;
-//	height: 170px;
-//	background-color: rgba(255, 255, 255, 0.58);
 	background: rgb(69, 176, 232) url('../img/patern/stone1.png') repeat;
-//	border-radius: 15px;
-//	border: 1px dashed #f4b60d;
 	.amazingcarousel-nav{
 		background-color: rgba(41, 37, 34, 0.9);
 

@@ -7,17 +7,15 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="shortcut icon" href="img/favicon2.svg" type="image/svg">
 		<!--<link rel="shortcut icon" href="img/favicon.png" type="image/png">-->
+		<link href="libs/lightgallery/css/lightgallery.css" rel="stylesheet">
 		<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.0/animate.min.css">
 		<link rel="stylesheet" href="http://www.segodnya.ua/user/css/informer_styles.css" type="text/css" />
 		<link rel="stylesheet" type="text/css" href="carouselengine/initcarousel-1.css">
 		<link rel="stylesheet" media="all" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" />
 		<link rel="stylesheet" media="all" href="css/main.css" />
-		<link rel="stylesheet" media="all" href="css/style.css" />
-		<link rel="stylesheet" media="all" href="css/adaptive-modal.css" />
+		<link rel="stylesheet" href="css/gallery_group_img.css" />
 
-<!--		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>-->
-
-
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.js"></script>
 	</head>
 
 	<body>
@@ -49,14 +47,29 @@
 		<!—-==========--========== START wrapper ==========--==========-—>
 <div class="wrapper wrapper__stick clearfix">
 //= template/header.html
-//= template/carousel.html
+//= template/menu.html
 //= template/base.html
 //= template/footer.html
 //= template/historyModal.html
+//= template/gallery.html
 </div>
 
 
-
 <script src="js/main.js"></script>
+<script type="text/javascript">
+	$(function () {
+
+	});
+</script>
+<script src="https://cdn.jsdelivr.net/picturefill/2.3.1/picturefill.min.js"></script>
+<script src="libs/lightgallery/js/lightgallery.js"></script>
+<script src="libs/lightgallery/js/lg-fullscreen.js"></script>
+<script src="libs/lightgallery/js/lg-thumbnail.js"></script>
+<script src="libs/lightgallery/js/lg-video.js"></script>
+<script src="libs/lightgallery/js/lg-autoplay.js"></script>
+<script src="libs/lightgallery/js/lg-zoom.js"></script>
+<script src="libs/lightgallery/js/lg-hash.js"></script>
+<script src="libs/lightgallery/js/lg-pager.js"></script>
+<script src="libs/lightgallery/js/jquery.mousewheel.min.js"></script>
 </body>
 </html>

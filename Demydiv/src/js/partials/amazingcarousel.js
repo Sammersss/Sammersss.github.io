@@ -182,7 +182,6 @@
 		}
 		if (inst.options.initvimeo) {
 			var tag = document.createElement("script");
-			tag.src = inst.options.jsfolder + "froogaloop2.min.js";
 			var firstScriptTag = document.getElementsByTagName("script")[0];
 			firstScriptTag.parentNode.insertBefore(tag, firstScriptTag)
 		}

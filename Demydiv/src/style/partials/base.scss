@@ -3,12 +3,8 @@
 	/*	min-height: 1620px;*/
 	margin-top: 5px;
 	margin-bottom: 50px;
-	background-color: #fff;
-//	border-top: 1px dashed #ccc;
-//	border-bottom: 1px dashed #ccc;
 }
 .columns {
-//	overflow: hidden;
 	width: 100%;
 	position: relative;
 	z-index: 0;
@@ -18,7 +14,7 @@
 	position: relative;
 	min-height: 482px;
 	overflow: hidden;
-//	padding: 10px;
+
 	/* CSS3 Box sizing property */
 	-moz-box-sizing: border-box;
 	-webkit-box-sizing: border-box;
@@ -48,8 +44,9 @@
 	font-weight: 400;
 	line-height: 40px;
 	text-decoration: none;
-//	background-color: #C8FC98;
-//	border-right: 1px dashed #ccc;
+	border-top: 1px dashed #ccc;
+	border-bottom: 1px dashed #ccc;
+	border-right: 1px dashed #ccc;
 		text-align: center;
 	.sideGalleryBlock {
 		padding-bottom: 20px;
@@ -113,14 +110,19 @@
 	width: 20%;
 	padding: 0;
 	background-color: #fff;
-//	border-left: 1px dashed #ccc;
+	border-top: 1px dashed #ccc;
+	border-bottom: 1px dashed #ccc;
+	border-left: 1px dashed #ccc;
 }
 
 #center {
 	position: relative;
 	margin: 0 21%;
 	background-color: #fff;
+	border: 1px dashed #ccc;
+
 }
+
 #metaWeatherContainer{
 	margin: 20px 0;
 	padding-bottom: 20px;
@@ -136,9 +138,15 @@
 		&:nth-child(3) {
 			display: none;
 		}
+		img{
+			float: none;
+		}
 	}
 }
-
+#minfin-informer-m1Fn-currency{
+	padding-left: 10px;
+	padding-right: 10px;
+}
 
 /*-------------------------------------variants-------------------------------------*/
 

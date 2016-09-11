@@ -1,0 +1,24 @@
+<div id="gallery_modal">
+	<!--THIS IS IMPORTANT! to close the modal, the class name has to match the name given on the ID  class="close-animatedModal" -->
+	<div id="closebt-container2" class="close-gallery_modal close-modal_btn clearfix">
+		<img class="closebt" src="img/closebt.svg">
+	</div>
+	<div class="gallery_modal-content">
+		<div id="gallery_content" class="gallery_modal-guts">
+			<!—-==========--========== START animated-thumbnials ==========--==========-—>
+			<script id="gallery-template" type="text/x-handlebars-template">
+				{{#each blocks}}
+				<div id="{{id}}" class="anithumb stack" data-count="{{dataCount}}">
+					{{#each links}}
+					<a href="{{href}}" class="stack-item">
+						<img src="{{src}}" alt="{{alt}}">
+								</a>
+					{{/each}}
+								</div>
+				{{/each}}
+			</script>
+			<!--==========--========== END animated-thumbnials ==========--==========-->
+		</div>
+	</div>
+</div>
+

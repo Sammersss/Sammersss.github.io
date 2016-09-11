@@ -19,7 +19,7 @@
 			height:'100%',
 			top:'0px',
 			left:'0px',
-			zIndexIn: '9999',
+			zIndexIn: '5',
 			zIndexOut: '-9999',
 			color: 'hsla(0, 0%, 0%, 0.7)',
 			opacityIn:'1',

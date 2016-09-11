@@ -76,7 +76,7 @@ jQuery(document).ready(function(){
 		itembottomshadowimagewidth:100,
 		backgroundimage:"",
 		lightboxthumbtopmargin:5,
-		autoplay:false,
+		autoplay:true,
 		lightboxnogroup:false,
 		arrowwidth:32,
 		transparent:true,
@@ -99,13 +99,9 @@ jQuery(document).ready(function(){
 		usescreenquery:false,
 		bottomshadowimagewidth:110,
 		screenquery:{
-	tablet: {
-		screenwidth: 900,
-		visibleitems: 3
-	},
 	mobile: {
 		screenwidth: 600,
-		visibleitems: 2
+		visibleitems: 1
 	}
 },
 		navwidth:24,

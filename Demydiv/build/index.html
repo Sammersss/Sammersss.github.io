@@ -7,17 +7,15 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="shortcut icon" href="img/favicon2.svg" type="image/svg">
 		<!--<link rel="shortcut icon" href="img/favicon.png" type="image/png">-->
+		<link href="libs/lightgallery/css/lightgallery.css" rel="stylesheet">
 		<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.0/animate.min.css">
 		<link rel="stylesheet" href="http://www.segodnya.ua/user/css/informer_styles.css" type="text/css" />
 		<link rel="stylesheet" type="text/css" href="carouselengine/initcarousel-1.css">
 		<link rel="stylesheet" media="all" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" />
 		<link rel="stylesheet" media="all" href="css/main.css" />
-		<link rel="stylesheet" media="all" href="css/style.css" />
-		<link rel="stylesheet" media="all" href="css/adaptive-modal.css" />
+		<link rel="stylesheet" href="css/gallery_group_img.css" />
 
-<!--		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>-->
-
-
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.js"></script>
 	</head>
 
 	<body>
@@ -229,7 +227,7 @@
 			</ul>
 		</li>
 		<li>
-			<a  id="demo01" href="#animatedModal" class="menu__link">
+			<a id="history_hidden" href="#animatedModal" class="menu__link">
 				<i class="fa fa-edit"></i>
 				<strong>Історія</strong>
 				<small>нашого села</small>
@@ -280,8 +278,10 @@
 				</h2>
 			</div>
 			<div class="sideGalleryBlock clearfix">
-				<a class="clearfix" href="#" data-am-custom-bgcolor="rgb(69, 176, 232" data-am-custom-class="modal1" data-toggle="adaptive-modal" data-title="<h1>Модальное окно 1</h1><p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.</p>"><img src="img/fon1.jpg" width="100%" height="auto" alt="Фотографiї з життя с. Демидів" title="Фотографiї з життя с. Демидів"></a>
-				<p class="clearfix"><a href="#" data-am-custom-bgcolor="rgb(69, 176, 232" data-toggle="adaptive-modal" data-am-custom-class="modal2"  data-title="<h1>Модальное окно 2</h1><p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.</p>">Фотографiї з життя с. Демидів</a></p>
+				<a id="gallery_hiden" href="#gallery_modal" class="clearfix" >
+					<img src="img/fon1.jpg" width="100%" height="auto" alt="Фотографiї з життя с. Демидів" title="Фотографiї з життя с. Демидів">
+					<p class="clearfix">Фотографiї з життя с. Демидів</p>
+				</a>
 			</div>
 			<a class="holiday clearfix" href="http://www.dilovamova.com/"><img width="100%" height="auto" border="0" alt="Календар свят і подій. Листівки, вітання та побажання" title="Календар свят і подій. Листівки, вітання та побажання" src="http://www.dilovamova.com/images/wpi.cache/informer/informer_200_02.png"></a>
 
@@ -445,7 +445,7 @@
 	<div class="contacts_wrap resize">
 		<a href="https://www.google.com.ua/maps/place/%D0%94%D0%B5%D0%BC%D0%B8%D0%B4%D1%96%D0%B2%D1%81%D1%8C%D0%BA%D0%B0+%D1%81%D1%96%D0%BB%D1%8C%D1%81%D1%8C%D0%BA%D0%B0+%D1%80%D0%B0%D0%B4%D0%B0/@50.7273859,30.3233996,15z/data=!4m13!1m7!3m6!1s0x472ad7fc3abafcc5:0xae5e242e534fa7c!2z0LLRg9C7LiDQpNCw0YHRgtC-0LLQsCwgMiwg0JTQtdC80LjQtNGW0LIsINCa0LjRl9Cy0YHRjNC60LAg0L7QsdC70LDRgdGC0YwsIDA3MzM1!3b1!8m2!3d50.7293118!4d30.3304928!3m4!1s0x472ad7fdb1c5412b:0x781125fc9ef12350!8m2!3d50.727893!4d30.3317219" class="contacts__adress" target="_blank">с. Демидів, вул. Фастова, 2</a>
 		<span class="contacts__phone">Приймальня тел.: +38 (045-96) 33-242</span>
-		<span class="contacts__email">demydivgov@in.ua</span>
+		<span class="contacts__email">demydivgov@gmail.com</span>
 		<span class="conatcts__copyrights">© 2016 ArtAlex</span>
 	</div>
 </footer>
@@ -453,7 +453,7 @@
 <!--DEMO01-->
 <div id="animatedModal">
 	<!--THIS IS IMPORTANT! to close the modal, the class name has to match the name given on the ID  class="close-animatedModal" -->
-	<div id="closebt-container" class="close-animatedModal clearfix">
+	<div id="closebt-container" class="close-animatedModal close-modal_btn clearfix">
 		<img class="closebt" src="img/closebt.svg">
 	</div>
 
@@ -707,10 +707,47 @@
 		</div>
 	</div>
 </div>
+<div id="gallery_modal">
+	<!--THIS IS IMPORTANT! to close the modal, the class name has to match the name given on the ID  class="close-animatedModal" -->
+	<div id="closebt-container2" class="close-gallery_modal close-modal_btn clearfix">
+		<img class="closebt" src="img/closebt.svg">
+	</div>
+	<div class="gallery_modal-content">
+		<div id="gallery_content" class="gallery_modal-guts">
+			<!—-==========--========== START animated-thumbnials ==========--==========-—>
+			<script id="gallery-template" type="text/x-handlebars-template">
+				{{#each blocks}}
+				<div id="{{id}}" class="anithumb stack" data-count="{{dataCount}}">
+					{{#each links}}
+					<a href="{{href}}" class="stack-item">
+						<img src="{{src}}" alt="{{alt}}">
+								</a>
+					{{/each}}
+								</div>
+				{{/each}}
+			</script>
+			<!--==========--========== END animated-thumbnials ==========--==========-->
+		</div>
+	</div>
+</div>
 </div>
 
 
-
 <script src="js/main.js"></script>
+<script type="text/javascript">
+	$(function () {
+
+	});
+</script>
+<script src="https://cdn.jsdelivr.net/picturefill/2.3.1/picturefill.min.js"></script>
+<script src="libs/lightgallery/js/lightgallery.js"></script>
+<script src="libs/lightgallery/js/lg-fullscreen.js"></script>
+<script src="libs/lightgallery/js/lg-thumbnail.js"></script>
+<script src="libs/lightgallery/js/lg-video.js"></script>
+<script src="libs/lightgallery/js/lg-autoplay.js"></script>
+<script src="libs/lightgallery/js/lg-zoom.js"></script>
+<script src="libs/lightgallery/js/lg-hash.js"></script>
+<script src="libs/lightgallery/js/lg-pager.js"></script>
+<script src="libs/lightgallery/js/jquery.mousewheel.min.js"></script>
 </body>
 </html>
