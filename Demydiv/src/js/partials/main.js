@@ -5,15 +5,18 @@ $(function($) {
 
 		column.each(function(){
 			thisHight = $(this).height();
+			center = $('.wrapper').height();
+			console.log('center:', center);
 			if(thisHight > myblock){
 				myblock = thisHight;
+			}else if(center > myblock){
+				myblock = center*0.69;
 			}
 		});
 		column.height(myblock);
 	};
 
-	heightBlock($(".columns > div"));
-
+	heightBlock($(".columns .column"));
 
 
 //	запускаем модальное окно для истории
@@ -64,6 +67,47 @@ $(function($) {
 		showThumbByDefault: false
 	});
 
+
+// добавляем первым двум блокам новостей клас для отображения на весь родительский блок
+	$(".news__box:lt(2)").addClass('news__box-big');
+
+// запуск модальных окон для новостей
+
+	$(".news__desc > .trigger-large").on('click',function (event) {
+		event.preventDefault();
+		$(this).parent(".news__desc").next(".iziModal").iziModal('open');
+	});
+
+	$(".iziModal.normal").iziModal({
+		title: "Новини Демидова",
+		subtitle: "найсвіжіші події з життя громади",
+		icon: 'icon-chat',
+		iconColor: 'white',
+		fullscreen: true,
+		transitionOut: 'bounceOutDown',
+		timeout: 30000,
+		timeoutProgressbar: true,
+		pauseOnHover: true,
+		timeoutProgressbarColor: 'rgba(255,255,255,0.5)',
+		width: 768,
+		padding: 25
+	});
+
+	$(".iziModal.attention").iziModal({
+		title: "Новини Демидова",
+		subtitle: "найсвіжіші події з життя громади",
+		icon: 'icon-chat',
+		iconColor: 'white',
+		headerColor: '#e25151',
+		fullscreen: true,
+		transitionOut: 'bounceOutDown',
+		timeout: 30000,
+		timeoutProgressbar: true,
+		pauseOnHover: true,
+		timeoutProgressbarColor: 'rgba(255,255,255,0.5)',
+		width: 768,
+		padding: 25
+	});
 
 
 
