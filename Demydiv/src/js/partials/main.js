@@ -1,25 +1,33 @@
 $(function($) {
 	// колонки одинаковой высоты
-	function heightBlock(column){
-		var myblock = 0;
+//	function heightBlock(column){
+//		var myblock = 0;
+//
+//		column.each(function(){
+//			thisHight = $(this).height();
+//			center = $('.wrapper').height();
+//			console.log('center:', center);
+//			if(thisHight > myblock){
+//				myblock = thisHight;
+//			}
+//			else if(center > myblock){
+//				myblock = center*0.79;
+//			}
+//		});
+//		column.height(myblock);
+//	};
+//
+//	heightBlock($(".columns .column"));
+//прелоадер
+	$(window).on('load', function () {
+		var $preloader = $('#page-preloader'),
+			$spinner   = $preloader.find('.spinner');
+		$spinner.fadeOut();
+		$preloader.delay(250).fadeOut('slow');
+	});
 
-		column.each(function(){
-			thisHight = $(this).height();
-			center = $('.wrapper').height();
-			console.log('center:', center);
-			if(thisHight > myblock){
-				myblock = thisHight;
-			}else if(center > myblock){
-				myblock = center*0.69;
-			}
-		});
-		column.height(myblock);
-	};
 
-	heightBlock($(".columns .column"));
-
-
-//	запускаем модальное окно для истории
+	//	запускаем модальное окно для истории
 	$("#history_hidden").animatedModal({
 		animatedIn:'fadeIn',
 		animatedOut:'fadeOut',
@@ -49,27 +57,71 @@ $(function($) {
 	});
 
 
-//запускаем модальное окно для галереи
-	$("#gallery_hiden").animatedModal({
-		modalTarget:'gallery_modal',
-		animatedIn:'fadeIn',
-		animatedOut:'fadeOut',
-		color: 'hsla(0, 0%, 0%, 0.7)',
-		animationDuration:'1.5s'
+	//находим перекрывающие изображение элементы в модальном окне и скрываем при наведениии мыши и показываем при сведнии мыши с элемента
+	$(document).on({mouseenter: function() {
+		$(this).find('.item-info').fadeOut(200).find('.line').css('width','0%');
+	},mouseleave: function() {
+		$(this).find('.item-info').fadeIn(700).find('.line').css('width','40%');
+	}}, '.gallery-wrap');
+
+	//ищем в модальном окне и запускаем lightgallery
+	$(document).on('mouseenter', '.gallery-wrap', function(){
+		$(".gallery-wrap > div").each(function() {
+			allId = $(this).attr('id')
+			//						console.log('allId:', allId);
+		}).lightGallery({
+			thumbnail:true,
+			showThumbByDefault: false
+		});
+
 	});
 
 
-//	запуск галереи для каждого блока картинок
-	$(".gallery_modal-guts > div").each(function() {
-		allId = $(this).attr('id')
-	}).lightGallery({
-		thumbnail:true,
-		showThumbByDefault: false
+	$(document).on('click', '.trigger-gallery', function (event) {
+		event.preventDefault();
+		$('#gallery-modal').iziModal('open');
+	});
+
+	$("#gallery-modal").iziModal({
+		title: "Вітаємо в галереї зображень",
+		subtitle: "Тут зібрані яскраві моменти життя села Демидів",
+		icon: 'icon-chat',
+		iconColor: 'white',
+		fullscreen: true,
+		width: 960,
+		padding: 25,
+		timeout: 777777,
+		timeoutProgressbar: true,
+		transitionIn: 'fadeInDown',
+		transitionOut: 'bounceOutDown',
+		pauseOnHover: true
 	});
 
 
 // добавляем первым двум блокам новостей клас для отображения на весь родительский блок
-	$(".news__box:lt(2)").addClass('news__box-big');
+//	$(".news__box:lt(2)").addClass('news__box-big');
+
+// убирем и добавляем первым двум блокам новостей клас box-big после определенного размера экрана
+//	$(window).resize(function(){
+//		var windowWidth = $(window).width();
+//		if(windowWidth > 1032)$(".news__box:lt(2)").addClass("news__box-big");
+//		else $(".news__box:lt(2)").removeClass("news__box-big");
+//	});
+
+// убирем и добавляем первым двум блокам новостей клас box-big после определенного размера экрана
+	function windowSize(){
+		var windowWidth = $(window).width();
+		if(windowWidth > 1032)$(".news__box:lt(2)").addClass("news__box-big");
+		else $(".news__box:lt(2)").removeClass("news__box-big");
+		}
+
+	// при загрузке
+//	$(window).load(windowSize);
+	// при изменении размеров
+//	$(window).resize(windowSize);
+	// или "два-в-одном", вместо двух последних строк:
+	$(window).on('load resize',windowSize);
+
 
 // запуск модальных окон для новостей
 

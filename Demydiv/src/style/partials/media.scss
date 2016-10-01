@@ -8,15 +8,17 @@
 
 
 	}
-//	.mcd-menu {
-//		width: 97%;
-//		margin-left: 4px;
-//	}
+
 	.view-banner-block a{
 		height: 50px;
 	}
 	.news__box {
 		width: 30%;
+		.news__text {
+			width: 100%;
+			margin-left: 0;
+		}
+
 	}
 	.news__img {
 		width: 100%;
@@ -37,6 +39,7 @@
 		svg {
 			width: 15px;
 			height: 15px;
+			-webkit-transition: fill 0.3s, width 0.3s, height 0.3s;
 			transition: fill 0.3s, width 0.3s, height 0.3s;
 		}
 		&:hover svg {
@@ -130,86 +133,54 @@
 			}
 		}
 	}
-
-//	.mcd-menu {
-//		width: 95%;
-//		margin-left: 4px;
-//		li {
-//			a {
-//				height: 50px;
-//				padding: 12px 15px;
-//
-//				i {
-//					font-size: 22px;
-//				}
-//				strong {
-//					font-size: 12px;
-//				}
-//				small {
-//					font-size: 10px;
-//				}
-//				&.search {
-//					input {
-//						width: 90px;
-//						font-size: 11px;
-//					}
-//					button {
-//						margin-left: 0px;
-//						padding: 7px 7px 7px;
-//					}
-//				}
-//			}
-//			> ul {
-//				min-width: 180px;
-//			}
-//			&:hover > ul {
-//				min-width: 180px;
-//				left: 200px;
-//			}
-//			ul {
-//				li {
-//					> ul, ul li > ul {
-//						min-width: 150px;
-//					}
-//					&:hover > ul {
-//						left: 180px;
-//						min-width: 150px;
-//					}
-//					ul li:hover > ul {
-//						left: 150px;
-//						min-width: 150px;
-//					}
-//				}
-//				a {
-//					font-size: 12px;
-//					i {
-//						font-size: 14px;
-//					}
-//				}
-//			}
-//		}
-////	}
 	.view-banner-block a{
 		height: 40px;
 	}
 	.news__box {
 		width: 40%;
 		margin: 10px 1px 15px 39px;
+		.news__text {
+			width: 100%;
+			margin-left: 0;
+		}
+
 	}
 	.news__img {
 		width: 100%;
 	}
+
+	.contacts__adress {
+		margin-right: 25px;
+	}
+
+	.contacts__phone {
+		margin-right: 25px;
+	}
+
+	.contacts__email {
+		margin-right: 25px;
+	}
 }
 
 @media only screen and (min-width: 480px) and (max-width: 767px) {
-	#left {
-		width: 10%;
+	.date {
+		font-size: 10px;
 	}
-	#center {
-		margin: 0 10%;
+	.social__item svg {
+		width: 15px;
+		height: 15px;
+	}
+	.slogan_1, .slogan_2 {
+		margin-top: 10px;
+	}
+	.slogan_1>span {
+		font-size: 15px;
+	}
+	.slogan_2>span {
+		font-size: 10px;
 	}
 	.container {
-		width: 428px;
+		min-width: 428px;
 		margin: 0 auto;
 	}
 	.mcd-menu {
@@ -320,95 +291,93 @@
 			}
 		}
 	}
+	#center {
+		width: 100%;
+		margin: 0;
+		-webkit-box-ordinal-group: 2;
+			-ms-flex-order: 1;
+				order: 1;
+		.news__box {
+			width: 45%;
+			.news__img {
+				width: 100%;
+				height: 150px;
+			}
+			.news__text {
+				width: 100%;
+				margin-left: 0px;
+				.iziModal_inner p {
+					font-weight: 600;
+					line-height: 25px;
+				}
+			}
 
-//	.mcd-menu {
-//		width: 90%;
-//		margin-left: 4px;
-//		li {
-//			a {
-//				position: relative;
-//				padding: 10px 6px;
-//				height: 40px;
-//				vertical-align:middle;
-//
-//				i {
-//					margin: 0 0 0 6px;
-//				}
-//				small,strong {
-//					display: none;
-//				}
-//				&.active:after,&.active:before{
-//					top: 45%;
-//				}
-//				&:hover strong, &.active strong {
-//					display: block;
-//					font-size: 10px;
-//					padding: 3px 0;
-//					position: absolute;
-//					bottom: 0px;
-//					left: 0;
-//					background: #e67e22;
-//					color: #FFF;
-//					min-width: 100%;
-//					text-transform: lowercase;
-//					font-weight: normal;
-//					text-align: center;
-//				}
-//			}
-//			.search {
-//				display: none;
-//			}
-//			> ul {
-//				min-width: 180px;
-//				left: 70px;
-//			}
-//			&:hover > ul {
-//				min-width: 180px;
-//				left: 50px;
-//			}
-//			ul {
-//				li {
-//					> ul, ul li > ul {
-//						min-width: 150px;
-//					}
-//					&:hover > ul {
-//						left: 180px;
-//						min-width: 150px;
-//					}
-//					ul li {
-//						> ul {
-//							left: 35px;
-//							top: 45px;
-//							border: 0;
-//							border-top: 4px solid #e67e22;
-//							&:before {
-//								left: 30px;
-//								top: -9px;
-//								border: 0;
-//								border-bottom: 5px solid #e67e22;
-//								border-left: 5px solid transparent;
-//								border-right: 5px solid transparent;
-//							}
-//						}
-//						&:hover > ul {
-//							left: 30px;
-//							min-width: 150px;
-//							top: 35px;
-//						}
-//					}
-//				}
-//				a {
-//					font-size: 12px;
-//					i {
-//						font-size: 14px;
-//					}
-//				}
-//			}
-//		}
-//	}
+
+		}
+	}
+	#left {
+		width: 50%;
+		-webkit-box-ordinal-group: 3;
+			-ms-flex-order: 2;
+				order: 2;
+		.holiday {
+			img {
+				width: 80%;
+				margin: 0 35px;
+			}
+		}
+	}
+	#right {
+		width: 50%;
+		-webkit-box-ordinal-group: 3;
+			-ms-flex-order: 2;
+				order: 2;
+	}
+	.contacts {
+		line-height: 20px;
+		.contacts__adress {
+			margin-right: 0;
+			font-size: 10px;
+			&:before {
+				margin-right: 5px;
+			}
+		}
+
+		.contacts__phone {
+			margin-right: 0;
+			font-size: 10px;
+			&:before {
+				margin-right: 5px;
+			}
+		}
+
+		.contacts__email {
+			margin-right: 0;
+			font-size: 9px;
+		}
+		.conatcts__copyrights {
+			font-size: 9px;
+		}
+	}
 }
 
 @media only screen and (max-width: 479px) {
+	.date {
+		font-size: 10px;
+	}
+	.social__item svg {
+		width: 15px;
+		height: 15px;
+	}
+	.slogan_1, .slogan_2 {
+		margin-top: 10px;
+	}
+	.slogan_1>span {
+		font-size: 15px;
+	}
+	.slogan_2>span {
+		font-size: 10px;
+	}
 	.mcd-menu {
 		height: 42px;
 		position: relative;
@@ -514,82 +483,79 @@
 			}
 		}
 	}
-//	.mcd-menu {
-//		width: 50px;
-//		li {
-//			a {
-//				position: relative;
-//				padding: 12px 16px;
-//				height: 20px;
-//				small, strong {
-//					display: none;
-//				}
-//				&:hover strong, &.active strong {
-//					display: block;
-//					font-size: 10px;
-//					padding: 3px 0;
-//					position: absolute;
-//					bottom: 0px;
-//					left: 0;
-//					background: #e67e22;
-//					color: #FFF;
-//					min-width: 100%;
-//					text-transform: lowercase;
-//					font-weight: normal;
-//					text-align: center;
-//				}
-//			}
-//			.search {
-//				display: none;
-//			}
-//			> ul {
-//				min-width: 180px;
-//				left: 70px;
-//			}
-//			&:hover > ul {
-//				min-width: 180px;
-//				left: 50px;
-//			}
-//			ul {
-//				li {
-//					> ul, ul li > ul {
-//						min-width: 150px;
-//					}
-//					&:hover > ul {
-//						left: 180px;
-//						min-width: 150px;
-//					}
-//					ul li {
-//						> ul {
-//							left: 35px;
-//							top: 45px;
-//							border: 0;
-//							border-top: 4px solid #e67e22;
-//							&:before {
-//								left: 30px;
-//								top: -9px;
-//								border: 0;
-//								border-bottom: 5px solid #e67e22;
-//								border-left: 5px solid transparent;
-//								border-right: 5px solid transparent;
-//							}
-//						}
-//						&:hover > ul {
-//							left: 30px;
-//							min-width: 150px;
-//							top: 35px;
-//						}
-//					}
-//				}
-//				a {
-//					font-size: 12px;
-//					i {
-//						font-size: 14px;
-//					}
-//				}
-//			}
-//		}
-//	}
+	.contacts {
+		line-height: 20px;
+		.contacts__adress {
+			margin-right: 15px;
+			font-size: 10px;
+			&:before {
+				margin-right: 5px;
+			}
+		}
+
+		.contacts__phone {
+			margin-right: 26px;
+			font-size: 10px;
+			&:before {
+				margin-right: 5px;
+			}
+		}
+
+		.contacts__email {
+			margin-right: 5px;
+			font-size: 10px;
+		}
+		.conatcts__copyrights {
+			font-size: 10px;
+		}
+	}
+	#center {
+		width: 100%;
+		margin: 0;
+		-webkit-box-ordinal-group: 2;
+			-ms-flex-order: 1;
+				order: 1;
+		.news__box {
+			width: 100%;
+			.news__text {
+				width: 230px;
+				.iziModal_inner p {
+					font-size: 12px;
+					font-weight: 400;
+					line-height: 18px;
+				}
+				.iziModal-content {
+					img {
+						max-width: 150px;
+					}
+					img.big-picture {
+						max-width: 360px;
+					}
+				}
+			}
+		}
+	}
+	#left {
+		width: 50%;
+		-webkit-box-ordinal-group: 3;
+			-ms-flex-order: 2;
+				order: 2;
+	}
+	#right {
+		width: 50%;
+		-webkit-box-ordinal-group: 3;
+			-ms-flex-order: 2;
+				order: 2;
+	}
+}
+@media handheld, only screen and (max-width: 960px){
+	.iziModal {
+		width: 100% !important;
+		max-width: 100% !important;
+		margin-left: 0 !important;
+		left: 0 !important;
+		border-radius: 0!important;
+	}
 }
 
 .PrimaryNav {

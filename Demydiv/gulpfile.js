@@ -16,6 +16,7 @@ var gulp =        require('gulp'),
 	filesize =    require('gulp-filesize'),
 	cssmin =      require('gulp-clean-css'),
 	sourcemaps =  require('gulp-sourcemaps'),
+	googlecdn =    require('gulp-google-cdn'),
 	prefixer =    require('gulp-autoprefixer'),
 	pngquant =    require('imagemin-pngquant'),
 	reload =      browserSync.reload;
@@ -72,6 +73,7 @@ gulp.task('html:build', function () {
 	gulp.src(path.src.html) //Выберем файлы по нужному пути
 		.pipe(plumber())
 		.pipe(rigger()) //Прогоним через rigger
+		.pipe(googlecdn(require('./bower.json')))
 		.pipe(gulp.dest(path.build.html)) //Выплюнем их в папку build
 		.pipe(notify('HTML is DONE!'))
 		.pipe(reload({stream: true})); //И перезагрузим наш сервер для обновлений

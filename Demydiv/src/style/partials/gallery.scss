@@ -1,0 +1,67 @@
+.gallery-wrap{
+	position: relative;
+	display: inline-block;
+	max-height: 180px;
+	margin: 20px 25px 00px 30px;
+}
+
+.gallery_modal-guts .item-info {
+	position: absolute;
+	top: 12px;
+	left: 13px;
+	display: inline-block;
+	width: 231px;
+	height: 154px;
+	z-index: 2;
+	color: #fff;
+	text-decoration:none;
+	text-align:center;
+	background-color: rgba(0, 0, 0, 0.40);
+	cursor:pointer;
+}
+.gallery_modal-guts .item-info .headline {
+	padding-top: 20%;
+	font-size:20px;
+}
+
+.gallery_modal-guts .item-info .line {
+	height:1px;
+	width:40%;
+	margin:15px auto;
+	background-color:#ffffff;
+	-webkit-transition: all 900ms ease-out;
+	transition: all 900ms ease-out;
+
+}
+
+.gallery_modal-guts .item-info .date {
+	font-size:12px;
+}
+
+
+.item-info:hover + .stack .stack-item:nth-child(2) {
+	-webkit-transform: rotate(7deg) translate(-6px, -3px);
+	transform: rotate(7deg) translate(-6px, -3px); }
+.item-info:hover + .stack .stack-item:nth-child(3) {
+	-webkit-transform: rotate(-5deg) translate(10px, 10px);
+	transform: rotate(-5deg) translate(10px, 10px); }
+.item-info:hover + .stack .stack-item:nth-child(4) {
+	-webkit-transform: rotate(-4deg) translate(-16px, -2px);
+	transform: rotate(-4deg) translate(-16px, -2px); }
+
+#gallery-modal .iziModal-wrap {
+	background: url(../img/stone1.png) #F3D890;
+
+}
+
+.flex-container{
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-pack:distribute;
+		justify-content:space-around;
+	-ms-flex-line-pack: center;
+		align-content: center;
+	-ms-flex-flow: row wrap;
+		flex-flow: row wrap;
+}

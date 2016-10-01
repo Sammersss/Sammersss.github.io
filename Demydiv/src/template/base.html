@@ -1,15 +1,53 @@
 <!—-==========--========== START base ==========--==========-—>
 
 <div class="base clearfix layout clearfix">
-	<div class="columns clearfix">
-		<div class="column" id="left">
+	<div class="columns flex-columns clearfix">
+		<div class="column column-flex-block clearfix" id="center">
+			<div class="header-simple">
+				<h2>
+					<a class="inf-links" rel="nofollow" href="#" title="новини">Свіжі новини :</a>
+				</h2>
+			</div>
+			<section id="news" class="news clearfix">
+			</section>
+			<!--NeWS-->
+			<script id="news-template" type="text/x-handlebars-template">
+			{{#each section}}
+			<section class="news__box clearfix">
+				{{#each newsImgdate}}
+				<div class="news__img" style="background: url({{img}})0 no-repeat; background-size: cover;">
+					<p class="news__month">{{month}}</p>
+					<p class="news__date">{{day}}</p>
+							</div>
+				{{/each}}
+				{{#each newsArticle}}
+				<article class="news__text clearfix">
+					<div class="news__link clearfix"><h4 class="{{alert}}" style="color: #656565;">{{title}}</h4></div>
+					<a href="{{link}}" target="_blank"  class="news__creator clearfix" style="text-decoration: none;">автор&nbsp;:&nbsp;<span style="color: #248cec;">{{author}}</span></a>
+					<div class="news__desc clearfix" style="text-overflow: ellipsis;"> {{paragraph1}}<a href="#" class="trigger-large" style="text-decoration: none; color:#248cec; font-style:italic; background-color: white;" onmouseover="this.style.color = 'red';" onmouseout="this.style.color = '#248cec';">&nbsp;&hellip;&nbsp;більше</a></div>
+					<div class="iziModal {{alert}} clearfix" data-izimodal-title="{{title}}" data-izimodal-subtitle="автор&nbsp;:&nbsp;{{author}}">
+						<img class="{{imgClass}} clearfix" src="{{img}}" alt="картинка новости" style="float: left; margin: 0 25px 0 0;" width="240">
+						<div class="iziModal_inner clearfix" style="margin: 0 0 16px 0; text-indent: 1.5em;">
+							<p style="margin: 0 0 5px 0;">{{paragraph1}}</p>
+							<p style="margin: 0 0 5px 0;">{{paragraph2}}</p>
+							<p style="margin: 0 0 5px 0;">{{paragraph3}}</p>
+							</div>
+							</div>
+							</article>
+				{{/each}}
+							</section>
+			{{/each}}
+			</script>
+			<!--end of news-->
+		</div>
+		<div class="column column-flex-block" id="left">
 			<div class="header-simple">
 				<h2>
 					<a class="inf-links" target="_blank" rel="nofollow" href="#" title="фото">Фотогалерея :</a>
 				</h2>
 			</div>
 			<div class="sideGalleryBlock clearfix">
-				<a id="gallery_hiden" href="#gallery_modal" class="clearfix" >
+				<a id="gallery_hiden" href="#gallery_modal" class="trigger-gallery clearfix" >
 					<img src="img/fon1.jpg" width="100%" height="auto" alt="Фотографiї з життя с. Демидів" title="Фотографiї з життя с. Демидів">
 					<p class="clearfix">Фотографiї з життя с. Демидів</p>
 				</a>
@@ -24,7 +62,7 @@
 
 		</div>
 
-		<div class="column" id="right">
+		<div class="column column-flex-block" id="right">
 			<div class="informers-layout clearfix">
 				<div class="header-simple">
 					<h2>
@@ -38,8 +76,35 @@
 					<div class="clr"></div>
 				</div>
 			</div>
-			<script src="http://pogoda.meta.ua/get_informer/Kyivska/Vyshhorodskyi/Demydiv/?count_days=3&width=100%&height=auto&head_color=%23656565&text_color=%23696969&text_color2=%23595959&border_color=%23FFFFFF&head_bg_color=%23ffffff&backgroundTheme=auto&lang=ua&oe=UTF"></script>
 			<script src="http://www.segodnya.ua/user/informers/e8606197a868cafcef86c11da7356d43.js"></script>
+			<!-- Gismeteo informer START -->
+			<link rel="stylesheet" type="text/css" href="https://s1.gismeteo.ua/static/css/informer2/gs_informerClient.min.css">
+			<div id="gsInformerID-TV471Sl50B7Y2b" class="gsInformer" style="width:180px;height:267px">
+				<div class="gsIContent">
+					<div id="cityLink">
+						<a href="https://www.gismeteo.ua/ua/weather-demydiv-84043/" target="_blank">Погода у Демидові</a>
+					</div>
+					<div class="gsLinks">
+						<table>
+							<tr>
+								<td>
+									<div class="leftCol">
+										<a href="https://www.gismeteo.ua/ua" target="_blank">
+											<img alt="Gismeteo" title="Gismeteo" src="https://s1.gismeteo.ua/static/images/informer2/logo-mini2.png" align="absmiddle" border="0" />
+											<span>Gismeteo</span>
+										</a>
+									</div>
+									<div class="rightCol">
+										<a href="https://www.gismeteo.ua/ua/weather-demydiv-84043/14-days/" target="_blank">Детальніше</a>
+									</div>
+								</td>
+							</tr>
+						</table>
+					</div>
+				</div>
+			</div>
+			<script src="https://www.gismeteo.ua/ajax/getInformer/?hash=TV471Sl50B7Y2b" type="text/javascript"></script>
+			<!-- Gismeteo informer END -->
 
 			<!-- Minfin.com.ua currency informer 180x120 yellow-->
 			<div id="minfin-informer-m1Fn-currency">Загружаем <a href="http://minfin.com.ua/currency/" target="_blank">курсы валют от minfin.com.ua</a></div><script type="text/javascript">var iframe = '<ifra'+'me width="180" height="120" fram'+'eborder="0" src="http://informer.minfin.com.ua/gen/course/?color=yellow" vspace="0" scrolling="no" hspace="0" allowtransparency="true"style="width:100%;height:120px;ove'+'rflow:hidden;"></iframe>';var cl = 'minfin-informer-m1Fn-currency';document.getElementById(cl).innerHTML = iframe; </script><noscript><img src="http://informer.minfin.com.ua/gen/img.png" width="1" height="1" alt="minfin.com.ua: курсы валют" title="Курс валют" border="0" /></noscript>
@@ -47,44 +112,7 @@
 
 		</div>
 
-		<div class="column clearfix" id="center">
-			<div class="header-simple">
-				<h2>
-					<a class="inf-links" rel="nofollow" href="#" title="новини">Свіжі новини :</a>
-				</h2>
-			</div>
-			<section id="news" class="news clearfix">
-			</section>
-			<!--NeWS-->
-			<script id="news-template" type="text/x-handlebars-template">
-				{{#each section}}
-				<section class="news__box clearfix">
-					{{#each newsImgdate}}
-					<div class="news__img" style="background: url({{img}})0 no-repeat; background-size: cover;">
-						<p class="news__month">{{month}}</p>
-						<p class="news__date">{{day}}</p>
-					</div>
-					{{/each}}
-					{{#each newsArticle}}
-					<article class="news__text clearfix">
-						<div class="news__link clearfix"><h4 class="{{alert}}" style="color: #656565;">{{title}}</h4></div>
-						<a href="{{link}}" target="_blank"  class="news__creator clearfix" style="text-decoration: none;">автор&nbsp;:&nbsp;<span style="color: #248cec;">{{author}}</span></a>
-						<div class="news__desc clearfix" style="text-overflow: ellipsis;"> {{paragraph1}}<a href="#" class="trigger-large" style="text-decoration: none; color:#9d9c9c; font-style:italic; background-color: white;" onmouseover="this.style.color = '#248cec';" onmouseout="this.style.color = 'red';">&nbsp;&hellip;&nbsp;більше</a></div>
-						<div class="iziModal {{alert}} clearfix" data-izimodal-title="{{title}}" data-izimodal-subtitle="автор&nbsp;:&nbsp;{{author}}">
-							<img class="clearfix" src="{{img}}" alt="картинка новости" style="float: left; margin: 0 25px 0 0;" width="240">
-							<div class="iziModal_inner clearfix" style="margin: 0 0 16px 0; text-indent: 1.5em;">
-								<p style="margin: 0 0 5px 0;">{{paragraph1}}</p>
-								<p style="margin: 0 0 5px 0;">{{paragraph2}}</p>
-								<p style="margin: 0 0 5px 0;">{{paragraph3}}</p>
-							</div>
-						</div>
-					</article>
-					{{/each}}
-				</section>
-				{{/each}}
-							</script>
-			<!--end of news-->
-		</div>
+
 	</div>
 </div>
 

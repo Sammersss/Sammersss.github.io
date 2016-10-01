@@ -11,11 +11,14 @@ var jsonNews = {
 			newsArticle: [
 				{
 					img: "img/news_img/newspaper.jpg",
-					title: "Школа англійської мови \«FOREST SCHOOL\»",
-					author: "Анатолій Кравець",
+					imgClass:"",
+					title: "Про встановлення місцевих податків та зборів",
+					author: "Cільська рада",
 					link: "https://www.facebook.com/krabtolua?fref=nf",
 					alert: "normal",
-					paragraph1: "Демидівська сільська рада повідомляє, що 4 липня 2016 року на шостій сесії сьомого скликання Демидівської сільської ради прийнято рішення № 65-6-VІІ «Про встановлення місцевих податків та зборів на території Демидівської сільської ради на 2017 рік». Для ознайомлення з рішенням сесії сільської ради «Про встановлення місцевих податків та зборів на території Демидівської сільської ради на 2017 рік» звертатись за адресою: 07335, Демидівська сільська рада, Київська область, Вишгородський район, с. Демидів, вул. Фастова, 2, тел. (04596) 33-242."
+					paragraph1: "Демидівська сільська рада повідомляє, що 4 липня 2016 року на шостій сесії сьомого скликання Демидівської сільської ради прийнято рішення № 65-6-VІІ «Про встановлення місцевих податків та зборів на території Демидівської сільської ради на 2017 рік». ",
+					paragraph2: "Для ознайомлення з рішенням сесії сільської ради «Про встановлення місцевих податків та зборів на території Демидівської сільської ради на 2017 рік» звертатись за адресою:",
+					paragraph3: "07335, Демидівська сільська рада, Київська область, Вишгородський район, с. Демидів, вул. Фастова, 2, тел. (04596) 33-242."
 				}
 			]
 		},
@@ -30,6 +33,7 @@ var jsonNews = {
 			newsArticle: [
 				{
 					img: "img/news_img/happy.jpg",
+					imgClass:"",
 					title: "Приємні новини",
 					author: "Lyudmila Sharay",
 					link: "https://www.facebook.com/sharaylg?fref=nf",
@@ -49,6 +53,7 @@ var jsonNews = {
 			newsArticle: [
 				{
 					img: "img/news_img/ambrozia.jpg",
+					imgClass:"",
 					title: "АМБРОЗІЯ - росте по всіх вулицях нашого села",
 					author: "Iryna Pobidash",
 					link: "https://www.facebook.com/iryna.pobidash?fref=nf",
@@ -70,6 +75,7 @@ var jsonNews = {
 			newsArticle: [
 				{
 					img: "img/news_img/meeting.jpg",
+					imgClass:"",
 					title: "Засідання постійної комісії з земельних відносин",
 					author: "Lyudmila Sharay",
 					link: "https://www.facebook.com/sharaylg?fref=nf",
@@ -91,6 +97,7 @@ var jsonNews = {
 			newsArticle: [
 				{
 					img: "img/news_img/day_care.jpg",
+					imgClass:"",
 					title: "Група продовженого дня в дитячому садочку",
 					author: "Vita Kovalenko",
 					link: "https://www.facebook.com/vita.kovalenko.370?fref=nf",
@@ -110,11 +117,13 @@ var jsonNews = {
 			newsArticle: [
 				{
 					img: "img/news_img/forest_school.jpg",
+					imgClass:"",
 					title: "Школа англійської мови \«FOREST SCHOOL\»",
-					author: "Анатолій Кравець",
-					link: "https://www.facebook.com/krabtolua?fref=nf",
+					author: "FOREST SCHOOL",
+					link: "#",
 					alert: "normal",
-					paragraph1: "Оголошення було надруковане в соц.мережі ВКонтакте в групі Демидів вчора о 8:24 В селі Демидів відкрилася школа англійської мови \«FOREST SCHOOL\» (Форест Скул). Оголошується набір на групові заняття для дошкільнят та учнів. Деталі за телефоном: 066-176-08-81; 068-513-11-80."
+					paragraph1: "В селі Демидів відкрилася школа англійської мови \«FOREST SCHOOL\» (Форест Скул). Оголошується набір на групові заняття для дошкільнят та учнів.",
+					paragraph2: "Деталі за телефоном: 066-176-08-81; 068-513-11-80."
 				}
 			]
 		},
@@ -129,6 +138,7 @@ var jsonNews = {
 			newsArticle: [
 				{
 					img: "img/news_img/light_off.jpg",
+					imgClass:"",
 					title: "ДО УВАГИ ГРОМАДЯН!",
 					author: "Вишгородський РЕМ",
 					link: "http://www.koe.vsei.ua/koe/index.php?page=135",
@@ -148,13 +158,54 @@ var jsonNews = {
 			newsArticle: [
 				{
 					img: "img/news_img/memory.jpg",
-					title: "Вшанування загиблих в війні на сході України наших земляків",
+					imgClass:"",
+					title: "Вшанування загиблих в війні земляків",
 					author: "Iryna Pobidash",
 					link: "https://www.facebook.com/iryna.pobidash?fref=nf",
 					alert: "normal",
 					paragraph1: "Дорогі мої односельці. Проанонсую величезний захід, який пройде в Демидові 1 жовтня. Оргкомітет, який складається із спортсменів (А.Філіпович, Катерина Прищепа, О. Костюченко і Dima Dmitrenko), учасника бойових дій-депутата сільради Игорь Тигнеев , мене, як депутата райради, на чолі з вдовою загиблого Таня Костюченко визначились із форматом проведення заходів вшанування загиблих в війні на сході України наших земляків.",
 					paragraph2: "Олександр Горган, Ростислав Кириченко, Marina Spiridonova-Melnik, відділ культури Вишгородської РДА відгукнулись на нашу ініціативу і допомагають у організації заходу.",
 					paragraph3: "В програмі заходу: *урочисте відкриття; *спартакіада (від веселих змагань для малюків до ігрових, важко- та легкоатлетичних та інтелектуальних видів спорту для дітей та дорослих); *концерт дитячої творчості району; *каша; *забави для малят тощо. Вже дав згоду допомогти у нагородженні переможців турніру та учасників концерту #зоопарк \"12місяців\". Сценарій і регламент розробляється. Ідеї і допомога приймаються з вдячністю! Будемо раді прийняти в селі гостей зі всього району."
+				}
+			]
+		},
+		{
+			newsImgdate: [
+				{
+					img: "img/news_img/medichna-dopomoga.jpg",
+					month: "Вер.",
+					day: "23"
+				}
+			],
+			newsArticle: [
+				{
+					img: "img/news_img/medichna-dopomoga.jpg",
+					imgClass:"",
+					title: "Допомога для односельців",
+					author: "Iryna Pobidash",
+					link: "https://www.facebook.com/iryna.pobidash?fref=nf",
+					alert: "normal",
+					paragraph1: "Якщо Ви знаєте людей, які в даний час потребують допомоги на лікування (складні випадки), передайте їм мій телефон 0964649669. Маю можливість частково допомогти."
+				}
+			]
+		},
+		{
+			newsImgdate: [
+				{
+					img: "img/news_img/holiday.jpg",
+					month: "Вер.",
+					day: "24"
+				}
+			],
+			newsArticle: [
+				{
+					img: "img/news_img/holiday.jpg",
+					imgClass:"big-picture",
+					title: "Вшанування загиблих в війні земляків",
+					author: "Iryna Pobidash",
+					link: "https://www.facebook.com/iryna.pobidash?fref=nf",
+					alert: "attention",
+					paragraph1: ""
 				}
 			]
 		}

@@ -3,8 +3,43 @@
 
 <head>
 	<meta charset="UTF-8" />
-	<title>Офіційний сайт села Демидів</title>
+	<title>Поки не Офіційний сайт села Демидів</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script>
+		var $buoop = {vs:{i:11,f:-4,o:-2,s:7,c:-2},c:4};
+		function $buo_f(){
+			var e = document.createElement("script");
+			e.src = "//browser-update.org/update.min.js";
+			document.body.appendChild(e);
+		};
+		try {document.addEventListener("DOMContentLoaded", $buo_f,false)}
+		catch(e){window.attachEvent("onload", $buo_f)}
+	</script>
+	<!--[if lte IE 11]>
+		<div style="width:100%;text-align:center;background:#dd5544;padding:50px;position:fixed;top:0;left:0;bottom:0;z-index:100;">
+			<div style="margin: 0 auto;">
+				<h3 style="color:#ffffff;margin:0;padding:0;">
+					Досить шарпати труп! Ваш Internet Explorer ЗАСТАРІВ!
+				</h3>
+				<p style="color:#ffffff; margin:5px 0 0 0; padding:0; font-size:15px;">
+					Час вже розпочати використовувати продвинуті технології сучасних браузерів! Завантажуйте, звичайно ж, з офіційних сайтів:
+				</p>
+				<p style="color:#ffffff;margin:5px 0 0 0; padding:0; font-size:20px;">             <a href="https://www.google.com/chrome/browser/desktop/index.html"><strong>google.com/chrome</strong></a>   чи   <a href="https://www.mozilla.org/uk/firefox/new/?utm_medium=referral&utm_source=firefox-com"><strong>firefox.com</strong></a>   чи   <a href="http://www.opera.com/uk"><strong>opera.com</strong></a>
+				</p>
+				<p style="color:#ffffff;margin:5px 0 0 0; padding:0; font-size:15px;">
+					Чекаємо на Вас тут з новим браузером ;-&rang;
+				</p>
+			</div>
+		</div>
+<![endif]-->
+	<!-- HelloPreload http://hello-site.ru/preloader/ -->
+<!--
+		<style type="text/css">#hellopreloader>p{display:none;}#hellopreloader_preload{display: block;position: fixed;z-index: 99999;top: 0;left: 0;width: 100%;height: 100%;background: #EB9532 url(http://hello-site.ru//main/images/preloads/circles.svg) center center no-repeat;background-size:150px;}</style>
+		<div id="hellopreloader"><div id="hellopreloader_preload"></div><p><a href="http://hello-site.ru">Hello-Site.ru. Бесплатный конструктор сайтов.</a></p></div>
+		<script type="text/javascript">var hellopreloader = document.getElementById("hellopreloader_preload");function fadeOutnojquery(el){el.style.opacity = 1;var interhellopreloader = setInterval(function(){el.style.opacity = el.style.opacity - 0.05;if (el.style.opacity <=0.05){ clearInterval(interhellopreloader);hellopreloader.style.display = "none";}},16);}window.onload = function(){setTimeout(function(){fadeOutnojquery(hellopreloader);},1000);};</script>
+-->
+	<!-- HelloPreload http://hello-site.ru/preloader/ -->
+
 	<link rel="shortcut icon" href="img/favicon2.svg" type="image/svg">
 	<!--<link rel="shortcut icon" href="img/favicon.png" type="image/png">-->
 	<link rel="stylesheet" href="libs/lightgallery/css/lightgallery.css">
@@ -17,9 +52,11 @@
 	<link rel="stylesheet" href="libs/iziModal/css/iziModal.css" />
 
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.js"></script>
+
 </head>
 
 <body>
+	<div id="page-preloader"><span class="spinner"></span></div>
 	<svg xmlns="http://www.w3.org/2000/svg" style="display:none">
 		<symbol id="face" viewbox="0 0 512 512">
 			<path d="M296.296 512H200.36V256h-64v-88.225l64-.03-.104-51.975C200.256 43.794 219.773 0 304.556 0h70.588v88.242H331.03c-33.017 0-34.605 12.328-34.605 35.342l-.13 44.162h79.345l-9.354 88.225-69.926.03-.064 256z" />
@@ -130,7 +167,7 @@
 						</li>
 						<li><a href="#"><i class="fa fa-pencil-square-o"></i>Рішення виконавчого комітету</a>
 						</li>
-						<li><a href="https://drive.google.com/drive/folders/0B-xD1QhNbgSmRW5TemdXTENDWnM?usp=sharing" target="_blank"><i class="fa fa-pencil-square-o"></i>Розпорядження голови</a>
+						<li><a href="https://drive.google.com/drive/folders/0B-xD1QhNbgSmRW5TemdXTENDWnM?usp=sharing" class="blank" target="_blank"><i class="fa fa-pencil-square-o"></i>Розпорядження голови</a>
 						</li>
 						<li><a href="#"><i class="fa fa-pie-chart"></i>Бюджет села</a>
 						</li>
@@ -178,7 +215,7 @@
 			</a>
 		</li>
 		<li>
-			<a href="https://drive.google.com/drive/folders/0B-xD1QhNbgSmM19iSUswbG1sUkk?usp=sharing" target="_blank" class="menu__link">
+			<a href="https://drive.google.com/drive/folders/0B-xD1QhNbgSmM19iSUswbG1sUkk?usp=sharing" target="_blank" class="menu__link myClass">
 				<i class="fa fa-file-text-o"></i>
 				<strong>Бланки</strong>
 				<small>документів</small>
@@ -214,15 +251,53 @@
 <!—-==========--========== START base ==========--==========-—>
 
 <div class="base clearfix layout clearfix">
-	<div class="columns clearfix">
-		<div class="column" id="left">
+	<div class="columns flex-columns clearfix">
+		<div class="column column-flex-block clearfix" id="center">
+			<div class="header-simple">
+				<h2>
+					<a class="inf-links" rel="nofollow" href="#" title="новини">Свіжі новини :</a>
+				</h2>
+			</div>
+			<section id="news" class="news clearfix">
+			</section>
+			<!--NeWS-->
+			<script id="news-template" type="text/x-handlebars-template">
+			{{#each section}}
+			<section class="news__box clearfix">
+				{{#each newsImgdate}}
+				<div class="news__img" style="background: url({{img}})0 no-repeat; background-size: cover;">
+					<p class="news__month">{{month}}</p>
+					<p class="news__date">{{day}}</p>
+							</div>
+				{{/each}}
+				{{#each newsArticle}}
+				<article class="news__text clearfix">
+					<div class="news__link clearfix"><h4 class="{{alert}}" style="color: #656565;">{{title}}</h4></div>
+					<a href="{{link}}" target="_blank"  class="news__creator clearfix" style="text-decoration: none;">автор&nbsp;:&nbsp;<span style="color: #248cec;">{{author}}</span></a>
+					<div class="news__desc clearfix" style="text-overflow: ellipsis;"> {{paragraph1}}<a href="#" class="trigger-large" style="text-decoration: none; color:#248cec; font-style:italic; background-color: white;" onmouseover="this.style.color = 'red';" onmouseout="this.style.color = '#248cec';">&nbsp;&hellip;&nbsp;більше</a></div>
+					<div class="iziModal {{alert}} clearfix" data-izimodal-title="{{title}}" data-izimodal-subtitle="автор&nbsp;:&nbsp;{{author}}">
+						<img class="{{imgClass}} clearfix" src="{{img}}" alt="картинка новости" style="float: left; margin: 0 25px 0 0;" width="240">
+						<div class="iziModal_inner clearfix" style="margin: 0 0 16px 0; text-indent: 1.5em;">
+							<p style="margin: 0 0 5px 0;">{{paragraph1}}</p>
+							<p style="margin: 0 0 5px 0;">{{paragraph2}}</p>
+							<p style="margin: 0 0 5px 0;">{{paragraph3}}</p>
+							</div>
+							</div>
+							</article>
+				{{/each}}
+							</section>
+			{{/each}}
+			</script>
+			<!--end of news-->
+		</div>
+		<div class="column column-flex-block" id="left">
 			<div class="header-simple">
 				<h2>
 					<a class="inf-links" target="_blank" rel="nofollow" href="#" title="фото">Фотогалерея :</a>
 				</h2>
 			</div>
 			<div class="sideGalleryBlock clearfix">
-				<a id="gallery_hiden" href="#gallery_modal" class="clearfix" >
+				<a id="gallery_hiden" href="#gallery_modal" class="trigger-gallery clearfix" >
 					<img src="img/fon1.jpg" width="100%" height="auto" alt="Фотографiї з життя с. Демидів" title="Фотографiї з життя с. Демидів">
 					<p class="clearfix">Фотографiї з життя с. Демидів</p>
 				</a>
@@ -237,7 +312,7 @@
 
 		</div>
 
-		<div class="column" id="right">
+		<div class="column column-flex-block" id="right">
 			<div class="informers-layout clearfix">
 				<div class="header-simple">
 					<h2>
@@ -251,8 +326,35 @@
 					<div class="clr"></div>
 				</div>
 			</div>
-			<script src="http://pogoda.meta.ua/get_informer/Kyivska/Vyshhorodskyi/Demydiv/?count_days=3&width=100%&height=auto&head_color=%23656565&text_color=%23696969&text_color2=%23595959&border_color=%23FFFFFF&head_bg_color=%23ffffff&backgroundTheme=auto&lang=ua&oe=UTF"></script>
 			<script src="http://www.segodnya.ua/user/informers/e8606197a868cafcef86c11da7356d43.js"></script>
+			<!-- Gismeteo informer START -->
+			<link rel="stylesheet" type="text/css" href="https://s1.gismeteo.ua/static/css/informer2/gs_informerClient.min.css">
+			<div id="gsInformerID-TV471Sl50B7Y2b" class="gsInformer" style="width:180px;height:267px">
+				<div class="gsIContent">
+					<div id="cityLink">
+						<a href="https://www.gismeteo.ua/ua/weather-demydiv-84043/" target="_blank">Погода у Демидові</a>
+					</div>
+					<div class="gsLinks">
+						<table>
+							<tr>
+								<td>
+									<div class="leftCol">
+										<a href="https://www.gismeteo.ua/ua" target="_blank">
+											<img alt="Gismeteo" title="Gismeteo" src="https://s1.gismeteo.ua/static/images/informer2/logo-mini2.png" align="absmiddle" border="0" />
+											<span>Gismeteo</span>
+										</a>
+									</div>
+									<div class="rightCol">
+										<a href="https://www.gismeteo.ua/ua/weather-demydiv-84043/14-days/" target="_blank">Детальніше</a>
+									</div>
+								</td>
+							</tr>
+						</table>
+					</div>
+				</div>
+			</div>
+			<script src="https://www.gismeteo.ua/ajax/getInformer/?hash=TV471Sl50B7Y2b" type="text/javascript"></script>
+			<!-- Gismeteo informer END -->
 
 			<!-- Minfin.com.ua currency informer 180x120 yellow-->
 			<div id="minfin-informer-m1Fn-currency">Загружаем <a href="http://minfin.com.ua/currency/" target="_blank">курсы валют от minfin.com.ua</a></div><script type="text/javascript">var iframe = '<ifra'+'me width="180" height="120" fram'+'eborder="0" src="http://informer.minfin.com.ua/gen/course/?color=yellow" vspace="0" scrolling="no" hspace="0" allowtransparency="true"style="width:100%;height:120px;ove'+'rflow:hidden;"></iframe>';var cl = 'minfin-informer-m1Fn-currency';document.getElementById(cl).innerHTML = iframe; </script><noscript><img src="http://informer.minfin.com.ua/gen/img.png" width="1" height="1" alt="minfin.com.ua: курсы валют" title="Курс валют" border="0" /></noscript>
@@ -260,44 +362,7 @@
 
 		</div>
 
-		<div class="column clearfix" id="center">
-			<div class="header-simple">
-				<h2>
-					<a class="inf-links" rel="nofollow" href="#" title="новини">Свіжі новини :</a>
-				</h2>
-			</div>
-			<section id="news" class="news clearfix">
-			</section>
-			<!--NeWS-->
-			<script id="news-template" type="text/x-handlebars-template">
-				{{#each section}}
-				<section class="news__box clearfix">
-					{{#each newsImgdate}}
-					<div class="news__img" style="background: url({{img}})0 no-repeat; background-size: cover;">
-						<p class="news__month">{{month}}</p>
-						<p class="news__date">{{day}}</p>
-					</div>
-					{{/each}}
-					{{#each newsArticle}}
-					<article class="news__text clearfix">
-						<div class="news__link clearfix"><h4 class="{{alert}}" style="color: #656565;">{{title}}</h4></div>
-						<a href="{{link}}" target="_blank"  class="news__creator clearfix" style="text-decoration: none;">автор&nbsp;:&nbsp;<span style="color: #248cec;">{{author}}</span></a>
-						<div class="news__desc clearfix" style="text-overflow: ellipsis;"> {{paragraph1}}<a href="#" class="trigger-large" style="text-decoration: none; color:#9d9c9c; font-style:italic; background-color: white;" onmouseover="this.style.color = '#248cec';" onmouseout="this.style.color = 'red';">&nbsp;&hellip;&nbsp;більше</a></div>
-						<div class="iziModal {{alert}} clearfix" data-izimodal-title="{{title}}" data-izimodal-subtitle="автор&nbsp;:&nbsp;{{author}}">
-							<img class="clearfix" src="{{img}}" alt="картинка новости" style="float: left; margin: 0 25px 0 0;" width="240">
-							<div class="iziModal_inner clearfix" style="margin: 0 0 16px 0; text-indent: 1.5em;">
-								<p style="margin: 0 0 5px 0;">{{paragraph1}}</p>
-								<p style="margin: 0 0 5px 0;">{{paragraph2}}</p>
-								<p style="margin: 0 0 5px 0;">{{paragraph3}}</p>
-							</div>
-						</div>
-					</article>
-					{{/each}}
-				</section>
-				{{/each}}
-							</script>
-			<!--end of news-->
-		</div>
+
 	</div>
 </div>
 
@@ -567,38 +632,48 @@
 		</div>
 	</div>
 </div>
-<div id="gallery_modal">
-	<!--THIS IS IMPORTANT! to close the modal, the class name has to match the name given on the ID  class="close-animatedModal" -->
-	<div id="closebt-container2" class="close-gallery_modal close-modal_btn clearfix">
-		<img class="closebt" src="libs/animatedModal/img/closebt.svg">
-	</div>
-	<div class="gallery_modal-content">
-		<div id="gallery_content" class="gallery_modal-guts">
-			<!—-==========--========== START animated-thumbnials ==========--==========-—>
-			<script id="gallery-template" type="text/x-handlebars-template">
-				{{#each blocks}}
+<div id="gallery-modal" class="iziModal">
+	<div id="content" class="gallery_modal-guts flex-container">
+		<script id="gallery-template" type="text/x-handlebars-template">
+		{{#each blocks}}
+		<section class="gallery-wrap flex-item">
+			<section class="item-info">
+				<p class="headline">{{headline}}</p>
+				<p class="line"></p>
+				<p class="img-date">{{imgDate}}</p>
+					</section>
 				<div id="{{id}}" class="anithumb stack" data-count="{{dataCount}}">
 					{{#each links}}
-					<a href="{{href}}" class="stack-item">
+					<a href="{{href}}" class="stack-item item-img">
 						<img src="{{src}}" alt="{{alt}}">
-								</a>
+					</a>
 					{{/each}}
-								</div>
-				{{/each}}
-			</script>
-			<!--==========--========== END animated-thumbnials ==========--==========-->
-		</div>
+				</div>
+			</section>
+		{{/each}}
+		</script>
 	</div>
 </div>
 </div>
 
-
 <script src="js/main.js"></script>
-<script type="text/javascript">
-	$(function () {
+	<script type="text/javascript">
+		$(function () {
+//			var bodyH = $(window).height() / 2;
+//			$("body").after('<div id="system-load" style="position:fixed;'
+//							+ 'top:0px; left:0px; background: #EB9532; width:100%; height:100%;'
+//							+ 'z-index:99999999; color:#fff; padding-top:' + bodyH + 'px;"'
+//							+ 'align="center">'
+//							+ '<img src="http://hello-site.ru//main/images/preloads/circles.svg"'
+//							+ ' alt="Пожалуйста, подождите..." /></div>');
+//			$(window).bind('load', function() {
+//				$('#system-load').fadeOut('slow').remove();
+//				$('body').animate({opacity: 1}, 'fast');
+//			});
 
-	});
-</script>
+		});
+	</script>
+
 <script src="libs/animatedModal/js/animatedModal.js"></script>
 <script src="libs/carouselengine/js/amazingcarousel.js"></script>
 <script src="libs/carouselengine/js/initcarousel-1.js"></script>
@@ -609,7 +684,6 @@
 <script src="libs/lightgallery/js/lg-video.js"></script>
 <script src="libs/lightgallery/js/lg-autoplay.js"></script>
 <script src="libs/lightgallery/js/lg-zoom.js"></script>
-<script src="libs/lightgallery/js/lg-hash.js"></script>
 <script src="libs/lightgallery/js/lg-pager.js"></script>
 <script src="libs/lightgallery/js/jquery.mousewheel.min.js"></script>
 <script src="libs/iziModal/js/iziModal.js"></script>

@@ -12,18 +12,12 @@
 
 .column {
 	position: relative;
-	min-height: 482px;
 	overflow: hidden;
 
 	/* CSS3 Box sizing property */
-	-moz-box-sizing: border-box;
-	-webkit-box-sizing: border-box;
 	-o-box-sizing: border-box;
 	box-sizing: border-box;
 	/* CSS3 transition */
-	-moz-transition: all 0.2s linear;
-	-ms-transition: all 0.2s linear;
-	-o-transition: all 0.2s linear;
 	-webkit-transition: all 0.2s linear;
 	transition: all 0.2s linear;
 	img {
@@ -36,8 +30,10 @@
 	float: left;
 	overflow: visible;
 	width: 20%;
-	margin-right: 1%;
 	padding: 0px;
+	-webkit-box-ordinal-group: 2;
+		-ms-flex-order: 1;
+			order: 1;
 	background-color: #fff;
 	font-family: Arial;
 	font-size: 12px;
@@ -47,7 +43,7 @@
 	border-top: 1px dashed #ccc;
 	border-bottom: 1px dashed #ccc;
 	border-right: 1px dashed #ccc;
-		text-align: center;
+	text-align: center;
 	.sideGalleryBlock {
 		padding-bottom: 20px;
 		border-bottom: 1px solid #ddd;
@@ -61,7 +57,6 @@
 
 			line-height:normal;
 			letter-spacing:normal;
-			display: -moz-inline-stack!important;
 			display:inline-block;
 			img{
 				display: inline-block;
@@ -106,42 +101,32 @@
 }
 #right {
 	float: right;
-	margin-left: 1%;
 	width: 20%;
 	padding: 0;
 	background-color: #fff;
 	border-top: 1px dashed #ccc;
 	border-bottom: 1px dashed #ccc;
 	border-left: 1px dashed #ccc;
+	-webkit-box-ordinal-group: 4;
+		-ms-flex-order: 3;
+			order: 3;
 }
 
 #center {
 	position: relative;
-	margin: 0 21%;
+	width: 58%;
+	margin: 0 1%;
+	-webkit-box-ordinal-group: 3;
+		-ms-flex-order: 2;
+			order: 2;
 	background-color: #fff;
 	border: 1px dashed #ccc;
 
 }
 
-#metaWeatherContainer{
-	margin: 20px 0;
-	padding-bottom: 20px;
-	border-bottom: 1px solid #ddd;
-
-}
-#metaWeatherInformer{
+.gsInformer{
 	margin: 0 auto;
-	width: 150px;
-	a{
-		display: block;
-
-		&:nth-child(3) {
-			display: none;
-		}
-		img{
-			float: none;
-		}
-	}
+	padding-bottom: 20px;
 }
 #minfin-informer-m1Fn-currency{
 	padding-left: 10px;
@@ -160,4 +145,34 @@
 	#center {
 		margin: 0 25%;
 	}
+}
+.flex-columns {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient:horizontal;
+	-webkit-box-direction:normal;
+		-ms-flex-direction:row;
+			flex-direction:row;
+	-ms-flex-wrap: wrap;
+		flex-wrap: wrap;
+}
+#page-preloader {
+	position: fixed;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	background: #EB9532;
+	z-index: 100500;
+}
+
+#page-preloader .spinner {
+	width: 120px;
+	height: 120px;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	background: url('../img/ajax-loader.gif') no-repeat 50% 50%;
+	margin: -60px 0 0 -60px;
 }

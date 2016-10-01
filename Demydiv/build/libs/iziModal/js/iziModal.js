@@ -873,50 +873,50 @@
 
 	};
 
-	$window.off('hashchange load').on('hashchange load', function(e) {
-
-		var modalHash = document.location.hash;
-
-		if(autoOpenModal === 0){
-
-			if(modalHash !== ""){
-
-				$.each( $('.'+PLUGIN_NAME) , function(index, modal) {
-					 var state = $(modal).iziModal('getState');
-					 if(state == 'opened' || state == 'opening'){
-
-						 if( "#" + $(modal).attr('id') !== modalHash){
-							 $(modal).iziModal('close');
-						 }
-					 }
-				});
-
-				var data = $(modalHash).data();
-
-				if(e.type === 'load'){
-					if(data.iziModal.options.autoOpen !== false){
-						$(modalHash).iziModal("open");
-					}
-				} else {
-					setTimeout(function(){
-						$(modalHash).iziModal("open");
-					},200);
-				}
-
-			} else {
-
-				$.each( $('.'+PLUGIN_NAME) , function(index, modal) {
-					 var state = $(modal).iziModal('getState');
-					 if(state == 'opened' || state == 'opening'){
-						 $(modal).iziModal('close');
-					 }
-				});
-
-			}
-		} else {
-			autoOpenModal = 0;
-		}
-	});
+//	$window.off('hashchange load').on('hashchange load', function(e) {
+//
+//		var modalHash = document.location.hash;
+//
+//		if(autoOpenModal === 0){
+//
+//			if(modalHash !== ""){
+//
+//				$.each( $('.'+PLUGIN_NAME) , function(index, modal) {
+//					 var state = $(modal).iziModal('getState');
+//					 if(state == 'opened' || state == 'opening'){
+//
+//						 if( "#" + $(modal).attr('id') !== modalHash){
+//							 $(modal).iziModal('close');
+//						 }
+//					 }
+//				});
+//
+//				var data = $(modalHash).data();
+//
+//				if(e.type === 'load'){
+//					if(data.iziModal.options.autoOpen !== false){
+//						$(modalHash).iziModal("open");
+//					}
+//				} else {
+//					setTimeout(function(){
+//						$(modalHash).iziModal("open");
+//					},200);
+//				}
+//
+//			} else {
+//
+//				$.each( $('.'+PLUGIN_NAME) , function(index, modal) {
+//					 var state = $(modal).iziModal('getState');
+//					 if(state == 'opened' || state == 'opening'){
+//						 $(modal).iziModal('close');
+//					 }
+//				});
+//
+//			}
+//		} else {
+//			autoOpenModal = 0;
+//		}
+//	});
 
 	$document.off('click', '[data-'+PLUGIN_NAME+'-open]').on('click', '[data-'+PLUGIN_NAME+'-open]', function(e) {
 		e.preventDefault();

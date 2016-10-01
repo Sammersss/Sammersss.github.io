@@ -3,8 +3,43 @@
 
 <head>
 	<meta charset="UTF-8" />
-	<title>Офіційний сайт села Демидів</title>
+	<title>Поки не Офіційний сайт села Демидів</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script>
+		var $buoop = {vs:{i:11,f:-4,o:-2,s:7,c:-2},c:4};
+		function $buo_f(){
+			var e = document.createElement("script");
+			e.src = "//browser-update.org/update.min.js";
+			document.body.appendChild(e);
+		};
+		try {document.addEventListener("DOMContentLoaded", $buo_f,false)}
+		catch(e){window.attachEvent("onload", $buo_f)}
+	</script>
+	<!--[if lte IE 11]>
+		<div style="width:100%;text-align:center;background:#dd5544;padding:50px;position:fixed;top:0;left:0;bottom:0;z-index:100;">
+			<div style="margin: 0 auto;">
+				<h3 style="color:#ffffff;margin:0;padding:0;">
+					Досить шарпати труп! Ваш Internet Explorer ЗАСТАРІВ!
+				</h3>
+				<p style="color:#ffffff; margin:5px 0 0 0; padding:0; font-size:15px;">
+					Час вже розпочати використовувати продвинуті технології сучасних браузерів! Завантажуйте, звичайно ж, з офіційних сайтів:
+				</p>
+				<p style="color:#ffffff;margin:5px 0 0 0; padding:0; font-size:20px;">             <a href="https://www.google.com/chrome/browser/desktop/index.html"><strong>google.com/chrome</strong></a>   чи   <a href="https://www.mozilla.org/uk/firefox/new/?utm_medium=referral&utm_source=firefox-com"><strong>firefox.com</strong></a>   чи   <a href="http://www.opera.com/uk"><strong>opera.com</strong></a>
+				</p>
+				<p style="color:#ffffff;margin:5px 0 0 0; padding:0; font-size:15px;">
+					Чекаємо на Вас тут з новим браузером ;-&rang;
+				</p>
+			</div>
+		</div>
+<![endif]-->
+	<!-- HelloPreload http://hello-site.ru/preloader/ -->
+<!--
+		<style type="text/css">#hellopreloader>p{display:none;}#hellopreloader_preload{display: block;position: fixed;z-index: 99999;top: 0;left: 0;width: 100%;height: 100%;background: #EB9532 url(http://hello-site.ru//main/images/preloads/circles.svg) center center no-repeat;background-size:150px;}</style>
+		<div id="hellopreloader"><div id="hellopreloader_preload"></div><p><a href="http://hello-site.ru">Hello-Site.ru. Бесплатный конструктор сайтов.</a></p></div>
+		<script type="text/javascript">var hellopreloader = document.getElementById("hellopreloader_preload");function fadeOutnojquery(el){el.style.opacity = 1;var interhellopreloader = setInterval(function(){el.style.opacity = el.style.opacity - 0.05;if (el.style.opacity <=0.05){ clearInterval(interhellopreloader);hellopreloader.style.display = "none";}},16);}window.onload = function(){setTimeout(function(){fadeOutnojquery(hellopreloader);},1000);};</script>
+-->
+	<!-- HelloPreload http://hello-site.ru/preloader/ -->
+
 	<link rel="shortcut icon" href="img/favicon2.svg" type="image/svg">
 	<!--<link rel="shortcut icon" href="img/favicon.png" type="image/png">-->
 	<link rel="stylesheet" href="libs/lightgallery/css/lightgallery.css">
@@ -17,9 +52,11 @@
 	<link rel="stylesheet" href="libs/iziModal/css/iziModal.css" />
 
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.js"></script>
+
 </head>
 
 <body>
+	<div id="page-preloader"><span class="spinner"></span></div>
 	<svg xmlns="http://www.w3.org/2000/svg" style="display:none">
 		<symbol id="face" viewbox="0 0 512 512">
 			<path d="M296.296 512H200.36V256h-64v-88.225l64-.03-.104-51.975C200.256 43.794 219.773 0 304.556 0h70.588v88.242H331.03c-33.017 0-34.605 12.328-34.605 35.342l-.13 44.162h79.345l-9.354 88.225-69.926.03-.064 256z" />
@@ -55,13 +92,24 @@
 //= template/gallery.html
 </div>
 
-
 <script src="js/main.js"></script>
-<script type="text/javascript">
-	$(function () {
+	<script type="text/javascript">
+		$(function () {
+//			var bodyH = $(window).height() / 2;
+//			$("body").after('<div id="system-load" style="position:fixed;'
+//							+ 'top:0px; left:0px; background: #EB9532; width:100%; height:100%;'
+//							+ 'z-index:99999999; color:#fff; padding-top:' + bodyH + 'px;"'
+//							+ 'align="center">'
+//							+ '<img src="http://hello-site.ru//main/images/preloads/circles.svg"'
+//							+ ' alt="Пожалуйста, подождите..." /></div>');
+//			$(window).bind('load', function() {
+//				$('#system-load').fadeOut('slow').remove();
+//				$('body').animate({opacity: 1}, 'fast');
+//			});
 
-	});
-</script>
+		});
+	</script>
+
 <script src="libs/animatedModal/js/animatedModal.js"></script>
 <script src="libs/carouselengine/js/amazingcarousel.js"></script>
 <script src="libs/carouselengine/js/initcarousel-1.js"></script>
@@ -72,7 +120,6 @@
 <script src="libs/lightgallery/js/lg-video.js"></script>
 <script src="libs/lightgallery/js/lg-autoplay.js"></script>
 <script src="libs/lightgallery/js/lg-zoom.js"></script>
-<script src="libs/lightgallery/js/lg-hash.js"></script>
 <script src="libs/lightgallery/js/lg-pager.js"></script>
 <script src="libs/lightgallery/js/jquery.mousewheel.min.js"></script>
 <script src="libs/iziModal/js/iziModal.js"></script>

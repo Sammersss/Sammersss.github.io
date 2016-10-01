@@ -10,9 +10,9 @@ $(function($) {
 			.removeClass('active');
 
 	});
-//	var $menuAllLink = $('.mcd-menu a');
-//	$menuAllLink.on('click', function(e) {
-//		e.preventDefault();
-//
-//	});
+	var $preventLink = $('.menu__link:not(.myClass)');
+	$preventLink.on('click', function(e) {
+		e.preventDefault();
+
+	});
 });
