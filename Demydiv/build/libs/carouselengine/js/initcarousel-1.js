@@ -34,6 +34,7 @@ jQuery(document).ready(function(){
 		random:true,
 		showhoveroverlay:true,
 		rownumber:1,
+		height:120,
 		arrowheight:32,
 		showbottomshadow:false,
 		itembackgroundimagewidth:100,
@@ -52,9 +53,10 @@ jQuery(document).ready(function(){
 		hoveroverlayimage:"../img/hoveroverlay-64-64-6.png",
 		itembottomshadowimage:"../img/itembottomshadow-100-98-3.png",
 		lightboxshowdescription:true,
+		width:280,
 		navswitchonmouseover:false,
 		showhoveroverlayalways:true,
-		transitioneasing:"easeInOutCubic",
+		transitioneasing:"easeInOutElastic",
 		lightboxshownavigation:true,
 		showitembackgroundimage:false,
 		itembackgroundimage:"",
@@ -96,12 +98,16 @@ jQuery(document).ready(function(){
 		transitionduration:4000,
 		visibleitems:4,
 		imagewidth:120,
-		usescreenquery:false,
+		usescreenquery:true,
 		bottomshadowimagewidth:110,
 		screenquery:{
+	tablet: {
+		screenwidth: 900,
+		visibleitems: 4
+	},
 	mobile: {
 		screenwidth: 600,
-		visibleitems: 1
+		visibleitems: 2
 	}
 },
 		navwidth:24,

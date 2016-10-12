@@ -33,18 +33,14 @@
 		</div>
 <![endif]-->
 	<!-- HelloPreload http://hello-site.ru/preloader/ -->
-<!--
-		<style type="text/css">#hellopreloader>p{display:none;}#hellopreloader_preload{display: block;position: fixed;z-index: 99999;top: 0;left: 0;width: 100%;height: 100%;background: #EB9532 url(http://hello-site.ru//main/images/preloads/circles.svg) center center no-repeat;background-size:150px;}</style>
-		<div id="hellopreloader"><div id="hellopreloader_preload"></div><p><a href="http://hello-site.ru">Hello-Site.ru. Бесплатный конструктор сайтов.</a></p></div>
+<style type="text/css">#hellopreloader>p{display:none;}#hellopreloader_preload{display: block;position: fixed;z-index: 99999;top: 0;left: 0;width: 100%;height: 100%;background: #514134 url('img/ajax-loader.gif') center center no-repeat;background-size:100px;}</style>
+		<div id="hellopreloader"><div id="hellopreloader_preload"></div><p></p></div>
 		<script type="text/javascript">var hellopreloader = document.getElementById("hellopreloader_preload");function fadeOutnojquery(el){el.style.opacity = 1;var interhellopreloader = setInterval(function(){el.style.opacity = el.style.opacity - 0.05;if (el.style.opacity <=0.05){ clearInterval(interhellopreloader);hellopreloader.style.display = "none";}},16);}window.onload = function(){setTimeout(function(){fadeOutnojquery(hellopreloader);},1000);};</script>
--->
 	<!-- HelloPreload http://hello-site.ru/preloader/ -->
 
 	<link rel="shortcut icon" href="img/favicon2.svg" type="image/svg">
-	<!--<link rel="shortcut icon" href="img/favicon.png" type="image/png">-->
 	<link rel="stylesheet" href="libs/lightgallery/css/lightgallery.css">
 	<link rel="stylesheet" href="libs/carouselengine/css/initcarousel-1.css">
-	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.0/animate.min.css">
 	<link rel="stylesheet" href="http://www.segodnya.ua/user/css/informer_styles.css" type="text/css" />
 	<link rel="stylesheet" media="all" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" />
 	<link rel="stylesheet" media="all" href="css/main.css" />
@@ -165,7 +161,7 @@
 					<ul>
 						<li><a href="#"><i class="fa fa-pencil-square-o"></i>Рішення ради</a>
 						</li>
-						<li><a href="#"><i class="fa fa-pencil-square-o"></i>Рішення виконавчого комітету</a>
+						<li><a href="https://drive.google.com/drive/folders/0B-xD1QhNbgSmcGRyZmNUdjUybjA?usp=sharing" class="blank" target="_blank"><i class="fa fa-pencil-square-o"></i>Рішення виконавчого комітету</a>
 						</li>
 						<li><a href="https://drive.google.com/drive/folders/0B-xD1QhNbgSmRW5TemdXTENDWnM?usp=sharing" class="blank" target="_blank"><i class="fa fa-pencil-square-o"></i>Розпорядження голови</a>
 						</li>
@@ -208,7 +204,7 @@
 			</ul>
 		</li>
 		<li>
-			<a id="history_hidden" href="#animatedModal" class="menu__link">
+			<a href="#" class="menu__link trigger-history">
 				<i class="fa fa-edit"></i>
 				<strong>Історія</strong>
 				<small>нашого села</small>
@@ -232,6 +228,13 @@
 			<a href="" class="menu__link">
 				<i class="fa fa-envelope-o"></i>
 				<strong>Контакти</strong>
+				<small>&nbsp;</small>
+			</a>
+		</li>
+		<li class="hidden-photo trigger-gallery">
+			<a href="" class="menu__link">
+				<i class="fa fa-picture-o" aria-hidden="true"></i>
+				<strong>Фотогалерея</strong>
 				<small>&nbsp;</small>
 			</a>
 		</li>
@@ -378,212 +381,205 @@
 </footer>
 <!--==========--========== END footer ==========--==========-->
 <!--DEMO01-->
-<div id="animatedModal">
-	<!--THIS IS IMPORTANT! to close the modal, the class name has to match the name given on the ID  class="close-animatedModal" -->
-	<div id="closebt-container" class="close-animatedModal close-modal_btn clearfix">
-		<img class="closebt" src="libs/animatedModal/img/closebt.svg">
-	</div>
-
-	<div class="modal-content">
+	<div id="history-modal" class="modal-content iziModal">
 		<div class="modal-guts ">
-
 			<div id="amazingcarousel-container-1">
-		<div id="amazingcarousel-1" style="display:none;position:relative;width:100%;max-width:1120px;margin:0px auto 0px;">
-			<div class="amazingcarousel-list-container">
-				<ul class="amazingcarousel-list">
-					<li class="amazingcarousel-item">
-						<div class="amazingcarousel-item-container">
-							<div class="amazingcarousel-image">
-								<a href="img/history/1-lightbox.jpg" title="Радгоспна контора (Обчислювальний Центр)" class="html5lightbox" data-group="amazingcarousel-1" data-thumbnail="img/history/1.jpg" data-description="Будівля радгоспної контори. Згодом, в 1975р. демонтували балкон і заложили двері.
-	Вхід зробили праворуч збоку та відкрили Обчислювальний Центр"><img src="img/history/1.jpg" alt="Радгоспна контора (Обчислювальний Центр)
-									" /></a>
-							</div>
-							<div class="amazingcarousel-text">
-								<cite>Радгоспна контора (Обчислювальний Центр)
-								</cite>
-								<blockquote>Будівля радгоспної контори. Згодом, в 1975р. демонтували балкон і заложили двері. Вхід зробили праворуч збоку та відкрили Обчислювальний Центр</blockquote>
-							</div>
-							<div style="clear:both;"></div>
-						</div>
-					</li>
-					<li class="amazingcarousel-item">
-						<div class="amazingcarousel-item-container">
-							<div class="amazingcarousel-image">
-								<a href="img/history/2-lightbox.jpg" title="Демидівський молокозавод" class="html5lightbox" data-group="amazingcarousel-1" data-thumbnail="img/history/2.jpg"><img src="img/history/2.jpg" alt="Демидівський молокозавод" /></a>
-							</div>
-							<div class="amazingcarousel-text">
-								<cite>Демидівський молокозавод</cite>
-								<blockquote></blockquote>
-							</div>
-							<div style="clear:both;"></div>
-						</div>
-					</li>
-					<li class="amazingcarousel-item">
-						<div class="amazingcarousel-item-container">
-							<div class="amazingcarousel-image">
-								<a href="img/history/3-lightbox.jpg" title="Демидівський засолзавод" class="html5lightbox" data-group="amazingcarousel-1" data-thumbnail="img/history/3.jpg"><img src="img/history/3.jpg" alt="Демидівський засолзавод" /></a>
-							</div>
-							<div class="amazingcarousel-text">
-								<cite>Демидівський засолзавод</cite>
-								<blockquote></blockquote>
-							</div>
-							<div style="clear:both;"></div>
-						</div>
-					</li>
-					<li class="amazingcarousel-item">
-						<div class="amazingcarousel-item-container">
-							<div class="amazingcarousel-image">
-								<a href="img/history/4-lightbox.jpg" title="Управління меліоративних систем" class="html5lightbox" data-group="amazingcarousel-1" data-thumbnail="img/history/4.jpg"><img src="img/history/4.jpg" alt="Управління меліоративних систем" /></a>
-							</div>
-							<div class="amazingcarousel-text">
-								<cite>Управління меліоративних систем</cite>
-								<blockquote></blockquote>
-							</div>
-							<div style="clear:both;"></div>
-						</div>
-					</li>
-					<li class="amazingcarousel-item">
-						<div class="amazingcarousel-item-container">
-							<div class="amazingcarousel-image">
-								<a href="img/history/5-lightbox.jpg" title="Колишній вїзд до радгоспу" class="html5lightbox" data-group="amazingcarousel-1" data-thumbnail="img/history/5.jpg" data-description="З лівої сторони колись була їдальня,зараз чотирьох поверховий будинок,з правої -  парк"><img src="img/history/5.jpg" alt="Колишній вїзд до радгоспу" /></a>
-							</div>
-							<div class="amazingcarousel-text">
-								<cite>Колишній вїзд до радгоспу</cite>
-								<blockquote>З лівої сторони колись була їдальня,зараз чотирьох поверховий будинок,з правої - парк</blockquote>
-							</div>
-							<div style="clear:both;"></div>
-						</div>
-					</li>
-					<li class="amazingcarousel-item">
-						<div class="amazingcarousel-item-container">
-							<div class="amazingcarousel-image">
-								<a href="img/history/6-lightbox.jpg" title="Будівництво Буднку Культури" class="html5lightbox" data-group="amazingcarousel-1" data-thumbnail="img/history/6.jpg"><img src="img/history/6.jpg" alt="Будівництво Буднку Культури" /></a>
-							</div>
-							<div class="amazingcarousel-text">
-								<cite>Будівництво Буднку Культури</cite>
-								<blockquote></blockquote>
-							</div>
-							<div style="clear:both;"></div>
-						</div>
-					</li>
-					<li class="amazingcarousel-item">
-						<div class="amazingcarousel-item-container">
-							<div class="amazingcarousel-image">
-								<a href="img/history/7-lightbox.jpg" title="Дорога до пожежної частини" class="html5lightbox" data-group="amazingcarousel-1" data-thumbnail="img/history/7.jpg" data-description="З правої сторони видніється добровільна пожежна частина радгоспу ім.Васильєва, зачатки парку, зліва радгоспна контора"><img src="img/history/7.jpg" alt="Дорога до пожежної частини" /></a>
-							</div>
-							<div class="amazingcarousel-text">
-								<cite>Дорога до пожежної частини</cite>
-								<blockquote>З правої сторони видніється добровільна пожежна частина радгоспу ім.Васильєва, зачатки парку, зліва радгоспна контора</blockquote>
-							</div>
-							<div style="clear:both;"></div>
-						</div>
-					</li>
-					<li class="amazingcarousel-item">
-						<div class="amazingcarousel-item-container">
-							<div class="amazingcarousel-image">
-								<a href="img/history/8-lightbox.jpg" title="Будівля сільської ради" class="html5lightbox" data-group="amazingcarousel-1" data-thumbnail="img/history/8.jpg"><img src="img/history/8.jpg" alt="Будівля сільської ради" /></a>
-							</div>
-							<div class="amazingcarousel-text">
-								<cite>Будівля сільської ради</cite>
-								<blockquote></blockquote>
-							</div>
-							<div style="clear:both;"></div>
-						</div>
-					</li>
-					<li class="amazingcarousel-item">
-						<div class="amazingcarousel-item-container">
-							<div class="amazingcarousel-image">
-								<a href="img/history/9-lightbox.jpg" title="Схема Демидова" class="html5lightbox" data-group="amazingcarousel-1" data-thumbnail="img/history/9.jpg" data-description="Малюнок, невідомого автора. Приблизно до 1954-1956 року Ірпінь мав три русла, через два з яких було побудовано мости."><img src="img/history/9.jpg" alt="Схема Демидова" /></a>
-							</div>
-							<div class="amazingcarousel-text">
-								<cite>Схема Демидова</cite>
-								<blockquote>Малюнок, невідомого автора. Приблизно до 1954-1956 року Ірпінь мав три русла, через два з яких було побудовано мости.</blockquote>
-							</div>
-							<div style="clear:both;"></div>
-						</div>
-					</li>
-					<li class="amazingcarousel-item">
-						<div class="amazingcarousel-item-container">
-							<div class="amazingcarousel-image">
-								<a href="img/history/10-lightbox.jpg" title="Демидівський &quot;Поділ&quot;" class="html5lightbox" data-group="amazingcarousel-1" data-thumbnail="img/history/10.jpg" data-description="Ось так виглядав Демидів кілька десятиліть тому. Для тих, хто відразу не впізнав місце, підкажу - на протилежному боці дороги продуктовий магазин &quot;на низу&quot;, ГАЗ-51 стоїть на місці теперішньої зупинки в сторону Димера, а фото зроблено зі схилу біля старої школи. Також праворуч видно мазин який пізніше було розібрано."><img src="img/history/10.jpg" alt="Демидівський &quot;Поділ&quot;
-									" /></a>
-							</div>
-							<div class="amazingcarousel-text">
-								<cite>Демидівський &quot;Поділ&quot;
-								</cite>
-								<blockquote>Ось так виглядав Демидів кілька десятиліть тому. Для тих, хто відразу не впізнав місце, підкажу - на протилежному боці дороги продуктовий магазин &quot;на низу&quot;, ГАЗ-51 стоїть на місці теперішньої зупинки в сторону Димера, а фото зроблено зі схилу біля старої школи. Також праворуч видно мазин який пізніше було розібрано.</blockquote>
-							</div>
-							<div style="clear:both;"></div>
-						</div>
-					</li>
-					<li class="amazingcarousel-item">
-						<div class="amazingcarousel-item-container">
-							<div class="amazingcarousel-image">
-								<a href="img/history/11-lightbox.jpg" title="Першотравнева демонстрація 1930 року. " class="html5lightbox" data-group="amazingcarousel-1" data-thumbnail="img/history/11.jpg"><img src="img/history/11.jpg" alt="Першотравнева демонстрація 1930 року. " /></a>
-							</div>
-							<div class="amazingcarousel-text">
-								<cite>Першотравнева демонстрація 1930 року. </cite>
-								<blockquote></blockquote>
-							</div>
-							<div style="clear:both;"></div>
-						</div>
-					</li>
-					<li class="amazingcarousel-item">
-						<div class="amazingcarousel-item-container">
-							<div class="amazingcarousel-image">
-								<a href="img/history/12-lightbox.jpg" title="ПС Демидів\Демидівський РЕС." class="html5lightbox" data-group="amazingcarousel-1" data-thumbnail="img/history/12.jpg" data-description="Зараз на місці опор дитячий майданчик, а трансформатори перенесено в інше місце."><img src="img/history/12.jpg" alt="ПС Демидів\Демидівський РЕС." /></a>
-							</div>
-							<div class="amazingcarousel-text">
-								<cite>ПС Демидів\Демидівський РЕС.</cite>
-								<blockquote>Зараз на місці опор дитячий майданчик, а трансформатори перенесено в інше місце.</blockquote>
-							</div>
-							<div style="clear:both;"></div>
-						</div>
-					</li>
-					<li class="amazingcarousel-item">
-						<div class="amazingcarousel-item-container">
-							<div class="amazingcarousel-image">
-								<a href="img/history/13-lightbox.jpg" title="Будівля старої школи" class="html5lightbox" data-group="amazingcarousel-1" data-thumbnail="img/history/13.jpg"><img src="img/history/13.jpg" alt="Будівля старої школи" /></a>
-							</div>
-							<div class="amazingcarousel-text">
-								<cite>Будівля старої школи</cite>
-								<blockquote></blockquote>
-							</div>
-							<div style="clear:both;"></div>
-						</div>
-					</li>
-					<li class="amazingcarousel-item">
-						<div class="amazingcarousel-item-container">
-							<div class="amazingcarousel-image">
-								<a href="img/history/14-lightbox.jpg" title="Вулиця Комсомольська" class="html5lightbox" data-group="amazingcarousel-1" data-thumbnail="img/history/14.jpg" data-description="Світлину зроблено від будинку №54. 2 серпня 1957 р."><img src="img/history/14.jpg" alt="Вулиця Комсомольська" /></a>
-							</div>
-							<div class="amazingcarousel-text">
-								<cite>Вулиця Комсомольська</cite>
-								<blockquote>Світлину зроблено від будинку №54. 2 серпня 1957 р.</blockquote>
-							</div>
-							<div style="clear:both;"></div>
-						</div>
-					</li>
-					<li class="amazingcarousel-item">
-						<div class="amazingcarousel-item-container">
-							<div class="amazingcarousel-image">
-								<a href="img/history/15-lightbox.jpg" title="Вулиця Комсомольська" class="html5lightbox" data-group="amazingcarousel-1" data-thumbnail="img/history/15.jpg" data-description="Напевно, одна з найстаріших світлин. Світлину зроблено з боку вулиці Річної, будинки 21, 23. 1933 рік."><img src="img/history/15.jpg" alt="Вулиця Комсомольська" /></a>
-							</div>
-							<div class="amazingcarousel-text">
-								<cite>Вулиця Комсомольська</cite>
-								<blockquote>Напевно, одна з найстаріших світлин. Світлину зроблено з боку вулиці Річної, будинки 21, 23. 1933 рік.</blockquote>
-							</div>
-							<div style="clear:both;"></div>
-						</div>
-					</li>
-				</ul>
-				<div class="amazingcarousel-prev"></div>
-				<div class="amazingcarousel-next"></div>
+				<div id="amazingcarousel-1" style="display:none;position:relative;width:100%;max-width:1120px;margin:0px auto 0px;">
+					<div class="amazingcarousel-list-container">
+						<ul class="amazingcarousel-list">
+							<li class="amazingcarousel-item">
+								<div class="amazingcarousel-item-container">
+									<div class="amazingcarousel-image">
+										<a href="img/history/1-lightbox.jpg" title="Радгоспна контора (Обчислювальний Центр)" class="html5lightbox" data-group="amazingcarousel-1" data-thumbnail="img/history/1.jpg" data-description="Будівля радгоспної контори. Згодом, в 1975р. демонтували балкон і заложили двері.
+			Вхід зробили праворуч збоку та відкрили Обчислювальний Центр"><img src="img/history/1.jpg" alt="Радгоспна контора (Обчислювальний Центр)
+											" /></a>
+									</div>
+									<div class="amazingcarousel-text">
+										<cite>Радгоспна контора (Обчислювальний Центр)
+										</cite>
+										<blockquote>Будівля радгоспної контори. Згодом, в 1975р. демонтували балкон і заложили двері. Вхід зробили праворуч збоку та відкрили Обчислювальний Центр</blockquote>
+									</div>
+									<div style="clear:both;"></div>
+								</div>
+							</li>
+							<li class="amazingcarousel-item">
+								<div class="amazingcarousel-item-container">
+									<div class="amazingcarousel-image">
+										<a href="img/history/2-lightbox.jpg" title="Демидівський молокозавод" class="html5lightbox" data-group="amazingcarousel-1" data-thumbnail="img/history/2.jpg"><img src="img/history/2.jpg" alt="Демидівський молокозавод" /></a>
+									</div>
+									<div class="amazingcarousel-text">
+										<cite>Демидівський молокозавод</cite>
+										<blockquote></blockquote>
+									</div>
+									<div style="clear:both;"></div>
+								</div>
+							</li>
+							<li class="amazingcarousel-item">
+								<div class="amazingcarousel-item-container">
+									<div class="amazingcarousel-image">
+										<a href="img/history/3-lightbox.jpg" title="Демидівський засолзавод" class="html5lightbox" data-group="amazingcarousel-1" data-thumbnail="img/history/3.jpg"><img src="img/history/3.jpg" alt="Демидівський засолзавод" /></a>
+									</div>
+									<div class="amazingcarousel-text">
+										<cite>Демидівський засолзавод</cite>
+										<blockquote></blockquote>
+									</div>
+									<div style="clear:both;"></div>
+								</div>
+							</li>
+							<li class="amazingcarousel-item">
+								<div class="amazingcarousel-item-container">
+									<div class="amazingcarousel-image">
+										<a href="img/history/4-lightbox.jpg" title="Управління меліоративних систем" class="html5lightbox" data-group="amazingcarousel-1" data-thumbnail="img/history/4.jpg"><img src="img/history/4.jpg" alt="Управління меліоративних систем" /></a>
+									</div>
+									<div class="amazingcarousel-text">
+										<cite>Управління меліоративних систем</cite>
+										<blockquote></blockquote>
+									</div>
+									<div style="clear:both;"></div>
+								</div>
+							</li>
+							<li class="amazingcarousel-item">
+								<div class="amazingcarousel-item-container">
+									<div class="amazingcarousel-image">
+										<a href="img/history/5-lightbox.jpg" title="Колишній вїзд до радгоспу" class="html5lightbox" data-group="amazingcarousel-1" data-thumbnail="img/history/5.jpg" data-description="З лівої сторони колись була їдальня,зараз чотирьох поверховий будинок,з правої -  парк"><img src="img/history/5.jpg" alt="Колишній вїзд до радгоспу" /></a>
+									</div>
+									<div class="amazingcarousel-text">
+										<cite>Колишній вїзд до радгоспу</cite>
+										<blockquote>З лівої сторони колись була їдальня,зараз чотирьох поверховий будинок,з правої - парк</blockquote>
+									</div>
+									<div style="clear:both;"></div>
+								</div>
+							</li>
+							<li class="amazingcarousel-item">
+								<div class="amazingcarousel-item-container">
+									<div class="amazingcarousel-image">
+										<a href="img/history/6-lightbox.jpg" title="Будівництво Буднку Культури" class="html5lightbox" data-group="amazingcarousel-1" data-thumbnail="img/history/6.jpg"><img src="img/history/6.jpg" alt="Будівництво Буднку Культури" /></a>
+									</div>
+									<div class="amazingcarousel-text">
+										<cite>Будівництво Буднку Культури</cite>
+										<blockquote></blockquote>
+									</div>
+									<div style="clear:both;"></div>
+								</div>
+							</li>
+							<li class="amazingcarousel-item">
+								<div class="amazingcarousel-item-container">
+									<div class="amazingcarousel-image">
+										<a href="img/history/7-lightbox.jpg" title="Дорога до пожежної частини" class="html5lightbox" data-group="amazingcarousel-1" data-thumbnail="img/history/7.jpg" data-description="З правої сторони видніється добровільна пожежна частина радгоспу ім.Васильєва, зачатки парку, зліва радгоспна контора"><img src="img/history/7.jpg" alt="Дорога до пожежної частини" /></a>
+									</div>
+									<div class="amazingcarousel-text">
+										<cite>Дорога до пожежної частини</cite>
+										<blockquote>З правої сторони видніється добровільна пожежна частина радгоспу ім.Васильєва, зачатки парку, зліва радгоспна контора</blockquote>
+									</div>
+									<div style="clear:both;"></div>
+								</div>
+							</li>
+							<li class="amazingcarousel-item">
+								<div class="amazingcarousel-item-container">
+									<div class="amazingcarousel-image">
+										<a href="img/history/8-lightbox.jpg" title="Будівля сільської ради" class="html5lightbox" data-group="amazingcarousel-1" data-thumbnail="img/history/8.jpg"><img src="img/history/8.jpg" alt="Будівля сільської ради" /></a>
+									</div>
+									<div class="amazingcarousel-text">
+										<cite>Будівля сільської ради</cite>
+										<blockquote></blockquote>
+									</div>
+									<div style="clear:both;"></div>
+								</div>
+							</li>
+							<li class="amazingcarousel-item">
+								<div class="amazingcarousel-item-container">
+									<div class="amazingcarousel-image">
+										<a href="img/history/9-lightbox.jpg" title="Схема Демидова" class="html5lightbox" data-group="amazingcarousel-1" data-thumbnail="img/history/9.jpg" data-description="Малюнок, невідомого автора. Приблизно до 1954-1956 року Ірпінь мав три русла, через два з яких було побудовано мости."><img src="img/history/9.jpg" alt="Схема Демидова" /></a>
+									</div>
+									<div class="amazingcarousel-text">
+										<cite>Схема Демидова</cite>
+										<blockquote>Малюнок, невідомого автора. Приблизно до 1954-1956 року Ірпінь мав три русла, через два з яких було побудовано мости.</blockquote>
+									</div>
+									<div style="clear:both;"></div>
+								</div>
+							</li>
+							<li class="amazingcarousel-item">
+								<div class="amazingcarousel-item-container">
+									<div class="amazingcarousel-image">
+										<a href="img/history/10-lightbox.jpg" title="Демидівський &quot;Поділ&quot;" class="html5lightbox" data-group="amazingcarousel-1" data-thumbnail="img/history/10.jpg" data-description="Ось так виглядав Демидів кілька десятиліть тому. Для тих, хто відразу не впізнав місце, підкажу - на протилежному боці дороги продуктовий магазин &quot;на низу&quot;, ГАЗ-51 стоїть на місці теперішньої зупинки в сторону Димера, а фото зроблено зі схилу біля старої школи. Також праворуч видно мазин який пізніше було розібрано."><img src="img/history/10.jpg" alt="Демидівський &quot;Поділ&quot;
+											" /></a>
+									</div>
+									<div class="amazingcarousel-text">
+										<cite>Демидівський &quot;Поділ&quot;
+										</cite>
+										<blockquote>Ось так виглядав Демидів кілька десятиліть тому. Для тих, хто відразу не впізнав місце, підкажу - на протилежному боці дороги продуктовий магазин &quot;на низу&quot;, ГАЗ-51 стоїть на місці теперішньої зупинки в сторону Димера, а фото зроблено зі схилу біля старої школи. Також праворуч видно мазин який пізніше було розібрано.</blockquote>
+									</div>
+									<div style="clear:both;"></div>
+								</div>
+							</li>
+							<li class="amazingcarousel-item">
+								<div class="amazingcarousel-item-container">
+									<div class="amazingcarousel-image">
+										<a href="img/history/11-lightbox.jpg" title="Першотравнева демонстрація 1930 року. " class="html5lightbox" data-group="amazingcarousel-1" data-thumbnail="img/history/11.jpg"><img src="img/history/11.jpg" alt="Першотравнева демонстрація 1930 року. " /></a>
+									</div>
+									<div class="amazingcarousel-text">
+										<cite>Першотравнева демонстрація 1930 року. </cite>
+										<blockquote></blockquote>
+									</div>
+									<div style="clear:both;"></div>
+								</div>
+							</li>
+							<li class="amazingcarousel-item">
+								<div class="amazingcarousel-item-container">
+									<div class="amazingcarousel-image">
+										<a href="img/history/12-lightbox.jpg" title="ПС Демидів\Демидівський РЕС." class="html5lightbox" data-group="amazingcarousel-1" data-thumbnail="img/history/12.jpg" data-description="Зараз на місці опор дитячий майданчик, а трансформатори перенесено в інше місце."><img src="img/history/12.jpg" alt="ПС Демидів\Демидівський РЕС." /></a>
+									</div>
+									<div class="amazingcarousel-text">
+										<cite>ПС Демидів\Демидівський РЕС.</cite>
+										<blockquote>Зараз на місці опор дитячий майданчик, а трансформатори перенесено в інше місце.</blockquote>
+									</div>
+									<div style="clear:both;"></div>
+								</div>
+							</li>
+							<li class="amazingcarousel-item">
+								<div class="amazingcarousel-item-container">
+									<div class="amazingcarousel-image">
+										<a href="img/history/13-lightbox.jpg" title="Будівля старої школи" class="html5lightbox" data-group="amazingcarousel-1" data-thumbnail="img/history/13.jpg"><img src="img/history/13.jpg" alt="Будівля старої школи" /></a>
+									</div>
+									<div class="amazingcarousel-text">
+										<cite>Будівля старої школи</cite>
+										<blockquote></blockquote>
+									</div>
+									<div style="clear:both;"></div>
+								</div>
+							</li>
+							<li class="amazingcarousel-item">
+								<div class="amazingcarousel-item-container">
+									<div class="amazingcarousel-image">
+										<a href="img/history/14-lightbox.jpg" title="Вулиця Комсомольська" class="html5lightbox" data-group="amazingcarousel-1" data-thumbnail="img/history/14.jpg" data-description="Світлину зроблено від будинку №54. 2 серпня 1957 р."><img src="img/history/14.jpg" alt="Вулиця Комсомольська" /></a>
+									</div>
+									<div class="amazingcarousel-text">
+										<cite>Вулиця Комсомольська</cite>
+										<blockquote>Світлину зроблено від будинку №54. 2 серпня 1957 р.</blockquote>
+									</div>
+									<div style="clear:both;"></div>
+								</div>
+							</li>
+							<li class="amazingcarousel-item">
+								<div class="amazingcarousel-item-container">
+									<div class="amazingcarousel-image">
+										<a href="img/history/15-lightbox.jpg" title="Вулиця Комсомольська" class="html5lightbox" data-group="amazingcarousel-1" data-thumbnail="img/history/15.jpg" data-description="Напевно, одна з найстаріших світлин. Світлину зроблено з боку вулиці Річної, будинки 21, 23. 1933 рік."><img src="img/history/15.jpg" alt="Вулиця Комсомольська" /></a>
+									</div>
+									<div class="amazingcarousel-text">
+										<cite>Вулиця Комсомольська</cite>
+										<blockquote>Напевно, одна з найстаріших світлин. Світлину зроблено з боку вулиці Річної, будинки 21, 23. 1933 рік.</blockquote>
+									</div>
+									<div style="clear:both;"></div>
+								</div>
+							</li>
+						</ul>
+						<div class="amazingcarousel-prev"></div>
+						<div class="amazingcarousel-next"></div>
+					</div>
+					<div class="amazingcarousel-nav"></div>
+					<div class="amazingcarousel-engine"><a href="http://amazingcarousel.com">jQuery Image Scroller</a></div>
+				</div>
 			</div>
-			<div class="amazingcarousel-nav"></div>
-			<div class="amazingcarousel-engine"><a href="http://amazingcarousel.com">jQuery Image Scroller</a></div>
-		</div>
-	</div>
 
 			<article>
 				<h3>Історія села</h3>
@@ -631,7 +627,6 @@
 			</article>
 		</div>
 	</div>
-</div>
 <div id="gallery-modal" class="iziModal">
 	<div id="content" class="gallery_modal-guts flex-container">
 		<script id="gallery-template" type="text/x-handlebars-template">
@@ -659,22 +654,9 @@
 <script src="js/main.js"></script>
 	<script type="text/javascript">
 		$(function () {
-//			var bodyH = $(window).height() / 2;
-//			$("body").after('<div id="system-load" style="position:fixed;'
-//							+ 'top:0px; left:0px; background: #EB9532; width:100%; height:100%;'
-//							+ 'z-index:99999999; color:#fff; padding-top:' + bodyH + 'px;"'
-//							+ 'align="center">'
-//							+ '<img src="http://hello-site.ru//main/images/preloads/circles.svg"'
-//							+ ' alt="Пожалуйста, подождите..." /></div>');
-//			$(window).bind('load', function() {
-//				$('#system-load').fadeOut('slow').remove();
-//				$('body').animate({opacity: 1}, 'fast');
-//			});
 
 		});
 	</script>
-
-<script src="libs/animatedModal/js/animatedModal.js"></script>
 <script src="libs/carouselengine/js/amazingcarousel.js"></script>
 <script src="libs/carouselengine/js/initcarousel-1.js"></script>
 <script src="https://cdn.jsdelivr.net/picturefill/2.3.1/picturefill.min.js"></script>
